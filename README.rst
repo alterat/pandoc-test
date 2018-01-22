@@ -46,14 +46,14 @@ Testo molto complesso, con tabelle annidate, immagini e codice.
 
 **Problema**: la conversione fatica a capire la struttura delle tabelle.
 
-code-test
+test-code
 =========
 
 Testo con parte di codice.
 
 **Problema**: la conversione non riconosce il codice.
 
-complex-table
+test-complex-table
 =============
 
 Tabella molto complessa, quasi patologica, per via delle celle multiple non
