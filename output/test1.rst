@@ -5,6 +5,8 @@ Domande frequenti esercenti - COS’E’ 18app
 
 1. **Cos’è 18app?**
 
+..
+
     L’applicazione 18app permette di gestire il beneficio nominale di
     500 euro ai cittadini residenti nel territorio nazionale (in
     possesso, ove previsto, di permesso di soggiorno in corso di
@@ -22,6 +24,8 @@ Domande Frequenti Esercenti - BENI VENDIBILI E OPERAZIONI DI NEGOZIO
 ====================================================================
 
 1. **Quali prodotti posso vendere con 18app?**
+
+..
 
     Se aderisci all’iniziativa 18app puoi vendere esclusivamente beni
     riconducibili ai seguenti ambiti:
@@ -57,7 +61,7 @@ Posso vendere i beni a una persona non intestataria del buono generato dall’ap
     No, i beni sono vendibili solamente ai diciottenni intestatari del
     buono.
 
-1. **Cosa succede nell’eventualità che il cliente debba effettuare un
+4. **Cosa succede nell’eventualità che il cliente debba effettuare un
    cambio/reso?** I buoni, una volta validati dall’esercente, non
    possono più essere annullati e riaccreditati. Nel caso di cambi o
    resi di prodotti acquistati con il bonus, sarai tu stesso a regolare
@@ -65,10 +69,12 @@ Posso vendere i beni a una persona non intestataria del buono generato dall’ap
    denaro o consentire l’acquisto di beni differenti da quelli previsti
    dalla normativa della “carta elettronica” ai diciottenni.
 
-2. .. rubric:: Se nel momento dell’acquisto effettuo uno sconto ad un
+5. .. rubric:: Se nel momento dell’acquisto effettuo uno sconto ad un
       ragazzo che presenta pertanto un buono di importo superiore come
       mi regolo? Posso restituirgli il resto in denaro?
       :name: se-nel-momento-dellacquisto-effettuo-uno-sconto-ad-un-ragazzo-che-presenta-pertanto-un-buono-di-importo-superiore-come-mi-regolo-posso-restituirgli-il-resto-in-denaro
+
+..
 
     No, non è consentito restituire denaro. Il ragazzo dovrà generare un
     nuovo buono attraverso la piattaforma 18app.
