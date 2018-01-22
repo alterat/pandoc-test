@@ -44,6 +44,8 @@ Check
 |                       |                       | voucher*              |
 +-----------------------+-----------------------+-----------------------+
 
+..
+
     Se **tipo operazione** verrà valorizzato con **“1”**, il check del
     voucher restituerà all’esercente i campi previsti in output senza
     consumare il voucher e quindi senza scalare l’importo dal borsellino
@@ -82,6 +84,8 @@ Confirm
 |     OUTPUT:           |     esito             |                       |
 +-----------------------+-----------------------+-----------------------+
 
+..
+
     In questa versione del servizio il **tipo operazione** verrà
     valorizzato sempre con **“1”** e l’esercente potrà comunicare la
     quota utilizzata rispetto all’importo totale del voucher,
@@ -119,6 +123,8 @@ Modalità di autenticazione
    controlla se è pronto il certificato emesso da CA dedicata ed
    eventualmente lo rende disponibile per il download.
 
+..
+
     Durante il primo step sarà necessario caricare un file .der
     rappresentante la richiesta di certificato alla CA dedicata al
     progetto. Tale csr deve presentare le seguenti caratteristiche:
@@ -126,6 +132,8 @@ Modalità di autenticazione
 -  Algoritmo generazione chiavi: RSA
 
 -  Lunghezza chiavi: 2048 bit
+
+..
 
     Una volta scaricato il certificato X509 va installato, insieme alla
     corrispondente chiave privata, nel client utilizzato per il servizio
@@ -137,6 +145,8 @@ Modalità di autenticazione
 -  tipo operazione = 1
 
 -  codice voucher = 11aa22bb
+
+..
 
     Questa operazione equivale ad una transazione di attivazione, il cui
     unico effetto è quello di portare l’esercente nello stato attivo. Da

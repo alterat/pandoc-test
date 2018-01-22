@@ -30,6 +30,8 @@ Per ottenere il pagamento dei buoni validati, l’esercente deve provvedere a em
       `http://ivaservizi.agenziaentrate.gov.it/ <http://ivaservizi.agenziaentrate.gov.it/>`__
       :name: al-fine-di-limitare-la-possibilità-di-incorrere-in-errore-in-fase-di-caricamento-ed-invio-della-fattura-si-consiglia-di-utilizzare-il-portale-web-per-la-fatturazione-elettronica-disponibile-gratuitamente-allindirizzo-httpivaservizi.agenziaentrate.gov.it
 
+..
+
     Per accedere a questa funzionalità è necessario autenticarsi
     utilizzando **credenziali Entratel/Fisconline** oppure una **Carta
     Nazionale Servizi (CNS)** precedentemente abilitata ai servizi
@@ -40,6 +42,8 @@ Per ottenere il pagamento dei buoni validati, l’esercente deve provvedere a em
       compilazione delle fatture elettroniche potrebbero riportare campi
       e funzioni diverse; in ogni caso i campi essenziali
       :name: le-presenti-linee-guida-sono-state-redatte-utilizzando-la-citata-piattaforma-web.-altri-software-disponibili-per-la-compilazione-delle-fatture-elettroniche-potrebbero-riportare-campi-e-funzioni-diverse-in-ogni-caso-i-campi-essenziali
+
+..
 
      per la compilazione della fattura intestata all’iniziativa sono
     quelli descritti in questo documento.

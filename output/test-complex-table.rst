@@ -562,6 +562,8 @@ Appendice 3: regole tecniche di dettaglio per la compilazione della fattura
 |             |             | in Italia   |             |
 +-------------+-------------+-------------+-------------+-------------+
 
+..
+
     3 Riportare fedelmente tale codice, per il quale sono significativi
     e distinti i caratteri maiuscoli da quelli minuscoli (codice *case
     sensitive*)
@@ -820,6 +822,8 @@ Appendice 3: regole tecniche di dettaglio per la compilazione della fattura
 |             |             | il "valore  |             |
 |             |             | normale"    |             |
 +-------------+-------------+-------------+-------------+-------------+
+
+..
 
     4 Riportare fedelmente tale codice, per il quale sono significativi
     e distinti i caratteri maiuscoli da quelli minuscoli (codice *case

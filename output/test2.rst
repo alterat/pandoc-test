@@ -15,6 +15,8 @@ REGISTRAZIONE AL SERVIZIO
    prodotti vendibili sia nel proprio esercizio fisico che in quello
    online.
 
+..
+
     Al termine della registrazione, il sistema assegnerà automaticamente
     a ciascun esercente un “codice esercente” di 5 caratteri
     alfanumerici da utilizzare in fase di riscossione dei buoni. Gli
@@ -45,6 +47,8 @@ La web app mette a disposizione degli esercenti 2 tipologie di vendita: nell’e
 
 -  verificare l’istallazione del certificato tramite specifica chiamata
    del web-service, come da indicazioni in allegato1.
+
+..
 
     Si precisa che sarà possibile anche per gli esercenti che scelgono
     la vendita presso l’esercizio fisico scegliere l’utilizzo delle API
@@ -89,6 +93,8 @@ A partire da settembre 2017 e fino al 31 dicembre 2018 gli esercenti possono ver
 
 -  leggere il QR code o il codice a barre del buono.
 
+..
+
     In caso di riconoscimento del codice del buono, la web app
     restituisce le informazioni generali dell’acquisto (categoria di
     prodotto, bene, importo e cognome/nome del beneficiario);
@@ -123,6 +129,8 @@ A partire da settembre 2017 e fino al 31 dicembre 2018 gli esercenti possono ver
 
 -  informazione sull’eventuale download della lista esportabile in
    formato .csv.
+
+..
 
     WEB APP 18APP PAG. 6 DI 26
 
