@@ -1,3 +1,5 @@
+output/%.rst:input/%.docx
+	pandoc $< -o $@
 
-output/%.rst : input/%.docx
-	pandoc $< -t docx -o $@
+rst2html/%.html:output/%.rst
+	rst2html $< > $@
