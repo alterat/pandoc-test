@@ -1,0 +1,202 @@
+[BlockQuote
+ [Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "9",Space,Str "DI",Space,Str "26"]]
+,Header 1 ("app",[],[]) [Str "18app"]
+,BlockQuote
+ [Para [Strong [Str "Servizio",Space,Str "Web",Space,Str "per",Space,Str "verifica",Space,Str "voucher",Space,Str "degli",Space,Str "esercenti"]]
+ ,Para [Str "Gli",Space,Str "esercenti",Space,Str "registrati",Space,Str "al",Space,Str "servizio",Space,Str "\8220",Strong [Str "18app"],Str "\8221",Space,Str "per",Space,Str "la",Space,Str "vendita",Space,Str "online",Space,Str "potranno",Space,Str "validare",Space,Str "nei",Space,Str "propri",Space,Str "sistemi",Space,Str "i",Space,Str "voucher",Space,Str "di",Space,Str "acquisto",Space,Str "di",Space,Str "beni",Space,Str "da",Space,Str "parte",Space,Str "dei",Space,Str "18enni",Space,Str "utilizzando",Space,Str "uno",Space,Str "specifico",Space,Str "servizio",Space,Str "web",Space,Str "di",Space,Str "cui",Space,Str "si",Space,Str "forniscono",Space,Str "di",Space,Str "seguito",Space,Str "le",Space,Str "specifiche",Space,Str "di",Space,Str "utilizzo."]
+ ,Para [Emph [Strong [Str "In",Space,Str "merito",Space,Str "agli",Space,Str "endpoint,",Space,Str "si",Space,Str "precisa",Space,Str "che",Space,Str "al",Space,Str "momento",Space,Str "l\8217indirizzo",Space,Str "referenziato",Space,Str "nel",Space,Str "wsdl",Space,Str "(",Link ("",[],[]) [Span ("",["underline"],[]) [Str "http://bonus.mibact.it/VerificaVoucher"]] ("http://bonus.mibact.it/VerificaVoucher",""),Str ")",Space,Str "\232",Space,Str "provvisorio."]]]
+ ,Para [Str "Il",Space,Str "servizio",Space,Str "web",Space,Str "di",Space,Strong [Str "verifica",Space,Str "del",Space,Str "voucher"],Space,Str "da",Space,Str "parte",Space,Str "degli",Space,Str "esercenti",Space,Str "rende",Space,Str "disponibili",Space,Str "2",Space,Str "principali",Space,Str "operazioni",Space,Str "(\8220",Strong [Str "Check"],Str "\8221",Space,Str "e",Space,Str "\8220",Strong [Str "Confirm"],Str "\8221).",Space,Str "La",Space,Str "seguente",Space,Str "descrizione",Space,Str "delle",Space,Str "operazioni",Space,Str "\232",Space,Str "necessaria",Space,Str "per",Space,Str "valorizzare",Space,Str "adeguatamente",Space,Str "i",Space,Str "campi",Space,Str "di",Space,Str "input.",Space,Str "Pertanto",Space,Str "le",Space,Str "operazioni",Space,Str "esposte",Space,Str "dall\8217interfaccia",Space,Str "wsdl",Space,Str "possono",Space,Str "essere",Space,Str "descritte",Space,Str "come",Space,Str "segue:"]]
+,Header 5 ("check",[],[]) [Str "Check"]
+,Table [] [AlignDefault,AlignDefault,AlignDefault] [0.0,0.0,0.0]
+ [[BlockQuote
+   [Para [Str "INPUT:"]]]
+ ,[Plain [Str "tipo",Space,Str "operazione"]]
+ ,[BlockQuote
+   [Para [Emph [Str "\8220\&1\8221,",Space,Str "\8220\&2\8221"]]]]]
+ [[[BlockQuote
+    [Para [Str "OUTPUT:"]]]
+  ,[BlockQuote
+    [Para [Str "codice",Space,Str "voucher",Space,Str "nominativo",Space,Str "beneficiario"]]]
+  ,[BlockQuote
+    [Para [Emph [Str "CF",Space,Str "o",Space,Str "Nome",Space,Str "e",Space,Str "Cognome"]]]]]
+ ,[[]
+  ,[BlockQuote
+    [Para [Str "partita",Space,Str "IVA",Space,Str "esercente",Space,Str "ambito"]]]
+  ,[Plain [Emph [Str "cinema,",Space,Str "teatro,",Space,Str "libreria\8230"]]]]
+ ,[[]
+  ,[BlockQuote
+    [Para [Str "bene"]]]
+  ,[BlockQuote
+    [Para [Emph [Str "libri,",Space,Str "spettacoli\8230"]]]]]
+ ,[[]
+  ,[Plain [Str "importo"]]
+  ,[Plain [Emph [Str "importo",Space,Str "totale",Space,Str "del",Space,Str "voucher"]]]]]
+,BlockQuote
+ [Para [Str "Se",Space,Strong [Str "tipo",Space,Str "operazione"],Space,Str "verr\224",Space,Str "valorizzato",Space,Str "con",Space,Strong [Str "\8220\&1\8221"],Str ",",Space,Str "il",Space,Str "check",Space,Str "del",Space,Str "voucher",Space,Str "restituer\224",Space,Str "all\8217esercente",Space,Str "i",Space,Str "campi",Space,Str "previsti",Space,Str "in",Space,Str "output",Space,Str "senza",Space,Str "consumare",Space,Str "il",Space,Str "voucher",Space,Str "e",Space,Str "quindi",Space,Str "senza",Space,Str "scalare",Space,Str "l\8217importo",Space,Str "dal",Space,Str "borsellino",Space,Str "del",Space,Str "beneficiario.",Space,Str "Questa",Space,Str "modalit\224",Space,Str "di",Space,Str "utilizzo",Space,Str "dell\8217operazione",Space,Str "non",Space,Str "\232",Space,Str "obbligatoria,",Space,Str "ma",Space,Str "lascia",Space,Str "all\8217esercente",Space,Str "la",Space,Str "possibilit\224",Space,Str "di",Space,Str "eseguire",Space,Str "un",Space,Str "controllo",Space,Str "tra",Space,Str "il",Space,Str "nominativo",Space,Str "del",Space,Str "beneficiario",Space,Str "e",Space,Str "quello",Space,Str "del",Space,Str "suo",Space,Str "cliente",Space,Str "in",Space,Str "sessione."]
+ ,Para [Str "Se",Space,Strong [Str "tipo",Space,Str "operazione"],Space,Str "verr\224",Space,Str "valorizzato",Space,Str "con",Space,Strong [Str "\8220\&2\8221"],Str ",",Space,Str "il",Space,Str "check",Space,Str "del",Space,Str "voucher",Space,Str "consumer\224",Space,Str "direttamente",Space,Str "l\8217importo,",Space,Str "scalandolo",Space,Str "dal",Space,Str "borsellino",Space,Str "del",Space,Str "beneficiario,",Space,Str "e",Space,Str "restituer\224",Space,Str "comunque",Space,Str "le",Space,Str "informazioni",Space,Str "previste",Space,Str "in",Space,Str "output.",Space,Str "L\8217esercente",Space,Str "potr\224",Space,Str "scegliere",Space,Str "di",Space,Str "usare",Space,Str "direttamente",Space,Str "questa",Space,Str "modalit\224",Space,Str "oppure",Space,Str "effettuare",Space,Str "due",Space,Str "chiamate",Space,Str "successive:",Space,Str "la",Space,Str "prima",Space,Str "per",Space,Str "il",Space,Str "controllo",Space,Str "del",Space,Str "beneficiario",Space,Str "e",Space,Str "la",Space,Str "seconda",Space,Str "per",Space,Str "l\8217effettivo",Space,Str "utilizzo",Space,Str "del",Space,Str "voucher."]
+ ,Para [Str "Il",Space,Str "sequence",Space,Str "diagram",Space,Str "seguente",Space,Str "descrive",Space,Str "ad",Space,Str "alto",Space,Str "livello",Space,Str "l\8217interazione",Space,Str "tra",Space,Str "i",Space,Str "vari",Space,Str "sistemi",Space,Str "coinvolti,",Space,Str "nei",Space,Str "casi",Space,Str "fin",Space,Str "qui",Space,Str "descritti:"]]
+,Para [Image ("",[],[("width","7.278472222222222in"),("height","9.825694444444444in")]) [] ("media/image1.png","")]
+,BlockQuote
+ [Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "10",Space,Str "DI",Space,Str "26"]]
+,Header 5 ("confirm",[],[]) [Str "Confirm"]
+,Table [] [AlignDefault,AlignDefault,AlignDefault] [0.0,0.0,0.0]
+ [[BlockQuote
+   [Para [Str "INPUT:"]]]
+ ,[BlockQuote
+   [Para [Str "tipo",Space,Str "operazione"]]]
+ ,[BlockQuote
+   [Para [Emph [Str "\8220\&1\8221"]]]]]
+ [[[]
+  ,[BlockQuote
+    [Para [Str "codice",Space,Str "voucher",Space,Str "importo"]]]
+  ,[BlockQuote
+    [Para [Emph [Str "importo",Space,Str "confermato",Space,Str "dall\8217esercente"]]]]]
+ ,[[BlockQuote
+    [Para [Str "OUTPUT:"]]]
+  ,[BlockQuote
+    [Para [Str "esito"]]]
+  ,[]]]
+,BlockQuote
+ [Para [Str "In",Space,Str "questa",Space,Str "versione",Space,Str "del",Space,Str "servizio",Space,Str "il",Space,Strong [Str "tipo",Space,Str "operazione"],Space,Str "verr\224",Space,Str "valorizzato",Space,Str "sempre",Space,Str "con",Space,Strong [Str "\8220\&1\8221"],Space,Str "e",Space,Str "l\8217esercente",Space,Str "potr\224",Space,Str "comunicare",Space,Str "la",Space,Str "quota",Space,Str "utilizzata",Space,Str "rispetto",Space,Str "all\8217importo",Space,Str "totale",Space,Str "del",Space,Str "voucher,",Space,Str "momentaneamente",Space,Str "impegnato.",Space,Str "Il",Space,Str "sistema",Space,Str "scaler\224",Space,Str "l\8217importo",Space,Str "dal",Space,Str "borsellino",Space,Str "del",Space,Str "beneficiario,",Space,Str "riaccreditando",Space,Str "la",Space,Str "parte",Space,Str "non",Space,Str "utilizzata,",Space,Str "calcolata",Space,Str "come",Space,Str "differenza",Space,Str "tra",Space,Str "il",Space,Str "valore",Space,Str "totale",Space,Str "del",Space,Str "voucher",Space,Str "e",Space,Str "l\8217importo",Space,Str "comunicato",Space,Str "dall\8217esercente."]
+ ,Para [Str "L\8217",Strong [Str "esito"],Space,Str "dell\8217operazione",Space,Str "(",Strong [Str "\8220OK\8221"],Space,Str "/",Space,Strong [Str "\8220KO\8221"],Str ")",Space,Str "sar\224",Space,Str "restituito",Space,Str "all\8217esercente",Space,Str "che",Space,Str "potr\224",Space,Str "eventualmente",Space,Str "fornire",Space,Str "un",Space,Str "feedback",Space,Str "al",Space,Str "beneficiario."]
+ ,Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "11",Space,Str "DI",Space,Str "26"]]
+,Header 1 ("modalit\224-di-autenticazione",[],[]) [Str "Modalit\224",Space,Str "di",Space,Str "autenticazione"]
+,BlockQuote
+ [Para [Str "Per",Space,Str "consumare",Space,Str "il",Space,Str "web",Space,Str "service",Space,Str "di",Space,Str "verifica",Space,Str "del",Space,Str "voucher,",Space,Str "ogni",Space,Str "esercente",Space,Str "dovr\224",Space,Str "essere",Space,Str "dotato",Space,Str "di",Space,Str "un",Space,Strong [Str "certificato",Space,Str "di",Space,Str "autenticazione"],Space,Str "da",Space,Str "installare",Space,Str "nel",Space,Str "proprio",Space,Str "client",Space,Str "del",Space,Str "servizio",Space,Str "e",Space,Str "da",Space,Str "utilizzare",Space,Str "nella",Space,Str "chiamata",Space,Str "SOAP",Space,Str "per",Space,Str "effettuare",Space,Str "l\8217autenticazione",Space,Str "in",Space,Str "modalit\224",Space,Str "SSL",Space,Str "con",Space,Str "certificato",Space,Str "client."]
+ ,Para [Str "Tale",Space,Str "certificato",Space,Str "X509",Space,Str "sar\224",Space,Str "generabile",Space,Str "e",Space,Str "scaricabile",Space,Str "in",Space,Str "formato",Space,Str ".cer",Space,Str "direttamente",Space,Str "tramite",Space,Str "l\8217applicazione",Space,Str "web",Space,Str "dedicata",Space,Str "agli",Space,Str "esercenti,",Space,Str "in",Space,Str "area",Space,Str "autenticata.",Space,Str "In",Space,Str "particolare",Space,Str "il",Space,Str "processo",Space,Str "di",Space,Str "generazione",Space,Str "del",Space,Str "certificato",Space,Str "prevede",Space,Str "due",Space,Str "step:"]]
+,OrderedList (1,Decimal,Period)
+ [[Para [Str "Il",Space,Str "primo",Space,Str "step",Space,Str "di",Space,Str "richiesta",Space,Str "del",Space,Str "certificato;",Space,Str "a",Space,Str "seguito",Space,Str "di",Space,Str "questa",Space,Str "operazione",Space,Str "il",Space,Str "sistema",Space,Str "prende",Space,Str "in",Space,Str "carico",Space,Str "la",Space,Str "richiesta."]]
+ ,[Para [Str "Il",Space,Str "secondo",Space,Str "step",Space,Str "di",Space,Str "verifica",Space,Str "esito",Space,Str "della",Space,Str "richiesta;",Space,Str "questa",Space,Str "operazione",Space,Str "controlla",Space,Str "se",Space,Str "\232",Space,Str "pronto",Space,Str "il",Space,Str "certificato",Space,Str "emesso",Space,Str "da",Space,Str "CA",Space,Str "dedicata",Space,Str "ed",Space,Str "eventualmente",Space,Str "lo",Space,Str "rende",Space,Str "disponibile",Space,Str "per",Space,Str "il",Space,Str "download."]]]
+,BlockQuote
+ [Para [Str "Durante",Space,Str "il",Space,Str "primo",Space,Str "step",Space,Str "sar\224",Space,Str "necessario",Space,Str "caricare",Space,Str "un",Space,Str "file",Space,Str ".der",Space,Str "rappresentante",Space,Str "la",Space,Str "richiesta",Space,Str "di",Space,Str "certificato",Space,Str "alla",Space,Str "CA",Space,Str "dedicata",Space,Str "al",Space,Str "progetto.",Space,Str "Tale",Space,Str "csr",Space,Str "deve",Space,Str "presentare",Space,Str "le",Space,Str "seguenti",Space,Str "caratteristiche:"]]
+,BulletList
+ [[Para [Str "Algoritmo",Space,Str "generazione",Space,Str "chiavi:",Space,Str "RSA"]]
+ ,[Para [Str "Lunghezza",Space,Str "chiavi:",Space,Str "2048",Space,Str "bit"]]]
+,BlockQuote
+ [Para [Str "Una",Space,Str "volta",Space,Str "scaricato",Space,Str "il",Space,Str "certificato",Space,Str "X509",Space,Str "va",Space,Str "installato,",Space,Str "insieme",Space,Str "alla",Space,Str "corrispondente",Space,Str "chiave",Space,Str "privata,",Space,Str "nel",Space,Str "client",Space,Str "utilizzato",Space,Str "per",Space,Str "il",Space,Str "servizio",Space,Str "di",Space,Str "verifica",Space,Str "voucher.",Space,Str "Pertanto",Space,Str "l\8217evento",Space,Str "di",Space,Str "download",Space,Str "del",Space,Str "certificato",Space,Str "non",Space,Str "pu\242",Space,Str "rappresentare",Space,Str "la",Space,Str "definitiva",Space,Str "attivazione",Space,Str "dell\8217esercente.",Space,Str "E\8217",Space,Str "stato",Space,Str "previsto",Space,Str "uno",Space,Str "step",Space,Str "di",Space,Str "attivazione,",Space,Str "di",Space,Str "tipo",Space,Str "\8220Check\8221",Space,Str "con",Space,Str "i",Space,Str "seguenti",Space,Str "valori",Space,Str "di",Space,Str "input:"]]
+,BulletList
+ [[Para [Str "tipo",Space,Str "operazione",Space,Str "=",Space,Str "1"]]
+ ,[Para [Str "codice",Space,Str "voucher",Space,Str "=",Space,Str "11aa22bb"]]]
+,BlockQuote
+ [Para [Str "Questa",Space,Str "operazione",Space,Str "equivale",Space,Str "ad",Space,Str "una",Space,Str "transazione",Space,Str "di",Space,Str "attivazione,",Space,Str "il",Space,Str "cui",Space,Str "unico",Space,Str "effetto",Space,Str "\232",Space,Str "quello",Space,Str "di",Space,Str "portare",Space,Str "l\8217esercente",Space,Str "nello",Space,Str "stato",Space,Str "attivo.",Space,Str "Da",Space,Str "questo",Space,Str "momento",Space,Str "in",Space,Str "poi",Space,Str "i",Space,Str "beneficiari",Space,Str "potranno",Space,Str "generare",Space,Str "voucher",Space,Str "reali",Space,Str "per",Space,Str "tale",Space,Str "esercente."]
+ ,Para [Str "Endpoint",Space,Str "del",Space,Str "servizio"]
+ ,Para [Str "Il",Space,Str "servizio",Space,Str "risponde",Space,Str "ai",Space,Str "seguenti",Space,Str "endpoint",Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "https://wstest.18app.italia.it/VerificaVoucherWEB/VerificaVoucher"]] ("https://wstest.18app.italia.it/VerificaVoucherWEB/VerificaVoucher",""),Space,Str "(ambiente",Space,Str "di",Space,Str "prova)",Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "https://ws.18app.italia.it/VerificaVoucherWEB/VerificaVoucher"]] ("https://ws.18app.italia.it/VerificaVoucherWEB/VerificaVoucher",""),Space,Str "(ambiente",Space,Str "reale)"]
+ ,Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "12",Space,Str "DI",Space,Str "26"]]
+,Header 1 ("codici-di-errore",[],[]) [Str "Codici",Space,Str "di",Space,Str "errore"]
+,BlockQuote
+ [Para [Str "La",Space,Str "seguente",Space,Str "tabella",Space,Str "rappresenta",Space,Str "i",Space,Str "possibili",Space,Str "errori",Space,Str "gestiti",Space,Str "dal",Space,Str "sistema:"]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[BlockQuote
+   [Para [Strong [Str "Codice/Code"]]]]
+ ,[BlockQuote
+   [Para [Strong [Str "Descrizione/Description"]]]]]
+ [[[BlockQuote
+    [Para [Str "01"]]]
+  ,[BlockQuote
+    [Para [Str "Errore",Space,Str "nel",Space,Str "formato",Space,Str "dei",Space,Str "parametri",Space,Str "in",Space,Str "input,",Space,Str "verificarli",Space,Str "e",Space,Str "riprovare"]]]]
+ ,[[]
+  ,[BlockQuote
+    [Para [Str "Error",Space,Str "in",Space,Str "the",Space,Str "input",Space,Str "parameters,",Space,Str "check",Space,Str "and",Space,Str "try",Space,Str "again"]]]]
+ ,[[BlockQuote
+    [Para [Str "02"]]]
+  ,[BlockQuote
+    [Para [Str "Il",Space,Str "buono",Space,Str "richiesto",Space,Str "non",Space,Str "\232",Space,Str "disponibile",Space,Str "sul",Space,Str "sistema",Space,Str "o",Space,Str "\232",Space,Str "gi\224",Space,Str "stato",Space,Str "riscosso",Space,Str "o",Space,Str "annullato"]]]]
+ ,[[]
+  ,[BlockQuote
+    [Para [Str "The",Space,Str "requested",Space,Str "voucher",Space,Str "is",Space,Str "not",Space,Str "available",Space,Str "on",Space,Str "the",Space,Str "system.",Space,Str "It",Space,Str "could",Space,Str "be",Space,Str "already",Space,Str "collected",Space,Str "or",Space,Str "canceled"]]]]
+ ,[[BlockQuote
+    [Para [Str "03"]]]
+  ,[BlockQuote
+    [Para [Str "Impossibile",Space,Str "attivare",Space,Str "l'esercente.",Space,Str "Verificare",Space,Str "che",Space,Str "i",Space,Str "dati",Space,Str "siano",Space,Str "corretti",Space,Str "e",Space,Str "che"]
+    ,Para [Str "l'esercente",Space,Str "non",Space,Str "sia",Space,Str "gi\224",Space,Str "stato",Space,Str "attivato"]]]]
+ ,[[]
+  ,[BlockQuote
+    [Para [Str "Impossible",Space,Str "to",Space,Str "activate",Space,Str "the",Space,Str "user.",Space,Str "Please",Space,Str "verify",Space,Str "input",Space,Str "parameters",Space,Str "and",Space,Str "that",Space,Str "the",Space,Str "user",Space,Str "has",Space,Str "not",Space,Str "been",Space,Str "already",Space,Str "activated."]]]]
+ ,[[BlockQuote
+    [Para [Str "04"]]]
+  ,[BlockQuote
+    [Para [Str "L'importo",Space,Str "richiesto",Space,Str "\232",Space,Str "superiore",Space,Str "all'importo",Space,Str "del",Space,Str "buono",Space,Str "selezionato"]]]]
+ ,[[]
+  ,[BlockQuote
+    [Para [Str "The",Space,Str "amount",Space,Str "claimed",Space,Str "is",Space,Str "greater",Space,Str "than",Space,Str "the",Space,Str "amount",Space,Str "of",Space,Str "the",Space,Str "selected",Space,Str "voucher"]]]]
+ ,[[BlockQuote
+    [Para [Str "05"]]]
+  ,[BlockQuote
+    [Para [Str "Non",Space,Str "si",Space,Str "pu\242",Space,Str "verificare",Space,Str "o",Space,Str "consumare",Space,Str "il",Space,Str "buono",Space,Str "poich\232",Space,Str "l'esercente",Space,Str "risulta",Space,Str "non",Space,Str "attivo"]]]]
+ ,[[]
+  ,[BlockQuote
+    [Para [Str "User",Space,Str "inactive,",Space,Str "voucher",Space,Str "impossible",Space,Str "to",Space,Str "verify."]]]]
+ ,[[BlockQuote
+    [Para [Str "06"]]]
+  ,[BlockQuote
+    [Para [Str "Ambito",Space,Str "e",Space,Str "bene",Space,Str "del",Space,Str "buono",Space,Str "non",Space,Str "coincidono",Space,Str "con",Space,Str "ambiti",Space,Str "e",Space,Str "beni",Space,Str "trattati",Space,Str "dall\8217esercente"]]]]
+ ,[[]
+  ,[BlockQuote
+    [Para [Str "Category",Space,Str "and",Space,Str "type",Space,Str "of",Space,Str "this",Space,Str "voucher",Space,Str "are",Space,Str "not",Space,Str "aligned",Space,Str "with",Space,Str "category",Space,Str "and",Space,Str "type",Space,Str "managed",Space,Str "by",Space,Str "the",Space,Str "user."]]]]]
+,Para [Image ("",[],[("width","7.741666666666666in"),("height","9.825694444444444in")]) [] ("media/image3.jpeg","")]
+,BlockQuote
+ [Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "13",Space,Str "DI",Space,Str "26"]]
+,Header 1 ("esempi-di-requestresponse",[],[]) [Str "Esempi",Space,Str "di",Space,Str "request/response"]
+,BlockQuote
+ [Para [Str "Di",Space,Str "seguito",Space,Str "si",Space,Str "riportano",Space,Str "due",Space,Str "esempi",Space,Str "di",Space,Str "request",Space,Str "e",Space,Str "relativa",Space,Str "response,",Space,Str "sia",Space,Str "per",Space,Str "l\8217operation",Space,Str "\8220Check\8221",Space,Str "che",Space,Str "per",Space,Str "l\8217operation",Space,Str "\8220Confirm\8221."]
+ ,Para [Str "\8220Check\8221"]
+ ,Para [Str "Check",Space,Str "request:"]
+ ,Para [Str "<soapenv:Envelope",Space,Str "xmlns:soapenv=\"",Link ("",[],[]) [Str "http://schemas.xmlsoap.org/soap/envelope/"] ("http://schemas.xmlsoap.org/soap/envelope/",""),Str "\"",Space,Str "xmlns:ver=\"",Link ("",[],[]) [Str "http://bonus.mibact.it/VerificaVoucher/"] ("http://bonus.mibact.it/VerificaVoucher/",""),Str "\">"]
+ ,Para [Str "<soapenv:Header/>"]
+ ,Para [Str "<soapenv:Body>"]
+ ,Para [Str "<ver:CheckRequestObj>"]
+ ,Para [Str "<checkReq>"]
+ ,Para [Str "<tipoOperazione>1</tipoOperazione>"]
+ ,Para [Str "<codiceVoucher>2a75f266</codiceVoucher>"]
+ ,Para [Str "<!--Optional:"]
+ ,Para [Str "<partitaIvaEsercente>?</partitaIvaEsercente>"]
+ ,Para [Str "-->"]
+ ,Para [Str "</checkReq>"]
+ ,Para [Str "</ver:CheckRequestObj>"]
+ ,Para [Str "</soapenv:Body>"]
+ ,Para [Str "</soapenv:Envelope>",Space,Str "Check",Space,Str "response:"]
+ ,Para [Str "<soapenv:Envelope",Space,Str "xmlns:soapenv=\"",Link ("",[],[]) [Str "http://schemas.xmlsoap.org/soap/envelope/"] ("http://schemas.xmlsoap.org/soap/envelope/",""),Str "\">"]
+ ,Para [Str "<soapenv:Body>"]
+ ,Para [Str "<a:CheckResponseObj",Space,Str "xmlns:a=\"",Link ("",[],[]) [Str "http://bonus.mibact.it/VerificaVoucher/"] ("http://bonus.mibact.it/VerificaVoucher/",""),Str "\">"]
+ ,Para [Str "<checkResp>"]
+ ,Para [Str "<nominativoBeneficiario>AAABBB10X10X111D</nominativoBeneficiario>"]
+ ,Para [Str "<partitaIvaEsercente>01043931003</partitaIvaEsercente>"]]
+,Para [Image ("",[],[("width","7.741666666666666in"),("height","9.825694444444444in")]) [] ("media/image5.jpeg","")]
+,BlockQuote
+ [Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "14",Space,Str "DI",Space,Str "26"]
+ ,Para [Str "<ambito>Teatro</ambito>"]
+ ,Para [Str "<bene>Biglietti</bene>"]
+ ,Para [Str "<importo>40.5</importo>"]
+ ,Para [Str "</checkResp>"]
+ ,Para [Str "</a:CheckResponseObj>"]
+ ,Para [Str "</soapenv:Body>"]
+ ,Para [Str "</soapenv:Envelope>"]
+ ,Para [Str "\8220Confirm\8221"]
+ ,Para [Str "Confirm",Space,Str "request:"]
+ ,Para [Str "<soapenv:Envelope",Space,Str "xmlns:soapenv=\"",Link ("",[],[]) [Str "http://schemas.xmlsoap.org/soap/envelope/"] ("http://schemas.xmlsoap.org/soap/envelope/",""),Str "\"",Space,Str "xmlns:ver=\"",Link ("",[],[]) [Str "http://bonus.mibact.it/VerificaVoucher/"] ("http://bonus.mibact.it/VerificaVoucher/",""),Str "\">"]
+ ,Para [Str "<soapenv:Header/>"]
+ ,Para [Str "<soapenv:Body>"]
+ ,Para [Str "<ver:ConfirmRequestObj>"]
+ ,Para [Str "<checkReq>"]
+ ,Para [Str "<tipoOperazione>1</tipoOperazione>"]
+ ,Para [Str "<codiceVoucher>2a75f266</codiceVoucher>"]
+ ,Para [Str "<importo>30.20</importo>"]
+ ,Para [Str "</checkReq>"]
+ ,Para [Str "</ver:ConfirmRequestObj>"]
+ ,Para [Str "</soapenv:Body>"]
+ ,Para [Str "</soapenv:Envelope>",Space,Str "Confirm",Space,Str "response:"]
+ ,Para [Str "<soapenv:Envelope",Space,Str "xmlns:soapenv=\"",Link ("",[],[]) [Str "http://schemas.xmlsoap.org/soap/envelope/"] ("http://schemas.xmlsoap.org/soap/envelope/",""),Str "\">"]
+ ,Para [Str "<soapenv:Body>"]
+ ,Para [Str "<a:ConfirmResponseObj",Space,Str "xmlns:a=\"",Link ("",[],[]) [Str "http://bonus.mibact.it/VerificaVoucher/"] ("http://bonus.mibact.it/VerificaVoucher/",""),Str "\">"]
+ ,Para [Str "<checkResp>"]
+ ,Para [Str "<esito>OK</esito>"]
+ ,Para [Str "</checkResp>"]
+ ,Para [Str "</a:ConfirmResponseObj>"]
+ ,Para [Str "</soapenv:Body>"]
+ ,Para [Str "</soapenv:Envelope>"]]]
