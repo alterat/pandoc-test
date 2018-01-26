@@ -1,0 +1,15 @@
+[Table [] [AlignDefault,AlignDefault] [0.5,0.5]
+ [[Plain [Str "one"]]
+ ,[Plain [Str "two"]]]
+ [[[Plain [Str "ports"]]
+  ,[BlockQuote
+    [Para [Str "binding",SoftBreak,Str "`",Strong [Str "tns:VerificaVoucherSOAP"]]]
+   ,Para [Str "<#_bookmark2>`__"]
+   ,BlockQuote
+    [Para [Str "extensibility",Space,Str "<soap:address"]
+    ,Para [Str "location=\"",Link ("",[],[]) [Str "https://bonus.mibac"] ("https://bonus.mibac","")]]
+   ,Para [Str "t.it/VerificaVoucherWEB/VerificaV",SoftBreak,Str "oucher\"/>"]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<wsdl:port",SoftBreak,Str "name=\"VerificaVoucherSOAP\"",SoftBreak,Str "binding=\"tns:VerificaVoucherS"]]
+   ,Plain [Str "OAP\">"]]]]]

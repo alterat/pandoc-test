@@ -1,0 +1,2049 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.12: http://docutils.sourceforge.net/" />
+<title></title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7614 2013-02-21 15:55:51Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document">
+
+
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 15 DI 26</p>
+</blockquote>
+<div class="section" id="wsdl-verificavoucher-wsdl">
+<h1>WSDL VerificaVoucher.wsdl</h1>
+<blockquote>
+<p>targetnamespace:
+<a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/">**http://bonus.mibact.it/VerificaVoucher/**</a></p>
+<p>services bindings porttypes messages types</p>
+</blockquote>
+<div class="section" id="verificavouc-her">
+<h2><a class="reference external" href="#_bookmark0">VerificaVouc</a> <a class="reference external" href="#_bookmark0">her</a></h2>
+<blockquote>
+<p><strong>`VerificaVoucherS &lt;#_bookmark2&gt;`__ `OAP &lt;#_bookmark2&gt;`__</strong></p>
+<p><strong>`VerificaVouc &lt;#_bookmark3&gt;`__ `her &lt;#_bookmark3&gt;`__</strong></p>
+<p><strong>`CheckRequest &lt;#_bookmark6&gt;`__ `Check &lt;#_bookmark18&gt;`__</strong></p>
+<p><strong>`CheckRespons &lt;#_bookmark7&gt;`__ `e &lt;#_bookmark7&gt;`__
+`ConfirmReque &lt;#_bookmark8&gt;`__ `st &lt;#_bookmark8&gt;`__
+`ConfirmRespo &lt;#_bookmark9&gt;`__ `nse &lt;#_bookmark9&gt;`__</strong></p>
+<p><strong>`CheckRequestObj &lt;#_bookmark10&gt;`__
+`CheckResponse &lt;#_bookmark22&gt;`__</strong></p>
+<p><strong>`CheckResponseO &lt;#_bookmark12&gt;`__ `bj &lt;#_bookmark12&gt;`__</strong></p>
+<p><strong>`Confirm &lt;#_bookmark28&gt;`__ `ConfirmRequestO &lt;#_bookmark14&gt;`__
+`bj &lt;#_bookmark14&gt;`__</strong></p>
+<p><a class="reference external" href="#_bookmark32">**ConfirmResponse**</a></p>
+<p><strong>`ConfirmResponse &lt;#_bookmark16&gt;`__ `Obj &lt;#_bookmark16&gt;`__</strong></p>
+<p>attributeFormDefault: elementFormDefault:</p>
+<p>targetNamespace:
+<a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/">**http://bonus.mibact.it/VerificaVoucher/**</a></p>
+<p>Elements Complex types</p>
+<p><strong>`CheckRequestObj &lt;#_bookmark10&gt;`__ `Check &lt;#_bookmark18&gt;`__
+`CheckResponseObj &lt;#_bookmark12&gt;`__ `CheckResponse &lt;#_bookmark22&gt;`__
+`ConfirmRequestObj &lt;#_bookmark14&gt;`__ `Confirm &lt;#_bookmark28&gt;`__
+`ConfirmResponseObj &lt;#_bookmark16&gt;`__
+`ConfirmResponse &lt;#_bookmark32&gt;`__</strong></p>
+<p>service <strong>VerificaVoucher</strong></p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image1" src="media/image1.png" style="width: 3.23748in; height: 0.49875in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>ports</td>
+<td><blockquote class="first">
+<p><strong>VerificaVoucherSOAP</strong></p>
+<p>binding
+<a href="#id1"><span class="problematic" id="id2">`</span></a><strong>tns:VerificaVoucherSOAP</strong></p>
+<div class="system-message" id="id1">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 59); <em><a href="#id2">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 61)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p>&lt;#_bookmark2&gt;`__</p>
+<blockquote>
+<p>extensibility &lt;soap:address</p>
+<p>location=&quot;<a class="reference external" href="https://bonus.mibac">https://bonus.mibac</a></p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 66)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">t.it/VerificaVoucherWEB/VerificaV
+oucher&quot;/&gt;</p>
+</td>
+</tr>
+<tr><td>source</td>
+<td><blockquote class="first">
+<p>&lt;wsdl:service
+name=&quot;VerificaVoucher&quot;&gt;</p>
+<p>&lt;wsdl:port
+name=&quot;VerificaVoucherSOAP&quot;
+binding=&quot;tns:VerificaVoucherS</p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 75)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">OAP&quot;&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 16 DI 26</p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>&nbsp;</td>
+<td><blockquote class="first">
+&lt;soap:address
+location=&quot;https://bonus.mibac</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 87)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p>t.it/VerificaVoucherWEB/VerificaV
+oucher&quot;/&gt;</p>
+<blockquote class="last">
+<p>&lt;/wsdl:port&gt;</p>
+<p>&lt;/wsdl:service&gt;</p>
+</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+binding <strong>VerificaVoucherSOAP</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image3" src="media/image2.png" style="width: 2.8175in; height: 2.26625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><blockquote class="first">
+<p><a href="#id3"><span class="problematic" id="id4">`</span></a><strong>tns:VerificaVoucher</strong> &lt;#_b</p>
+<div class="system-message" id="id3">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 102); <em><a href="#id4">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 103)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">ookmark3&gt;`__</p>
+</td>
+</tr>
+<tr><td>extensibility</td>
+<td><blockquote class="first">
+<p>&lt;soap:binding
+style=&quot;document&quot;
+transport=<a href="#id5"><span class="problematic" id="id6">`</span></a>&quot;<a class="reference external" href="http://schemas">http://schemas</a>.</p>
+<div class="system-message" id="id5">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 105); <em><a href="#id6">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 108)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">xmlsoap.org/soap/http &lt;<a class="reference external" href="http://sch">http://sch</a>
+emas.xmlsoap.org/soap/http&gt;`__&quot;/&gt;</p>
+</td>
+</tr>
+<tr><td>operations</td>
+<td><blockquote class="first">
+<p><strong>Check</strong></p>
+<p>extensibility &lt;soap:operation</p>
+<p>soapAction=&quot;<a class="reference external" href="http://bonus.miba">http://bonus.miba</a></p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 116)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p>ct.it/VerificaVoucher/Check&quot;/&gt;</p>
+<blockquote>
+<p>input &lt;soap:body
+use=&quot;literal&quot;/&gt;</p>
+<p>output &lt;soap:body
+use=&quot;literal&quot;/&gt;</p>
+<p><strong>Confirm</strong></p>
+<p>extensibility &lt;soap:operation</p>
+<p>soapAction=&quot;<a class="reference external" href="http://bonus.miba">http://bonus.miba</a></p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 129)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p>ct.it/VerificaVoucher/Confirm&quot;/&gt;</p>
+<blockquote class="last">
+<p>input &lt;soap:body
+use=&quot;literal&quot;/&gt;</p>
+<p>output &lt;soap:body
+use=&quot;literal&quot;/&gt;</p>
+</blockquote>
+</td>
+</tr>
+<tr><td>used by</td>
+<td><blockquote class="first">
+<p>Port
+<a href="#id7"><span class="problematic" id="id8">`</span></a><strong>VerificaVoucherSOAP</strong> &lt;#_b</p>
+<div class="system-message" id="id7">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 137); <em><a href="#id8">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 139)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<dl class="docutils">
+<dt>ookmark1&gt;`__</dt>
+<dd><p class="first">in Service
+<a href="#id9"><span class="problematic" id="id10">`</span></a><strong>VerificaVoucher</strong> &lt;#_bookm</p>
+<div class="last system-message" id="id9">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 140); <em><a href="#id10">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</dd>
+</dl>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 142)</p>
+Definition list ends without a blank line; unexpected unindent.</div>
+<p class="last">ark0&gt;`__</p>
+</td>
+</tr>
+<tr><td>source</td>
+<td><blockquote class="first">
+<p>&lt;wsdl:binding
+name=&quot;VerificaVoucherSOAP&quot;
+type=&quot;tns:VerificaVoucher&quot;&gt;</p>
+<p>&lt;soap:binding
+style=&quot;document&quot;
+transport=<a href="#id11"><span class="problematic" id="id12">`</span></a>&quot;<a class="reference external" href="http://schemas">http://schemas</a>.</p>
+<div class="system-message" id="id11">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 148); <em><a href="#id12">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 151)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p>xmlsoap.org/soap/http &lt;<a class="reference external" href="http://sch">http://sch</a>
+emas.xmlsoap.org/soap/http&gt;`__&quot;/&gt;</p>
+<blockquote>
+<p>&lt;wsdl:operation name=&quot;Check&quot;&gt;</p>
+<p>&lt;soap:operation
+soapAction=<a href="#id13"><span class="problematic" id="id14">`</span></a>&quot;<a class="reference external" href="http://bonus.m">http://bonus.m</a></p>
+<div class="system-message" id="id13">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 156); <em><a href="#id14">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 158)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p>ibact.it/VerificaVoucher/Check &lt;h
+ttp://bonus.mibact.it/VerificaVou
+cher/Check&gt;`__&quot;/&gt;</p>
+<blockquote class="last">
+<p>&lt;wsdl:input&gt;</p>
+<p>&lt;soap:body use=&quot;literal&quot;/&gt;</p>
+</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 17 DI 26</p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>&nbsp;</td>
+<td><blockquote class="first">
+<p>&lt;/wsdl:input&gt;</p>
+<p>&lt;wsdl:output&gt;</p>
+<p>&lt;soap:body use=&quot;literal&quot;/&gt;</p>
+<p>&lt;/wsdl:output&gt;</p>
+<p>&lt;/wsdl:operation&gt;</p>
+<p>&lt;wsdl:operation
+name=&quot;Confirm&quot;&gt;</p>
+<p>&lt;soap:operation
+soapAction=<a href="#id15"><span class="problematic" id="id16">`</span></a>&quot;<a class="reference external" href="http://bonus.m">http://bonus.m</a></p>
+<div class="system-message" id="id15">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 187); <em><a href="#id16">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 189)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p>ibact.it/VerificaVoucher/Confirm
+&lt;<a class="reference external" href="http://bonus.mibact.it/VerificaV">http://bonus.mibact.it/VerificaV</a>
+oucher/Confirm&gt;`__&quot;/&gt;</p>
+<blockquote class="last">
+<p>&lt;wsdl:input&gt;</p>
+<p>&lt;soap:body use=&quot;literal&quot;/&gt;</p>
+<p>&lt;/wsdl:input&gt;</p>
+<p>&lt;wsdl:output&gt;</p>
+<p>&lt;soap:body use=&quot;literal&quot;/&gt;</p>
+<p>&lt;/wsdl:output&gt;</p>
+<p>&lt;/wsdl:operation&gt;</p>
+<p>&lt;/wsdl:binding&gt;</p>
+</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+porttype <strong>VerificaVoucher</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image4" src="media/image3.png" style="width: 2.52in; height: 1.89in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>operations</td>
+<td><p class="first"><strong>Check</strong></p>
+<p>input <a class="reference external" href="#_bookmark6">**tns:CheckRequest**</a></p>
+<p>output <a class="reference external" href="#_bookmark7">**tns:CheckResponse**</a></p>
+<p><strong>Confirm</strong></p>
+<p>input <a class="reference external" href="#_bookmark8">**tns:ConfirmRequest**</a></p>
+<p class="last">output <a class="reference external" href="#_bookmark9">**tns:ConfirmResponse**</a></p>
+</td>
+</tr>
+<tr><td>used by</td>
+<td>binding <a class="reference external" href="#_bookmark2">**VerificaVoucherSOAP**</a></td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;wsdl:portType name=&quot;VerificaVoucher&quot;&gt;</p>
+<p>&lt;wsdl:operation name=&quot;Check&quot;&gt;</p>
+<p>&lt;wsdl:input message=&quot;tns:CheckRequest&quot;/&gt;</p>
+<p>&lt;wsdl:output message=&quot;tns:CheckResponse&quot;/&gt;</p>
+<p>&lt;/wsdl:operation&gt;</p>
+<p class="last">&lt;wsdl:operation name=&quot;Confirm&quot;&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 18 DI 26</p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="4%" />
+<col width="96%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>&nbsp;</td>
+<td><p class="first">&lt;wsdl:input message=&quot;tns:ConfirmRequest&quot;/&gt;</p>
+<p>&lt;wsdl:output message=&quot;tns:ConfirmResponse&quot;/&gt;</p>
+<p>&lt;/wsdl:operation&gt;</p>
+<p class="last">&lt;/wsdl:portType&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+message <strong>CheckRequest</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">parts</th>
+<th class="head"><blockquote class="first">
+<p><strong>parameters</strong></p>
+<p>element
+<a href="#id17"><span class="problematic" id="id18">`</span></a><strong>tns:CheckRequestObj</strong> &lt;#_b</p>
+<div class="system-message" id="id17">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 267); <em><a href="#id18">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 269)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">ookmark10&gt;`__</p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>used by</td>
+<td><blockquote class="first">
+<p>Operation
+<a class="reference external" href="#_bookmark4">**Check**</a>
+in PortType
+<a href="#id19"><span class="problematic" id="id20">**</span></a><a href="#id21"><span class="problematic" id="id22">`</span></a>VerificaVouche &lt;#_bookmark</p>
+<div class="system-message" id="id19">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 271); <em><a href="#id20">backlink</a></em></p>
+Inline strong start-string without end-string.</div>
+<div class="system-message" id="id21">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 271); <em><a href="#id22">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 275)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<dl class="last docutils">
+<dt>3&gt;`__r</dt>
+<dd><p class="first"><a href="#id23"><span class="problematic" id="id24">**</span></a></p>
+<div class="last system-message" id="id23">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 276); <em><a href="#id24">backlink</a></em></p>
+Inline strong start-string without end-string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr><td>source</td>
+<td><blockquote class="first">
+<p>&lt;wsdl:message
+name=&quot;CheckRequest&quot;&gt;</p>
+<p>&lt;wsdl:part name=&quot;parameters&quot;
+element=&quot;tns:CheckRequestObj&quot;</p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 283)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p>/&gt;</p>
+<blockquote class="last">
+&lt;/wsdl:message&gt;</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+message <strong>CheckResponse</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">parts</th>
+<th class="head"><blockquote class="first">
+<p><strong>parameters</strong></p>
+<p>element
+<a href="#id25"><span class="problematic" id="id26">`</span></a><strong>tns:CheckResponseObj</strong> &lt;#_</p>
+<div class="system-message" id="id25">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 295); <em><a href="#id26">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 297)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">bookmark12&gt;`__</p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>used by</td>
+<td><blockquote class="first">
+<p>Operation
+<a class="reference external" href="#_bookmark4">**Check**</a>
+in PortType
+<a href="#id27"><span class="problematic" id="id28">**</span></a><a href="#id29"><span class="problematic" id="id30">`</span></a>VerificaVouche &lt;#_bookmark</p>
+<div class="system-message" id="id27">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 299); <em><a href="#id28">backlink</a></em></p>
+Inline strong start-string without end-string.</div>
+<div class="system-message" id="id29">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 299); <em><a href="#id30">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 303)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<dl class="last docutils">
+<dt>3&gt;`__r</dt>
+<dd><p class="first"><a href="#id31"><span class="problematic" id="id32">**</span></a></p>
+<div class="last system-message" id="id31">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 304); <em><a href="#id32">backlink</a></em></p>
+Inline strong start-string without end-string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr><td>source</td>
+<td><blockquote class="first">
+<p>&lt;wsdl:message
+name=&quot;CheckResponse&quot;&gt;</p>
+<p>&lt;wsdl:part name=&quot;parameters&quot;
+element=&quot;tns:CheckResponseObj</p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 311)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p>&quot;/&gt;</p>
+<blockquote class="last">
+&lt;/wsdl:message&gt;</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+message <strong>ConfirmRequest</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">parts</th>
+<th class="head"><blockquote class="first">
+<p><strong>parameters</strong></p>
+<p>element
+<a href="#id33"><span class="problematic" id="id34">`</span></a><strong>tns:ConfirmRequestObj</strong> &lt;#</p>
+<div class="system-message" id="id33">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 323); <em><a href="#id34">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 325)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">_bookmark14&gt;`__</p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>used by</td>
+<td><blockquote class="first">
+<p>Operation
+<a class="reference external" href="#_bookmark5">**Confirm**</a>
+in PortType
+<a href="#id35"><span class="problematic" id="id36">**</span></a><a href="#id37"><span class="problematic" id="id38">`</span></a>VerificaVouche &lt;#_bookmark</p>
+<div class="system-message" id="id35">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 327); <em><a href="#id36">backlink</a></em></p>
+Inline strong start-string without end-string.</div>
+<div class="system-message" id="id37">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 327); <em><a href="#id38">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 331)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<dl class="last docutils">
+<dt>3&gt;`__r</dt>
+<dd><p class="first"><a href="#id39"><span class="problematic" id="id40">**</span></a></p>
+<div class="last system-message" id="id39">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 332); <em><a href="#id40">backlink</a></em></p>
+Inline strong start-string without end-string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr><td>source</td>
+<td><blockquote class="first">
+<p>&lt;wsdl:message
+name=&quot;ConfirmRequest&quot;&gt;</p>
+<p>&lt;wsdl:part name=&quot;parameters&quot;
+element=&quot;tns:ConfirmRequestOb</p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 339)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p>j&quot;/&gt;</p>
+<blockquote class="last">
+&lt;/wsdl:message&gt;</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>message <strong>ConfirmResponse</strong></p>
+<p><strong>Codice campo modificato Codice campo modificato</strong></p>
+<p><strong>Codice campo modificato Codice campo modificato</strong></p>
+<p><strong>Codice campo modificato Codice campo modificato</strong></p>
+<p><strong>Codice campo modificato Codice campo modificato</strong></p>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 19 DI 26</p>
+<p>element <strong>CheckRequestObj</strong></p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image5" src="media/image4.png" style="width: 2.52877in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>namespace</td>
+<td><a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/">http://bonus.mibact.it/VerificaVoucher/</a></td>
+</tr>
+<tr><td>properties</td>
+<td>content complex</td>
+</tr>
+<tr><td>children</td>
+<td><a class="reference external" href="#_bookmark11">**checkReq**</a></td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;xsd:element name=&quot;CheckRequestObj&quot;&gt;</p>
+<p>&lt;xsd:complexType&gt;</p>
+<p>&lt;xsd:sequence&gt;</p>
+<p>&lt;xsd:element name=&quot;checkReq&quot; type=&quot;tns:Check&quot;/&gt;</p>
+<p>&lt;/xsd:sequence&gt;</p>
+<p>&lt;/xsd:complexType&gt;</p>
+<p class="last">&lt;/xsd:element&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>CheckRequestObj/checkReq</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image7" src="media/image5.png" style="width: 2.85249in; height: 1.2775in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><blockquote class="first">
+<p><a href="#id41"><span class="problematic" id="id42">`</span></a><strong>tns:Check</strong> &lt;#_bookmark18&gt;</p>
+<div class="system-message" id="id41">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 393); <em><a href="#id42">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 394)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p><a href="#id43"><span class="problematic" id="id44">`</span></a>__</p>
+<div class="last system-message" id="id43">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 394); <em><a href="#id44">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</td>
+</tr>
+<tr><td>properties</td>
+<td>content complex</td>
+</tr>
+<tr><td>children</td>
+<td><blockquote class="first">
+<p><a href="#id45"><span class="problematic" id="id46">**</span></a><a href="#id47"><span class="problematic" id="id48">`</span></a>tipoOperazione &lt;#_bookmark</p>
+<div class="system-message" id="id45">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 398); <em><a href="#id46">backlink</a></em></p>
+Inline strong start-string without end-string.</div>
+<div class="system-message" id="id47">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 398); <em><a href="#id48">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 399)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<dl class="docutils">
+<dt>19&gt;`__</dt>
+<dd><p class="first"><a href="#id49"><span class="problematic" id="id50">`</span></a>codiceVoucher &lt;#_bookmark20&gt;</p>
+<div class="last system-message" id="id49">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 400); <em><a href="#id50">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</dd>
+<dt><a href="#id51"><span class="problematic" id="id52">`</span></a>__</dt>
+<dd><div class="first system-message" id="id51">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 401); <em><a href="#id52">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+<p><a href="#id53"><span class="problematic" id="id54">`</span></a>partitaIvaEsercente &lt;#_bookm</p>
+<div class="last system-message" id="id53">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 402); <em><a href="#id54">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</dd>
+</dl>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 403)</p>
+Definition list ends without a blank line; unexpected unindent.</div>
+<p class="last">ark21&gt;`__**</p>
+</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;checkReq&quot;
+type=&quot;tns:Check&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>CheckResponseObj</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="79%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image8" src="media/image6.png" style="width: 2.67741in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>namespace</td>
+<td><a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/">http://bonus.mibact.it/VerificaVoucher/</a></td>
+</tr>
+<tr><td>properties</td>
+<td>content complex</td>
+</tr>
+<tr><td>children</td>
+<td><a class="reference external" href="#_bookmark13">**checkResp**</a></td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;CheckResponseObj&quot;&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 20 DI 26</p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="3%" />
+<col width="97%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>&nbsp;</td>
+<td><p class="first">&lt;xsd:complexType&gt;</p>
+<p>&lt;xsd:sequence&gt;</p>
+<p>&lt;xsd:element name=&quot;checkResp&quot; type=&quot;tns:CheckResponse&quot;/&gt;</p>
+<p>&lt;/xsd:sequence&gt;</p>
+<p>&lt;/xsd:complexType&gt;</p>
+<p class="last">&lt;/xsd:element&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>CheckResponseObj/checkResp</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image10" src="media/image7.png" style="width: 3.08875in; height: 1.855in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><blockquote class="first">
+<p><a href="#id55"><span class="problematic" id="id56">`</span></a><strong>tns:CheckResponse</strong> &lt;#_boo</p>
+<div class="system-message" id="id55">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 452); <em><a href="#id56">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 453)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">kmark22&gt;`__</p>
+</td>
+</tr>
+<tr><td>properties</td>
+<td>content complex</td>
+</tr>
+<tr><td>children</td>
+<td><blockquote class="first">
+<p><a href="#id57"><span class="problematic" id="id58">**</span></a><a href="#id59"><span class="problematic" id="id60">`</span></a>nominativoBeneficiario &lt;#e</p>
+<div class="system-message" id="id57">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 457); <em><a href="#id58">backlink</a></em></p>
+Inline strong start-string without end-string.</div>
+<div class="system-message" id="id59">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 457); <em><a href="#id60">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 458)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p>lement-checkresponsenominativoben
+eficiario&gt;`__</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">output/test4.rst</tt>, line 459)</p>
+Unexpected indentation.</div>
+<blockquote>
+<p><a href="#id61"><span class="problematic" id="id62">`</span></a>partitaIvaEsercente &lt;#_bookm</p>
+<div class="system-message" id="id61">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 460); <em><a href="#id62">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 461)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<dl class="last docutils">
+<dt>ark24&gt;`__</dt>
+<dd><p class="first"><a class="reference external" href="#_bookmark25">ambito</a>
+<a class="reference external" href="#_bookmark26">bene</a>
+<a href="#id63"><span class="problematic" id="id64">`</span></a>importo &lt;#_bookmark27&gt;`__**</p>
+<div class="last system-message" id="id63">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 462); <em><a href="#id64">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;checkResp&quot;
+type=&quot;tns:CheckResponse&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>ConfirmRequestObj</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image11" src="media/image8.png" style="width: 2.61629in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>namespace</td>
+<td><a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/">http://bonus.mibact.it/VerificaVoucher/</a></td>
+</tr>
+<tr><td>properties</td>
+<td>content complex</td>
+</tr>
+<tr><td>children</td>
+<td><a class="reference external" href="#_bookmark15">**checkReq**</a></td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;xsd:element name=&quot;ConfirmRequestObj&quot;&gt;</p>
+<p>&lt;xsd:complexType&gt;</p>
+<p>&lt;xsd:sequence&gt;</p>
+<p>&lt;xsd:element name=&quot;checkReq&quot; type=&quot;tns:Confirm&quot;/&gt;</p>
+<p>&lt;/xsd:sequence&gt;</p>
+<p>&lt;/xsd:complexType&gt;</p>
+<p class="last">&lt;/xsd:element&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 21 DI 26</p>
+<p>element <strong>ConfirmRequestObj/checkReq</strong></p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image13" src="media/image9.png" style="width: 2.65994in; height: 1.2775in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><blockquote class="first">
+<p><a href="#id65"><span class="problematic" id="id66">`</span></a><strong>tns:Confirm</strong> &lt;#_bookmark2</p>
+<div class="system-message" id="id65">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 509); <em><a href="#id66">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 510)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">8&gt;`__</p>
+</td>
+</tr>
+<tr><td>properties</td>
+<td>content complex</td>
+</tr>
+<tr><td>children</td>
+<td><blockquote class="first">
+<p><a href="#id67"><span class="problematic" id="id68">**</span></a><a href="#id69"><span class="problematic" id="id70">`</span></a>tipoOperazione &lt;#_bookmark</p>
+<div class="system-message" id="id67">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 514); <em><a href="#id68">backlink</a></em></p>
+Inline strong start-string without end-string.</div>
+<div class="system-message" id="id69">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 514); <em><a href="#id70">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 515)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<dl class="last docutils">
+<dt>29&gt;`__</dt>
+<dd><p class="first"><a href="#id71"><span class="problematic" id="id72">`</span></a>codiceVoucher &lt;#_bookmark30&gt;</p>
+<div class="last system-message" id="id71">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 516); <em><a href="#id72">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</dd>
+<dt><a href="#id73"><span class="problematic" id="id74">`</span></a>__</dt>
+<dd><div class="first system-message" id="id73">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 517); <em><a href="#id74">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+<p><a href="#id75"><span class="problematic" id="id76">`</span></a>importo &lt;#_bookmark31&gt;`__**</p>
+<div class="last system-message" id="id75">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 518); <em><a href="#id76">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;checkReq&quot;
+type=&quot;tns:Confirm&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>ConfirmResponseObj</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="84%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image14" src="media/image10.png" style="width: 2.76493in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>namespace</td>
+<td><a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/">http://bonus.mibact.it/VerificaVoucher/</a></td>
+</tr>
+<tr><td>properties</td>
+<td>content complex</td>
+</tr>
+<tr><td>children</td>
+<td><a class="reference external" href="#_bookmark17">**checkResp**</a></td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;xsd:element name=&quot;ConfirmResponseObj&quot;&gt;</p>
+<p>&lt;xsd:complexType&gt;</p>
+<p>&lt;xsd:sequence&gt;</p>
+<p>&lt;xsd:element name=&quot;checkResp&quot; type=&quot;tns:ConfirmResponse&quot;/&gt;</p>
+<p>&lt;/xsd:sequence&gt;</p>
+<p>&lt;/xsd:complexType&gt;</p>
+<p class="last">&lt;/xsd:element&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>ConfirmResponseObj/checkResp</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="84%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image15" src="media/image11.png" style="width: 2.33625in; height: 0.7in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><a class="reference external" href="#_bookmark32">**tns:ConfirmResponse**</a></td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 22 DI 26</p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">properties</th>
+<th class="head">content complex</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>children</td>
+<td><a class="reference external" href="#_bookmark33">**esito**</a></td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;checkResp&quot;
+type=&quot;tns:ConfirmResponse&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+complexType <strong>Check</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image17" src="media/image12.png" style="width: 2.46753in; height: 0.88375in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>namespace</td>
+<td><blockquote class="first">
+<a class="reference external" href="http://bonus.mibact.it/Verifi">http://bonus.mibact.it/Verifi</a></blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 585)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">caVoucher/</p>
+</td>
+</tr>
+<tr><td>children</td>
+<td><blockquote class="first">
+<p><a href="#id77"><span class="problematic" id="id78">**</span></a><a href="#id79"><span class="problematic" id="id80">`</span></a>tipoOperazione &lt;#_bookmark</p>
+<div class="system-message" id="id77">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 587); <em><a href="#id78">backlink</a></em></p>
+Inline strong start-string without end-string.</div>
+<div class="system-message" id="id79">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 587); <em><a href="#id80">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 588)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<dl class="docutils">
+<dt>19&gt;`__</dt>
+<dd><p class="first"><a href="#id81"><span class="problematic" id="id82">`</span></a>codiceVoucher &lt;#_bookmark20&gt;</p>
+<div class="last system-message" id="id81">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 589); <em><a href="#id82">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</dd>
+<dt><a href="#id83"><span class="problematic" id="id84">`</span></a>__</dt>
+<dd><div class="first system-message" id="id83">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 590); <em><a href="#id84">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+<p><a href="#id85"><span class="problematic" id="id86">`</span></a>partitaIvaEsercente &lt;#_bookm</p>
+<div class="last system-message" id="id85">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 591); <em><a href="#id86">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</dd>
+</dl>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 592)</p>
+Definition list ends without a blank line; unexpected unindent.</div>
+<p class="last">ark21&gt;`__**</p>
+</td>
+</tr>
+<tr><td>used by</td>
+<td><blockquote class="first">
+<p>element
+<a href="#id87"><span class="problematic" id="id88">`</span></a><strong>CheckRequestObj/checkReq</strong></p>
+<div class="system-message" id="id87">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 594); <em><a href="#id88">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 596)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">&lt;#_bookmark11&gt;`__</p>
+</td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;xsd:complexType
+name=&quot;Check&quot;&gt;</p>
+<p>&lt;xsd:sequence&gt;</p>
+<p>&lt;xsd:element
+name=&quot;tipoOperazione&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;xsd:element
+name=&quot;codiceVoucher&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;xsd:element
+name=&quot;partitaIvaEsercente&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;0&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;/xsd:sequence&gt;</p>
+<p class="last">&lt;/xsd:complexType&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>Check/tipoOperazione</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image19" src="media/image13.png" style="width: 1.08498in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element
+name=&quot;tipoOperazione&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>Check/codiceVoucher</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="46%" />
+<col width="54%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>diagram</td>
+<td><img alt="image20" src="media/image14.png" style="width: 1.07624in; height: 0.30625in;" /></td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 23 DI 26</p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">type</th>
+<th class="head"><strong>xsd:string</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element
+name=&quot;codiceVoucher&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>Check/partitaIvaEsercente</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image22" src="media/image15.png" style="width: 1.27748in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td><p class="first">minOcc 0</p>
+<p class="last">maxOcc 1 content simple</p>
+</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element
+name=&quot;partitaIvaEsercente&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;0&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+complexType <strong>CheckResponse</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image24" src="media/image16.png" style="width: 3.1327in; height: 1.46125in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>namespace</td>
+<td><blockquote class="first">
+<a class="reference external" href="http://bonus.mibact.it/Verifi">http://bonus.mibact.it/Verifi</a></blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 692)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">caVoucher/</p>
+</td>
+</tr>
+<tr><td>children</td>
+<td><blockquote class="first">
+<p><a href="#id89"><span class="problematic" id="id90">**</span></a><a href="#id91"><span class="problematic" id="id92">`</span></a>nominativoBeneficiario &lt;#e</p>
+<div class="system-message" id="id89">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 694); <em><a href="#id90">backlink</a></em></p>
+Inline strong start-string without end-string.</div>
+<div class="system-message" id="id91">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 694); <em><a href="#id92">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 695)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p>lement-checkresponsenominativoben
+eficiario&gt;`__</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">output/test4.rst</tt>, line 696)</p>
+Unexpected indentation.</div>
+<blockquote>
+<p><a href="#id93"><span class="problematic" id="id94">`</span></a>partitaIvaEsercente &lt;#_bookm</p>
+<div class="system-message" id="id93">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 697); <em><a href="#id94">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 698)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<dl class="last docutils">
+<dt>ark24&gt;`__</dt>
+<dd><p class="first"><a class="reference external" href="#_bookmark25">ambito</a>
+<a class="reference external" href="#_bookmark26">bene</a>
+<a href="#id95"><span class="problematic" id="id96">`</span></a>importo &lt;#_bookmark27&gt;`__**</p>
+<div class="last system-message" id="id95">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 699); <em><a href="#id96">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr><td>used by</td>
+<td><blockquote class="first">
+<p>element
+<a href="#id97"><span class="problematic" id="id98">`</span></a><a href="#id99"><span class="problematic" id="id100">**</span></a>CheckResponseObj/checkResp</p>
+<div class="system-message" id="id97">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 703); <em><a href="#id98">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+<div class="system-message" id="id99">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 703); <em><a href="#id100">backlink</a></em></p>
+Inline strong start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 705)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">** &lt;#_bookmark13&gt;`__</p>
+</td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;xsd:complexType
+name=&quot;CheckResponse&quot;&gt;</p>
+<p>&lt;xsd:sequence&gt;</p>
+<p>&lt;xsd:element
+name=&quot;nominativoBeneficiario&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;xsd:element
+name=&quot;partitaIvaEsercente&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;xsd:element name=&quot;ambito&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;xsd:element name=&quot;bene&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;xsd:element name=&quot;importo&quot;
+type=&quot;xsd:double&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;/xsd:sequence&gt;</p>
+<p class="last">&lt;/xsd:complexType&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 24 DI 26</p>
+</blockquote>
+</div>
+<div class="section" id="element-checkresponse-nominativobeneficiario">
+<h2>element CheckResponse/nominativoBeneficiario</h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image26" src="media/image17.png" style="width: 1.45255in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element
+name=&quot;nominativoBeneficiario&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>CheckResponse/partitaIvaEsercente</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image28" src="media/image18.png" style="width: 1.27748in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element
+name=&quot;partitaIvaEsercente&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>CheckResponse/ambito</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image30" src="media/image19.png" style="width: 0.68249in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;ambito&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>CheckResponse/bene</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image32" src="media/image20.png" style="width: 0.665in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;bene&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 25 DI 26</p>
+<p>element <strong>CheckResponse/importo</strong></p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image34" src="media/image21.png" style="width: 0.73499in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:double</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;importo&quot;
+type=&quot;xsd:double&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+complexType <strong>Confirm</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image36" src="media/image22.png" style="width: 2.3625in; height: 0.88375in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>namespace</td>
+<td><blockquote class="first">
+<a class="reference external" href="http://bonus.mibact.it/Verifi">http://bonus.mibact.it/Verifi</a></blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 838)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">caVoucher/</p>
+</td>
+</tr>
+<tr><td>children</td>
+<td><blockquote class="first">
+<p><a href="#id101"><span class="problematic" id="id102">**</span></a><a href="#id103"><span class="problematic" id="id104">`</span></a>tipoOperazione &lt;#_bookmark</p>
+<div class="system-message" id="id101">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 840); <em><a href="#id102">backlink</a></em></p>
+Inline strong start-string without end-string.</div>
+<div class="system-message" id="id103">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 840); <em><a href="#id104">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 841)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<dl class="last docutils">
+<dt>29&gt;`__</dt>
+<dd><p class="first"><a href="#id105"><span class="problematic" id="id106">`</span></a>codiceVoucher &lt;#_bookmark30&gt;</p>
+<div class="last system-message" id="id105">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 842); <em><a href="#id106">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</dd>
+<dt><a href="#id107"><span class="problematic" id="id108">`</span></a>__</dt>
+<dd><div class="first system-message" id="id107">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 843); <em><a href="#id108">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+<p><a href="#id109"><span class="problematic" id="id110">`</span></a>importo &lt;#_bookmark31&gt;`__**</p>
+<div class="last system-message" id="id109">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 844); <em><a href="#id110">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr><td>used by</td>
+<td><blockquote class="first">
+<p>element
+<a href="#id111"><span class="problematic" id="id112">`</span></a><a href="#id113"><span class="problematic" id="id114">**</span></a>ConfirmRequestObj/checkReq</p>
+<div class="system-message" id="id111">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 846); <em><a href="#id112">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+<div class="system-message" id="id113">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 846); <em><a href="#id114">backlink</a></em></p>
+Inline strong start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 848)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">** &lt;#_bookmark15&gt;`__</p>
+</td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;xsd:complexType
+name=&quot;Confirm&quot;&gt;</p>
+<p>&lt;xsd:sequence&gt;</p>
+<p>&lt;xsd:element
+name=&quot;tipoOperazione&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;xsd:element
+name=&quot;codiceVoucher&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;xsd:element name=&quot;importo&quot;
+type=&quot;xsd:double&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;/xsd:sequence&gt;</p>
+<p class="last">&lt;/xsd:complexType&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>Confirm/tipoOperazione</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image38" src="media/image13.png" style="width: 1.08498in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element
+name=&quot;tipoOperazione&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 26 DI 26</p>
+<p>element <strong>Confirm/codiceVoucher</strong></p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image40" src="media/image14.png" style="width: 1.07624in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element
+name=&quot;codiceVoucher&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>Confirm/importo</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image42" src="media/image21.png" style="width: 0.73499in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:double</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;importo&quot;
+type=&quot;xsd:double&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+complexType <strong>ConfirmResponse</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image44" src="media/image23.png" style="width: 2.30997in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>namespace</td>
+<td><blockquote class="first">
+<a class="reference external" href="http://bonus.mibact.it/Verifi">http://bonus.mibact.it/Verifi</a></blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 936)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">caVoucher/</p>
+</td>
+</tr>
+<tr><td>children</td>
+<td><a class="reference external" href="#_bookmark33">**esito**</a></td>
+</tr>
+<tr><td>used by</td>
+<td><blockquote class="first">
+<p>element
+<a href="#id115"><span class="problematic" id="id116">`</span></a><a href="#id117"><span class="problematic" id="id118">**</span></a>ConfirmResponseObj/checkRe</p>
+<div class="system-message" id="id115">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 940); <em><a href="#id116">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+<div class="system-message" id="id117">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 940); <em><a href="#id118">backlink</a></em></p>
+Inline strong start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">output/test4.rst</tt>, line 942)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">sp** &lt;#_bookmark17&gt;`__</p>
+</td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;xsd:complexType
+name=&quot;ConfirmResponse&quot;&gt;</p>
+<p>&lt;xsd:sequence&gt;</p>
+<p>&lt;xsd:element name=&quot;esito&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;/xsd:sequence&gt;</p>
+<p class="last">&lt;/xsd:complexType&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>ConfirmResponse/esito</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image46" src="media/image24.png" style="width: 0.665in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;esito&quot;
+type=&quot;xsd:string&quot;
+minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,670 @@
+[BlockQuote
+ [Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "15",Space,Str "DI",Space,Str "26"]]
+,Header 1 ("wsdl-verificavoucher.wsdl",[],[]) [Str "WSDL",Space,Str "VerificaVoucher.wsdl"]
+,BlockQuote
+ [Para [Str "targetnamespace:",Space,Link ("",[],[]) [Strong [Str "http://bonus.mibact.it/VerificaVoucher/"]] ("http://bonus.mibact.it/VerificaVoucher/","")]
+ ,Para [Str "services",Space,Str "bindings",Space,Str "porttypes",Space,Str "messages",Space,Str "types"]]
+,Header 5 ("verificavouc-her",[],[]) [Link ("",[],[]) [Span ("",["underline"],[]) [Str "VerificaVouc"]] ("#_bookmark0",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "her"]] ("#_bookmark0","")]
+,BlockQuote
+ [Para [Strong [Link ("",[],[]) [Span ("",["underline"],[]) [Str "VerificaVoucherS"]] ("#_bookmark2",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "OAP"]] ("#_bookmark2","")]]
+ ,Para [Strong [Link ("",[],[]) [Span ("",["underline"],[]) [Str "VerificaVouc"]] ("#_bookmark3",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "her"]] ("#_bookmark3","")]]
+ ,Para [Strong [Link ("",[],[]) [Span ("",["underline"],[]) [Str "CheckRequest"]] ("#_bookmark6",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "Check"]] ("#_bookmark18","")]]
+ ,Para [Strong [Link ("",[],[]) [Span ("",["underline"],[]) [Str "CheckRespons"]] ("#_bookmark7",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "e"]] ("#_bookmark7",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "ConfirmReque"]] ("#_bookmark8",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "st"]] ("#_bookmark8",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "ConfirmRespo"]] ("#_bookmark9",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "nse"]] ("#_bookmark9","")]]
+ ,Para [Strong [Link ("",[],[]) [Span ("",["underline"],[]) [Str "CheckRequestObj"]] ("#_bookmark10",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "CheckResponse"]] ("#_bookmark22","")]]
+ ,Para [Strong [Link ("",[],[]) [Span ("",["underline"],[]) [Str "CheckResponseO"]] ("#_bookmark12",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "bj"]] ("#_bookmark12","")]]
+ ,Para [Strong [Link ("",[],[]) [Span ("",["underline"],[]) [Str "Confirm"]] ("#_bookmark28",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "ConfirmRequestO"]] ("#_bookmark14",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "bj"]] ("#_bookmark14","")]]
+ ,Para [Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "ConfirmResponse"]]] ("#_bookmark32","")]
+ ,Para [Strong [Link ("",[],[]) [Span ("",["underline"],[]) [Str "ConfirmResponse"]] ("#_bookmark16",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "Obj"]] ("#_bookmark16","")]]
+ ,Para [Str "attributeFormDefault:",Space,Str "elementFormDefault:"]
+ ,Para [Str "targetNamespace:",Space,Link ("",[],[]) [Strong [Str "http://bonus.mibact.it/VerificaVoucher/"]] ("http://bonus.mibact.it/VerificaVoucher/","")]
+ ,Para [Str "Elements",Space,Str "Complex",Space,Str "types"]
+ ,Para [Strong [Link ("",[],[]) [Span ("",["underline"],[]) [Str "CheckRequestOb"],Str "j"] ("#_bookmark10",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "Check"]] ("#_bookmark18",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "CheckResponseOb"],Str "j"] ("#_bookmark12",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "CheckResponse"]] ("#_bookmark22",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "ConfirmRequestOb"],Str "j"] ("#_bookmark14",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "Confirm"]] ("#_bookmark28",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "ConfirmResponseOb"],Str "j"] ("#_bookmark16",""),Space,Link ("",[],[]) [Span ("",["underline"],[]) [Str "ConfirmResponse"]] ("#_bookmark32","")]]
+ ,Para [Span ("_bookmark0",["anchor"],[]) [],Str "service",Space,Strong [Str "VerificaVoucher"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","3.237477034120735in"),("height","0.49874890638670166in")]) [] ("media/image1.png","")]]]]
+ [[[Plain [Str "ports"]]
+  ,[BlockQuote
+    [Para [Span ("_bookmark1",["anchor"],[]) [],Strong [Str "VerificaVoucherSOAP"]]
+    ,Para [Str "binding",Space,Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "tns:VerificaVoucherSOAP"]]] ("#_bookmark2","")]
+    ,Para [Str "extensibility",Space,Str "<soap:address"]
+    ,Para [Str "location=\"https://bonus.mibact.it/VerificaVoucherWEB/VerificaVoucher\"/>"]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<wsdl:service",Space,Str "name=\"VerificaVoucher\">"]
+    ,Para [Str "<wsdl:port",Space,Str "name=\"VerificaVoucherSOAP\"",Space,Str "binding=\"tns:VerificaVoucherSOAP\">"]]]]]
+,BlockQuote
+ [Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "16",Space,Str "DI",Space,Str "26"]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[]
+ ,[]]
+ [[[]
+  ,[BlockQuote
+    [Para [Str "<soap:address",Space,Str "location=\"https://bonus.mibact.it/VerificaVoucherWEB/VerificaVoucher\"/>"]
+    ,Para [Str "</wsdl:port>"]
+    ,Para [Str "</wsdl:service>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark2",["anchor"],[]) [],Str "binding",Space,Strong [Str "VerificaVoucherSOAP"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","2.8174956255468064in"),("height","2.2662489063867017in")]) [] ("media/image2.png","")]]]]
+ [[[Plain [Str "type"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "tns:VerificaVoucher"]]] ("#_bookmark3","")]]]]
+ ,[[Plain [Str "extensibility"]]
+  ,[BlockQuote
+    [Para [Str "<soap:binding",Space,Str "style=\"document\"",Space,Str "transport=",Link ("",[],[]) [Str "\"http://schemas.xmlsoap.org/soap/http"] ("http://schemas.xmlsoap.org/soap/http",""),Str "\"/>"]]]]
+ ,[[Plain [Str "operations"]]
+  ,[BlockQuote
+    [Para [Strong [Str "Check"]]
+    ,Para [Str "extensibility",Space,Str "<soap:operation"]
+    ,Para [Str "soapAction=\"",Link ("",[],[]) [Str "http://bonus.mibact.it/VerificaVoucher/Check"] ("http://bonus.mibact.it/VerificaVoucher/Check",""),Str "\"/>"]
+    ,Para [Str "input",Space,Str "<soap:body",Space,Str "use=\"literal\"/>"]
+    ,Para [Str "output",Space,Str "<soap:body",Space,Str "use=\"literal\"/>"]
+    ,Para [Strong [Str "Confirm"]]
+    ,Para [Str "extensibility",Space,Str "<soap:operation"]
+    ,Para [Str "soapAction=\"",Link ("",[],[]) [Str "http://bonus.mibact.it/VerificaVoucher/Confirm"] ("http://bonus.mibact.it/VerificaVoucher/Confirm",""),Str "\"/>"]
+    ,Para [Str "input",Space,Str "<soap:body",Space,Str "use=\"literal\"/>"]
+    ,Para [Str "output",Space,Str "<soap:body",Space,Str "use=\"literal\"/>"]]]]
+ ,[[Plain [Str "used",Space,Str "by"]]
+  ,[BlockQuote
+    [Para [Str "Port",Space,Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "VerificaVoucherSOAP"]]] ("#_bookmark1",""),Space,Str "in",Space,Str "Service",Space,Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "VerificaVoucher"]]] ("#_bookmark0","")]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<wsdl:binding",Space,Str "name=\"VerificaVoucherSOAP\"",Space,Str "type=\"tns:VerificaVoucher\">"]
+    ,Para [Str "<soap:binding",Space,Str "style=\"document\"",Space,Str "transport=",Link ("",[],[]) [Str "\"http://schemas.xmlsoap.org/soap/http"] ("http://schemas.xmlsoap.org/soap/http",""),Str "\"/>"]
+    ,Para [Str "<wsdl:operation",Space,Str "name=\"Check\">"]
+    ,Para [Str "<soap:operation",Space,Str "soapAction=",Link ("",[],[]) [Str "\"http://bonus.mibact.it/VerificaVoucher/Check"] ("http://bonus.mibact.it/VerificaVoucher/Check",""),Str "\"/>"]
+    ,Para [Str "<wsdl:input>"]
+    ,Para [Str "<soap:body",Space,Str "use=\"literal\"/>"]]]]]
+,BlockQuote
+ [Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "17",Space,Str "DI",Space,Str "26"]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[]
+ ,[]]
+ [[[]
+  ,[BlockQuote
+    [Para [Str "</wsdl:input>"]
+    ,Para [Str "<wsdl:output>"]
+    ,Para [Str "<soap:body",Space,Str "use=\"literal\"/>"]
+    ,Para [Str "</wsdl:output>"]
+    ,Para [Str "</wsdl:operation>"]
+    ,Para [Str "<wsdl:operation",Space,Str "name=\"Confirm\">"]
+    ,Para [Str "<soap:operation",Space,Str "soapAction=",Link ("",[],[]) [Str "\"http://bonus.mibact.it/VerificaVoucher/Confirm"] ("http://bonus.mibact.it/VerificaVoucher/Confirm",""),Str "\"/>"]
+    ,Para [Str "<wsdl:input>"]
+    ,Para [Str "<soap:body",Space,Str "use=\"literal\"/>"]
+    ,Para [Str "</wsdl:input>"]
+    ,Para [Str "<wsdl:output>"]
+    ,Para [Str "<soap:body",Space,Str "use=\"literal\"/>"]
+    ,Para [Str "</wsdl:output>"]
+    ,Para [Str "</wsdl:operation>"]
+    ,Para [Str "</wsdl:binding>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark3",["anchor"],[]) [],Str "porttype",Space,Strong [Str "VerificaVoucher"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","2.52in"),("height","1.8899989063867018in")]) [] ("media/image3.png","")]]]]
+ [[[Plain [Str "operations"]]
+  ,[BlockQuote
+    [Para [Span ("_bookmark4",["anchor"],[]) [],Strong [Str "Check"]]
+    ,Para [Str "input",Space,Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "tns:CheckRequest"]]] ("#_bookmark6","")]
+    ,Para [Str "output",Space,Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "tns:CheckResponse"]]] ("#_bookmark7","")]
+    ,Para [Span ("_bookmark5",["anchor"],[]) [],Strong [Str "Confirm"]]
+    ,Para [Str "input",Space,Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "tns:ConfirmRequest"]]] ("#_bookmark8","")]
+    ,Para [Str "output",Space,Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "tns:ConfirmResponse"]]] ("#_bookmark9","")]]]]
+ ,[[Plain [Str "used",Space,Str "by"]]
+  ,[BlockQuote
+    [Para [Str "binding",Space,Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "VerificaVoucherSOAP"]]] ("#_bookmark2","")]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<wsdl:portType",Space,Str "name=\"VerificaVoucher\">"]
+    ,Para [Str "<wsdl:operation",Space,Str "name=\"Check\">"]
+    ,Para [Str "<wsdl:input",Space,Str "message=\"tns:CheckRequest\"/>"]
+    ,Para [Str "<wsdl:output",Space,Str "message=\"tns:CheckResponse\"/>"]
+    ,Para [Str "</wsdl:operation>"]
+    ,Para [Str "<wsdl:operation",Space,Str "name=\"Confirm\">"]]]]]
+,BlockQuote
+ [Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "18",Space,Str "DI",Space,Str "26"]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[]
+ ,[]]
+ [[[]
+  ,[BlockQuote
+    [Para [Str "<wsdl:input",Space,Str "message=\"tns:ConfirmRequest\"/>"]
+    ,Para [Str "<wsdl:output",Space,Str "message=\"tns:ConfirmResponse\"/>"]
+    ,Para [Str "</wsdl:operation>"]
+    ,Para [Str "</wsdl:portType>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark6",["anchor"],[]) [],Str "message",Space,Strong [Str "CheckRequest"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "parts"]]
+ ,[BlockQuote
+   [Para [Strong [Str "parameters"]]
+   ,Para [Str "element",Space,Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "tns:CheckRequestObj"]]] ("#_bookmark10","")]]]]
+ [[[Plain [Str "used",Space,Str "by"]]
+  ,[BlockQuote
+    [Para [Str "Operation",Space,Link ("",[],[]) [Strong [Str "Check"]] ("#_bookmark4",""),Space,Str "in",Space,Str "PortType",Space,Strong [Link ("",[],[]) [Str "VerificaVouche"] ("#_bookmark3",""),Str "r",Space]]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<wsdl:message",Space,Str "name=\"CheckRequest\">"]
+    ,Para [Str "<wsdl:part",Space,Str "name=\"parameters\"",Space,Str "element=\"tns:CheckRequestObj\"/>"]
+    ,Para [Str "</wsdl:message>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark7",["anchor"],[]) [],Str "message",Space,Strong [Str "CheckResponse"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "parts"]]
+ ,[BlockQuote
+   [Para [Strong [Str "parameters"]]
+   ,Para [Str "element",Space,Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "tns:CheckResponseObj"]]] ("#_bookmark12","")]]]]
+ [[[Plain [Str "used",Space,Str "by"]]
+  ,[BlockQuote
+    [Para [Str "Operation",Space,Link ("",[],[]) [Strong [Str "Check"]] ("#_bookmark4",""),Space,Str "in",Space,Str "PortType",Space,Strong [Link ("",[],[]) [Str "VerificaVouche"] ("#_bookmark3",""),Str "r",Space]]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<wsdl:message",Space,Str "name=\"CheckResponse\">"]
+    ,Para [Str "<wsdl:part",Space,Str "name=\"parameters\"",Space,Str "element=\"tns:CheckResponseObj\"/>"]
+    ,Para [Str "</wsdl:message>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark8",["anchor"],[]) [],Str "message",Space,Strong [Str "ConfirmRequest"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "parts"]]
+ ,[BlockQuote
+   [Para [Strong [Str "parameters"]]
+   ,Para [Str "element",Space,Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "tns:ConfirmRequestObj"]]] ("#_bookmark14","")]]]]
+ [[[Plain [Str "used",Space,Str "by"]]
+  ,[BlockQuote
+    [Para [Str "Operation",Space,Link ("",[],[]) [Strong [Str "Confirm"]] ("#_bookmark5",""),Space,Str "in",Space,Str "PortType",Space,Strong [Link ("",[],[]) [Str "VerificaVouche"] ("#_bookmark3",""),Str "r",Space]]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<wsdl:message",Space,Str "name=\"ConfirmRequest\">"]
+    ,Para [Str "<wsdl:part",Space,Str "name=\"parameters\"",Space,Str "element=\"tns:ConfirmRequestObj\"/>"]
+    ,Para [Str "</wsdl:message>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark9",["anchor"],[]) [],Str "message",Space,Strong [Str "ConfirmResponse"]]
+ ,Para [Strong [Str "Codice",Space,Str "campo",Space,Str "modificato",Space,Str "Codice",Space,Str "campo",Space,Str "modificato"]]
+ ,Para [Strong [Str "Codice",Space,Str "campo",Space,Str "modificato",Space,Str "Codice",Space,Str "campo",Space,Str "modificato"]]
+ ,Para [Strong [Str "Codice",Space,Str "campo",Space,Str "modificato",Space,Str "Codice",Space,Str "campo",Space,Str "modificato"]]
+ ,Para [Strong [Str "Codice",Space,Str "campo",Space,Str "modificato",Space,Str "Codice",Space,Str "campo",Space,Str "modificato"]]
+ ,Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "19",Space,Str "DI",Space,Str "26"]
+ ,Para [Span ("_bookmark10",["anchor"],[]) [],Str "element",Space,Strong [Str "CheckRequestObj"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","2.5287674978127734in"),("height","0.30624890638670166in")]) [] ("media/image4.png","")]]]]
+ [[[Plain [Str "namespace"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Str "http://bonus.mibact.it/VerificaVoucher/"] ("http://bonus.mibact.it/VerificaVoucher/","")]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "complex"]]]]
+ ,[[Plain [Str "children"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "checkReq"]]] ("#_bookmark11","")]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"CheckRequestObj\">"]
+    ,Para [Str "<xsd:complexType>"]
+    ,Para [Str "<xsd:sequence>"]
+    ,Para [Str "<xsd:element",Space,Str "name=\"checkReq\"",Space,Str "type=\"tns:Check\"/>"]
+    ,Para [Str "</xsd:sequence>"]
+    ,Para [Str "</xsd:complexType>"]
+    ,Para [Str "</xsd:element>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark11",["anchor"],[]) [],Str "element",Space,Strong [Str "CheckRequestObj/checkReq"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","2.85248687664042in"),("height","1.2775in")]) [] ("media/image5.png","")]]]]
+ [[[Plain [Str "type"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "tns:Check"]]] ("#_bookmark18","")]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "complex"]]]]
+ ,[[Plain [Str "children"]]
+  ,[BlockQuote
+    [Para [Strong [Span ("",["underline"],[]) [Link ("",[],[]) [Str "tipoOperazione"] ("#_bookmark19",""),Space,Link ("",[],[]) [Str "codiceVoucher"] ("#_bookmark20",""),Space,Link ("",[],[]) [Str "partitaIvaEsercente"] ("#_bookmark21","")]]]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"checkReq\"",Space,Str "type=\"tns:Check\"/>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark12",["anchor"],[]) [],Str "element",Space,Strong [Str "CheckResponseObj"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","2.677412510936133in"),("height","0.30625in")]) [] ("media/image6.png","")]]]]
+ [[[Plain [Str "namespace"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Str "http://bonus.mibact.it/VerificaVoucher/"] ("http://bonus.mibact.it/VerificaVoucher/","")]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "complex"]]]]
+ ,[[Plain [Str "children"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "checkResp"]]] ("#_bookmark13","")]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"CheckResponseObj\">"]]]]]
+,BlockQuote
+ [Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "20",Space,Str "DI",Space,Str "26"]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[]
+ ,[]]
+ [[[]
+  ,[BlockQuote
+    [Para [Str "<xsd:complexType>"]
+    ,Para [Str "<xsd:sequence>"]
+    ,Para [Str "<xsd:element",Space,Str "name=\"checkResp\"",Space,Str "type=\"tns:CheckResponse\"/>"]
+    ,Para [Str "</xsd:sequence>"]
+    ,Para [Str "</xsd:complexType>"]
+    ,Para [Str "</xsd:element>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark13",["anchor"],[]) [],Str "element",Space,Strong [Str "CheckResponseObj/checkResp"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","3.0887489063867015in"),("height","1.855in")]) [] ("media/image7.png","")]]]]
+ [[[Plain [Str "type"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "tns:CheckResponse"]]] ("#_bookmark22","")]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "complex"]]]]
+ ,[[Plain [Str "children"]]
+  ,[BlockQuote
+    [Para [Strong [Span ("",["underline"],[]) [Link ("",[],[]) [Str "nominativoBeneficiario"] ("#element-checkresponsenominativobeneficiario",""),Space,Link ("",[],[]) [Str "partitaIvaEsercente"] ("#_bookmark24",""),Space,Link ("",[],[]) [Str "ambito"] ("#_bookmark25",""),Space,Link ("",[],[]) [Str "bene"] ("#_bookmark26",""),Space,Link ("",[],[]) [Str "importo"] ("#_bookmark27","")]]]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"checkResp\"",Space,Str "type=\"tns:CheckResponse\"/>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark14",["anchor"],[]) [],Str "element",Space,Strong [Str "ConfirmRequestObj"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","2.6162871828521435in"),("height","0.30625in")]) [] ("media/image8.png","")]]]]
+ [[[Plain [Str "namespace"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Str "http://bonus.mibact.it/VerificaVoucher/"] ("http://bonus.mibact.it/VerificaVoucher/","")]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "complex"]]]]
+ ,[[Plain [Str "children"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "checkReq"]]] ("#_bookmark15","")]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"ConfirmRequestObj\">"]
+    ,Para [Str "<xsd:complexType>"]
+    ,Para [Str "<xsd:sequence>"]
+    ,Para [Str "<xsd:element",Space,Str "name=\"checkReq\"",Space,Str "type=\"tns:Confirm\"/>"]
+    ,Para [Str "</xsd:sequence>"]
+    ,Para [Str "</xsd:complexType>"]
+    ,Para [Str "</xsd:element>"]]]]]
+,BlockQuote
+ [Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "21",Space,Str "DI",Space,Str "26"]
+ ,Para [Span ("_bookmark15",["anchor"],[]) [],Str "element",Space,Strong [Str "ConfirmRequestObj/checkReq"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","2.65994094488189in"),("height","1.2775in")]) [] ("media/image9.png","")]]]]
+ [[[Plain [Str "type"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "tns:Confirm"]]] ("#_bookmark28","")]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "complex"]]]]
+ ,[[Plain [Str "children"]]
+  ,[BlockQuote
+    [Para [Strong [Span ("",["underline"],[]) [Link ("",[],[]) [Str "tipoOperazione"] ("#_bookmark29",""),Space,Link ("",[],[]) [Str "codiceVoucher"] ("#_bookmark30",""),Space,Link ("",[],[]) [Str "importo"] ("#_bookmark31","")]]]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"checkReq\"",Space,Str "type=\"tns:Confirm\"/>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark16",["anchor"],[]) [],Str "element",Space,Strong [Str "ConfirmResponseObj"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","2.764932195975503in"),("height","0.30625in")]) [] ("media/image10.png","")]]]]
+ [[[Plain [Str "namespace"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Str "http://bonus.mibact.it/VerificaVoucher/"] ("http://bonus.mibact.it/VerificaVoucher/","")]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "complex"]]]]
+ ,[[Plain [Str "children"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "checkResp"]]] ("#_bookmark17","")]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"ConfirmResponseObj\">"]
+    ,Para [Str "<xsd:complexType>"]
+    ,Para [Str "<xsd:sequence>"]
+    ,Para [Str "<xsd:element",Space,Str "name=\"checkResp\"",Space,Str "type=\"tns:ConfirmResponse\"/>"]
+    ,Para [Str "</xsd:sequence>"]
+    ,Para [Str "</xsd:complexType>"]
+    ,Para [Str "</xsd:element>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark17",["anchor"],[]) [],Str "element",Space,Strong [Str "ConfirmResponseObj/checkResp"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","2.33625in"),("height","0.7in")]) [] ("media/image11.png","")]]]]
+ [[[Plain [Str "type"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "tns:ConfirmResponse"]]] ("#_bookmark32","")]]]]]
+,BlockQuote
+ [Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "22",Space,Str "DI",Space,Str "26"]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[BlockQuote
+   [Para [Str "properties"]]]
+ ,[BlockQuote
+   [Para [Str "content",Space,Str "complex"]]]]
+ [[[BlockQuote
+    [Para [Str "children"]]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "esito"]]] ("#_bookmark33","")]]]]
+ ,[[BlockQuote
+    [Para [Str "source"]]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"checkResp\"",Space,Str "type=\"tns:ConfirmResponse\"/>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark18",["anchor"],[]) [],Str "complexType",Space,Strong [Str "Check"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","2.467525153105862in"),("height","0.88375in")]) [] ("media/image12.png","")]]]]
+ [[[Plain [Str "namespace"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Str "http://bonus.mibact.it/VerificaVoucher/"] ("http://bonus.mibact.it/VerificaVoucher/","")]]]]
+ ,[[Plain [Str "children"]]
+  ,[BlockQuote
+    [Para [Strong [Span ("",["underline"],[]) [Link ("",[],[]) [Str "tipoOperazione"] ("#_bookmark19",""),Space,Link ("",[],[]) [Str "codiceVoucher"] ("#_bookmark20",""),Space,Link ("",[],[]) [Str "partitaIvaEsercente"] ("#_bookmark21","")]]]]]]
+ ,[[Plain [Str "used",Space,Str "by"]]
+  ,[BlockQuote
+    [Para [Str "element",Space,Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "CheckRequestObj/checkReq"]]] ("#_bookmark11","")]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:complexType",Space,Str "name=\"Check\">"]
+    ,Para [Str "<xsd:sequence>"]
+    ,Para [Str "<xsd:element",Space,Str "name=\"tipoOperazione\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]
+    ,Para [Str "<xsd:element",Space,Str "name=\"codiceVoucher\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]
+    ,Para [Str "<xsd:element",Space,Str "name=\"partitaIvaEsercente\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"0\"",Space,Str "maxOccurs=\"1\"/>"]
+    ,Para [Str "</xsd:sequence>"]
+    ,Para [Str "</xsd:complexType>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark19",["anchor"],[]) [],Str "element",Space,Strong [Str "Check/tipoOperazione"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","1.0849814085739282in"),("height","0.30625in")]) [] ("media/image13.png","")]]]]
+ [[[Plain [Str "type"]]
+  ,[BlockQuote
+    [Para [Strong [Str "xsd:string"]]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "simple"]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"tipoOperazione\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark20",["anchor"],[]) [],Str "element",Space,Strong [Str "Check/codiceVoucher"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[]
+ ,[]]
+ [[[BlockQuote
+    [Para [Str "diagram"]]]
+  ,[BlockQuote
+    [Para [Image ("",[],[("width","1.07624343832021in"),("height","0.30625in")]) [] ("media/image14.png","")]]]]]
+,BlockQuote
+ [Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "23",Space,Str "DI",Space,Str "26"]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "type"]]
+ ,[BlockQuote
+   [Para [Strong [Str "xsd:string"]]]]]
+ [[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "simple"]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"codiceVoucher\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark21",["anchor"],[]) [],Str "element",Space,Strong [Str "Check/partitaIvaEsercente"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","1.2774835958005248in"),("height","0.30624890638670166in")]) [] ("media/image15.png","")]]]]
+ [[[Plain [Str "type"]]
+  ,[BlockQuote
+    [Para [Strong [Str "xsd:string"]]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "minOcc",Space,Str "0"]
+    ,Para [Str "maxOcc",Space,Str "1",Space,Str "content",Space,Str "simple"]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"partitaIvaEsercente\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"0\"",Space,Str "maxOccurs=\"1\"/>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark22",["anchor"],[]) [],Str "complexType",Space,Strong [Str "CheckResponse"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","3.132697944006999in"),("height","1.4612489063867016in")]) [] ("media/image16.png","")]]]]
+ [[[Plain [Str "namespace"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Str "http://bonus.mibact.it/VerificaVoucher/"] ("http://bonus.mibact.it/VerificaVoucher/","")]]]]
+ ,[[Plain [Str "children"]]
+  ,[BlockQuote
+    [Para [Strong [Span ("",["underline"],[]) [Link ("",[],[]) [Str "nominativoBeneficiario"] ("#element-checkresponsenominativobeneficiario",""),Space,Link ("",[],[]) [Str "partitaIvaEsercente"] ("#_bookmark24",""),Space,Link ("",[],[]) [Str "ambito"] ("#_bookmark25",""),Space,Link ("",[],[]) [Str "bene"] ("#_bookmark26",""),Space,Link ("",[],[]) [Str "importo"] ("#_bookmark27","")]]]]]]
+ ,[[Plain [Str "used",Space,Str "by"]]
+  ,[BlockQuote
+    [Para [Str "element",Space,Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "CheckResponseObj/checkResp"]]] ("#_bookmark13","")]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:complexType",Space,Str "name=\"CheckResponse\">"]
+    ,Para [Str "<xsd:sequence>"]
+    ,Para [Str "<xsd:element",Space,Str "name=\"nominativoBeneficiario\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]
+    ,Para [Str "<xsd:element",Space,Str "name=\"partitaIvaEsercente\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]
+    ,Para [Str "<xsd:element",Space,Str "name=\"ambito\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]
+    ,Para [Str "<xsd:element",Space,Str "name=\"bene\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]
+    ,Para [Str "<xsd:element",Space,Str "name=\"importo\"",Space,Str "type=\"xsd:double\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]
+    ,Para [Str "</xsd:sequence>"]
+    ,Para [Str "</xsd:complexType>"]]]]]
+,BlockQuote
+ [Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "24",Space,Str "DI",Space,Str "26"]]
+,Header 5 ("element-checkresponsenominativobeneficiario",[],[]) [Str "element",Space,Str "CheckResponse/nominativoBeneficiario"]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","1.452551399825022in"),("height","0.30624890638670166in")]) [] ("media/image17.png","")]]]]
+ [[[Plain [Str "type"]]
+  ,[BlockQuote
+    [Para [Strong [Str "xsd:string"]]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "simple"]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"nominativoBeneficiario\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark24",["anchor"],[]) [],Str "element",Space,Strong [Str "CheckResponse/partitaIvaEsercente"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","1.2774835958005248in"),("height","0.30625in")]) [] ("media/image18.png","")]]]]
+ [[[Plain [Str "type"]]
+  ,[BlockQuote
+    [Para [Strong [Str "xsd:string"]]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "simple"]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"partitaIvaEsercente\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark25",["anchor"],[]) [],Str "element",Space,Strong [Str "CheckResponse/ambito"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","0.6824879702537183in"),("height","0.30625in")]) [] ("media/image19.png","")]]]]
+ [[[Plain [Str "type"]]
+  ,[BlockQuote
+    [Para [Strong [Str "xsd:string"]]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "simple"]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"ambito\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark26",["anchor"],[]) [],Str "element",Space,Strong [Str "CheckResponse/bene"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","0.6649978127734033in"),("height","0.30625in")]) [] ("media/image20.png","")]]]]
+ [[[Plain [Str "type"]]
+  ,[BlockQuote
+    [Para [Strong [Str "xsd:string"]]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "simple"]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"bene\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]]]]]
+,BlockQuote
+ [Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "25",Space,Str "DI",Space,Str "26"]
+ ,Para [Span ("_bookmark27",["anchor"],[]) [],Str "element",Space,Strong [Str "CheckResponse/importo"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","0.7349857830271216in"),("height","0.30624890638670166in")]) [] ("media/image21.png","")]]]]
+ [[[Plain [Str "type"]]
+  ,[BlockQuote
+    [Para [Strong [Str "xsd:double"]]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "simple"]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"importo\"",Space,Str "type=\"xsd:double\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark28",["anchor"],[]) [],Str "complexType",Space,Strong [Str "Confirm"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","2.3625010936132984in"),("height","0.88375in")]) [] ("media/image22.png","")]]]]
+ [[[Plain [Str "namespace"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Str "http://bonus.mibact.it/VerificaVoucher/"] ("http://bonus.mibact.it/VerificaVoucher/","")]]]]
+ ,[[Plain [Str "children"]]
+  ,[BlockQuote
+    [Para [Strong [Span ("",["underline"],[]) [Link ("",[],[]) [Str "tipoOperazione"] ("#_bookmark29",""),Space,Link ("",[],[]) [Str "codiceVoucher"] ("#_bookmark30",""),Space,Link ("",[],[]) [Str "importo"] ("#_bookmark31","")]]]]]]
+ ,[[Plain [Str "used",Space,Str "by"]]
+  ,[BlockQuote
+    [Para [Str "element",Space,Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "ConfirmRequestObj/checkReq"]]] ("#_bookmark15","")]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:complexType",Space,Str "name=\"Confirm\">"]
+    ,Para [Str "<xsd:sequence>"]
+    ,Para [Str "<xsd:element",Space,Str "name=\"tipoOperazione\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]
+    ,Para [Str "<xsd:element",Space,Str "name=\"codiceVoucher\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]
+    ,Para [Str "<xsd:element",Space,Str "name=\"importo\"",Space,Str "type=\"xsd:double\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]
+    ,Para [Str "</xsd:sequence>"]
+    ,Para [Str "</xsd:complexType>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark29",["anchor"],[]) [],Str "element",Space,Strong [Str "Confirm/tipoOperazione"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","1.0849814085739282in"),("height","0.30625in")]) [] ("media/image13.png","")]]]]
+ [[[Plain [Str "type"]]
+  ,[BlockQuote
+    [Para [Strong [Str "xsd:string"]]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "simple"]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"tipoOperazione\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]]]]]
+,BlockQuote
+ [Para [Str "APPLICAZIONE",Space,Str "18APP",Space,Str "ALLEGATO"]
+ ,Para [Str "LINEE",Space,Str "GUIDA",Space,Str "PER",Space,Str "ESERCENTI",Space,Str "PAG.",Space,Str "26",Space,Str "DI",Space,Str "26"]
+ ,Para [Span ("_bookmark30",["anchor"],[]) [],Str "element",Space,Strong [Str "Confirm/codiceVoucher"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","1.07624343832021in"),("height","0.30624890638670166in")]) [] ("media/image14.png","")]]]]
+ [[[Plain [Str "type"]]
+  ,[BlockQuote
+    [Para [Strong [Str "xsd:string"]]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "simple"]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"codiceVoucher\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark31",["anchor"],[]) [],Str "element",Space,Strong [Str "Confirm/importo"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","0.7349857830271216in"),("height","0.30625in")]) [] ("media/image21.png","")]]]]
+ [[[Plain [Str "type"]]
+  ,[BlockQuote
+    [Para [Strong [Str "xsd:double"]]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "simple"]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"importo\"",Space,Str "type=\"xsd:double\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark32",["anchor"],[]) [],Str "complexType",Space,Strong [Str "ConfirmResponse"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","2.30996719160105in"),("height","0.30625in")]) [] ("media/image23.png","")]]]]
+ [[[Plain [Str "namespace"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Str "http://bonus.mibact.it/VerificaVoucher/"] ("http://bonus.mibact.it/VerificaVoucher/","")]]]]
+ ,[[Plain [Str "children"]]
+  ,[BlockQuote
+    [Para [Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "esito"]]] ("#_bookmark33","")]]]]
+ ,[[Plain [Str "used",Space,Str "by"]]
+  ,[BlockQuote
+    [Para [Str "element",Space,Link ("",[],[]) [Strong [Span ("",["underline"],[]) [Str "ConfirmResponseObj/checkResp"]]] ("#_bookmark17","")]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:complexType",Space,Str "name=\"ConfirmResponse\">"]
+    ,Para [Str "<xsd:sequence>"]
+    ,Para [Str "<xsd:element",Space,Str "name=\"esito\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]
+    ,Para [Str "</xsd:sequence>"]
+    ,Para [Str "</xsd:complexType>"]]]]]
+,BlockQuote
+ [Para [Span ("_bookmark33",["anchor"],[]) [],Str "element",Space,Strong [Str "ConfirmResponse/esito"]]]
+,Table [] [AlignDefault,AlignDefault] [0.0,0.0]
+ [[Plain [Str "diagram"]]
+ ,[BlockQuote
+   [Para [Image ("",[],[("width","0.6649978127734033in"),("height","0.30625in")]) [] ("media/image24.png","")]]]]
+ [[[Plain [Str "type"]]
+  ,[BlockQuote
+    [Para [Strong [Str "xsd:string"]]]]]
+ ,[[Plain [Str "properties"]]
+  ,[BlockQuote
+    [Para [Str "content",Space,Str "simple"]]]]
+ ,[[Plain [Str "source"]]
+  ,[BlockQuote
+    [Para [Str "<xsd:element",Space,Str "name=\"esito\"",Space,Str "type=\"xsd:string\"",Space,Str "minOccurs=\"1\"",Space,Str "maxOccurs=\"1\"/>"]]]]]]
