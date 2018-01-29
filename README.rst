@@ -61,3 +61,11 @@ allineate.
 
 **Problema**: la conversione fallisce e la tabella creata presenta errori 
 di struttura.
+
+##############
+Come Compilare
+##############
+
+I file HTML si possono aggiornare tramite `make rst2html/*`, che
+aggiornerà anche i file RST necessari. Per aggiornare solo i files
+RST, eseguire `make output/*`

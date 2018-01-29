@@ -1,0 +1,17 @@
+
+crossing Pandoc issue numbers with our test naming and
+keeping a status for issues
+
+c = closed
+m = merged
+r = review pending
+w = work missing
+
+                     4248 4059
+               test0 c
+               test1 c
+             c test2 
+               test3
+               test4
+           test-code
+  test-complex-table      r
