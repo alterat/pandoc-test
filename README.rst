@@ -42,7 +42,7 @@ Testo complesso, con tabelle, immagini e codice.
 test4
 =====
 
-Testo molto complesso, con tabelle annidate, immagini e codice.
+Testo molto complesso: presenza di tabelle con codice e immagini annidati.
 
 **Problema**: la conversione fatica a capire la struttura delle tabelle.
 
