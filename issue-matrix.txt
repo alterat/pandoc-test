@@ -6,12 +6,13 @@ c = closed
 m = merged
 r = review pending
 w = work missing
+f = frankenstein
 
-                     4248 4059
+                     4248 4059 4320 4327
                test0 c
                test1 c
              c test2 
                test3
-               test4
+               test4           rf   rf
            test-code
-  test-complex-table      r
+  test-complex-table      rf
