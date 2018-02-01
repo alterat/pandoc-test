@@ -45,7 +45,7 @@ Per ottenere il pagamento dei buoni validati, l’esercente deve provvedere a em
 
 ..
 
-     per la compilazione della fattura intestata all’iniziativa sono
+    per la compilazione della fattura intestata all’iniziativa sono
     quelli descritti in questo documento.
 
     **Formato e contenuto della fattura**
