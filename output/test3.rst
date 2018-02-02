@@ -1,120 +1,215 @@
-    APPLICAZIONE 18APP ALLEGATO
+.. raw:: html
 
-    LINEE GUIDA PER ESERCENTI PAG. 9 DI 26
+   <div>
+
+APPLICAZIONE 18APP ALLEGATO
+
+LINEE GUIDA PER ESERCENTI PAG. 9 DI 26
+
+.. raw:: html
+
+   </div>
 
 18app
 =====
 
-    **Servizio Web per verifica voucher degli esercenti**
+.. raw:: html
 
-    Gli esercenti registrati al servizio “\ **18app**\ ” per la vendita
-    online potranno validare nei propri sistemi i voucher di acquisto di
-    beni da parte dei 18enni utilizzando uno specifico servizio web di
-    cui si forniscono di seguito le specifiche di utilizzo.
+   <div>
 
-    ***In merito agli endpoint, si precisa che al momento l’indirizzo
-    referenziato nel wsdl
-    (`http://bonus.mibact.it/VerificaVoucher <http://bonus.mibact.it/VerificaVoucher>`__)
-    è provvisorio.***
+**Servizio Web per verifica voucher degli esercenti**
 
-    Il servizio web di **verifica del voucher** da parte degli esercenti
-    rende disponibili 2 principali operazioni (“**Check**\ ” e
-    “\ **Confirm**\ ”). La seguente descrizione delle operazioni è
-    necessaria per valorizzare adeguatamente i campi di input. Pertanto
-    le operazioni esposte dall’interfaccia wsdl possono essere descritte
-    come segue:
+Gli esercenti registrati al servizio “\ **18app**\ ” per la vendita
+online potranno validare nei propri sistemi i voucher di acquisto di
+beni da parte dei 18enni utilizzando uno specifico servizio web di cui
+si forniscono di seguito le specifiche di utilizzo.
+
+***In merito agli endpoint, si precisa che al momento l’indirizzo
+referenziato nel wsdl
+(`http://bonus.mibact.it/VerificaVoucher <http://bonus.mibact.it/VerificaVoucher>`__)
+è provvisorio.***
+
+Il servizio web di **verifica del voucher** da parte degli esercenti
+rende disponibili 2 principali operazioni (“**Check**\ ” e
+“\ **Confirm**\ ”). La seguente descrizione delle operazioni è
+necessaria per valorizzare adeguatamente i campi di input. Pertanto le
+operazioni esposte dall’interfaccia wsdl possono essere descritte come
+segue:
+
+.. raw:: html
+
+   </div>
 
 Check
 '''''
 
 +-----------------------+-----------------------+-----------------------+
-|     INPUT:            | tipo operazione       |     *“1”, “2”*        |
+| .. raw:: html         | tipo operazione       | .. raw:: html         |
+|                       |                       |                       |
+|    <div>              |                       |    <div>              |
+|                       |                       |                       |
+| INPUT:                |                       | *“1”, “2”*            |
+|                       |                       |                       |
+| .. raw:: html         |                       | .. raw:: html         |
+|                       |                       |                       |
+|    </div>             |                       |    </div>             |
 +=======================+=======================+=======================+
-|     OUTPUT:           |     codice voucher    |     *CF o Nome e      |
-|                       |     nominativo        |     Cognome*          |
-|                       |     beneficiario      |                       |
+| .. raw:: html         | .. raw:: html         | .. raw:: html         |
+|                       |                       |                       |
+|    <div>              |    <div>              |    <div>              |
+|                       |                       |                       |
+| OUTPUT:               | codice voucher        | *CF o Nome e Cognome* |
+|                       | nominativo            |                       |
+| .. raw:: html         | beneficiario          | .. raw:: html         |
+|                       |                       |                       |
+|    </div>             | .. raw:: html         |    </div>             |
+|                       |                       |                       |
+|                       |    </div>             |                       |
 +-----------------------+-----------------------+-----------------------+
-|                       |     partita IVA       | *cinema, teatro,      |
-|                       |     esercente ambito  | libreria…*            |
+|                       | .. raw:: html         | *cinema, teatro,      |
+|                       |                       | libreria…*            |
+|                       |    <div>              |                       |
+|                       |                       |                       |
+|                       | partita IVA esercente |                       |
+|                       | ambito                |                       |
+|                       |                       |                       |
+|                       | .. raw:: html         |                       |
+|                       |                       |                       |
+|                       |    </div>             |                       |
 +-----------------------+-----------------------+-----------------------+
-|                       |     bene              |     *libri,           |
-|                       |                       |     spettacoli…*      |
+|                       | .. raw:: html         | .. raw:: html         |
+|                       |                       |                       |
+|                       |    <div>              |    <div>              |
+|                       |                       |                       |
+|                       | bene                  | *libri, spettacoli…*  |
+|                       |                       |                       |
+|                       | .. raw:: html         | .. raw:: html         |
+|                       |                       |                       |
+|                       |    </div>             |    </div>             |
 +-----------------------+-----------------------+-----------------------+
 |                       | importo               | *importo totale del   |
 |                       |                       | voucher*              |
 +-----------------------+-----------------------+-----------------------+
 
-..
+.. raw:: html
 
-    Se **tipo operazione** verrà valorizzato con **“1”**, il check del
-    voucher restituerà all’esercente i campi previsti in output senza
-    consumare il voucher e quindi senza scalare l’importo dal borsellino
-    del beneficiario. Questa modalità di utilizzo dell’operazione non è
-    obbligatoria, ma lascia all’esercente la possibilità di eseguire un
-    controllo tra il nominativo del beneficiario e quello del suo
-    cliente in sessione.
+   <div>
 
-    Se **tipo operazione** verrà valorizzato con **“2”**, il check del
-    voucher consumerà direttamente l’importo, scalandolo dal borsellino
-    del beneficiario, e restituerà comunque le informazioni previste in
-    output. L’esercente potrà scegliere di usare direttamente questa
-    modalità oppure effettuare due chiamate successive: la prima per il
-    controllo del beneficiario e la seconda per l’effettivo utilizzo del
-    voucher.
+Se **tipo operazione** verrà valorizzato con **“1”**, il check del
+voucher restituerà all’esercente i campi previsti in output senza
+consumare il voucher e quindi senza scalare l’importo dal borsellino del
+beneficiario. Questa modalità di utilizzo dell’operazione non è
+obbligatoria, ma lascia all’esercente la possibilità di eseguire un
+controllo tra il nominativo del beneficiario e quello del suo cliente in
+sessione.
 
-    Il sequence diagram seguente descrive ad alto livello l’interazione
-    tra i vari sistemi coinvolti, nei casi fin qui descritti:
+Se **tipo operazione** verrà valorizzato con **“2”**, il check del
+voucher consumerà direttamente l’importo, scalandolo dal borsellino del
+beneficiario, e restituerà comunque le informazioni previste in output.
+L’esercente potrà scegliere di usare direttamente questa modalità oppure
+effettuare due chiamate successive: la prima per il controllo del
+beneficiario e la seconda per l’effettivo utilizzo del voucher.
+
+Il sequence diagram seguente descrive ad alto livello l’interazione tra
+i vari sistemi coinvolti, nei casi fin qui descritti:
+
+.. raw:: html
+
+   </div>
 
 |image0|
 
-    APPLICAZIONE 18APP ALLEGATO
+.. raw:: html
 
-    LINEE GUIDA PER ESERCENTI PAG. 10 DI 26
+   <div>
+
+APPLICAZIONE 18APP ALLEGATO
+
+LINEE GUIDA PER ESERCENTI PAG. 10 DI 26
+
+.. raw:: html
+
+   </div>
 
 Confirm
 '''''''
 
-+-----------------------+-----------------------+-----------------------+
-|     INPUT:            |     tipo operazione   |     *“1”*             |
-+=======================+=======================+=======================+
-|                       |     codice voucher    |     *importo          |
-|                       |     importo           |     confermato        |
-|                       |                       |     dall’esercente*   |
-+-----------------------+-----------------------+-----------------------+
-|     OUTPUT:           |     esito             |                       |
-+-----------------------+-----------------------+-----------------------+
++---------------+------------------------+-------------------------------------+
+| .. raw:: html | .. raw:: html          | .. raw:: html                       |
+|               |                        |                                     |
+|    <div>      |    <div>               |    <div>                            |
+|               |                        |                                     |
+| INPUT:        | tipo operazione        | *“1”*                               |
+|               |                        |                                     |
+| .. raw:: html | .. raw:: html          | .. raw:: html                       |
+|               |                        |                                     |
+|    </div>     |    </div>              |    </div>                           |
++===============+========================+=====================================+
+|               | .. raw:: html          | .. raw:: html                       |
+|               |                        |                                     |
+|               |    <div>               |    <div>                            |
+|               |                        |                                     |
+|               | codice voucher importo | *importo confermato dall’esercente* |
+|               |                        |                                     |
+|               | .. raw:: html          | .. raw:: html                       |
+|               |                        |                                     |
+|               |    </div>              |    </div>                           |
++---------------+------------------------+-------------------------------------+
+| .. raw:: html | .. raw:: html          |                                     |
+|               |                        |                                     |
+|    <div>      |    <div>               |                                     |
+|               |                        |                                     |
+| OUTPUT:       | esito                  |                                     |
+|               |                        |                                     |
+| .. raw:: html | .. raw:: html          |                                     |
+|               |                        |                                     |
+|    </div>     |    </div>              |                                     |
++---------------+------------------------+-------------------------------------+
 
-..
+.. raw:: html
 
-    In questa versione del servizio il **tipo operazione** verrà
-    valorizzato sempre con **“1”** e l’esercente potrà comunicare la
-    quota utilizzata rispetto all’importo totale del voucher,
-    momentaneamente impegnato. Il sistema scalerà l’importo dal
-    borsellino del beneficiario, riaccreditando la parte non utilizzata,
-    calcolata come differenza tra il valore totale del voucher e
-    l’importo comunicato dall’esercente.
+   <div>
 
-    L’\ **esito** dell’operazione (**“OK”** / **“KO”**) sarà restituito
-    all’esercente che potrà eventualmente fornire un feedback al
-    beneficiario.
+In questa versione del servizio il **tipo operazione** verrà valorizzato
+sempre con **“1”** e l’esercente potrà comunicare la quota utilizzata
+rispetto all’importo totale del voucher, momentaneamente impegnato. Il
+sistema scalerà l’importo dal borsellino del beneficiario,
+riaccreditando la parte non utilizzata, calcolata come differenza tra il
+valore totale del voucher e l’importo comunicato dall’esercente.
 
-    APPLICAZIONE 18APP ALLEGATO
+L’\ **esito** dell’operazione (**“OK”** / **“KO”**) sarà restituito
+all’esercente che potrà eventualmente fornire un feedback al
+beneficiario.
 
-    LINEE GUIDA PER ESERCENTI PAG. 11 DI 26
+APPLICAZIONE 18APP ALLEGATO
+
+LINEE GUIDA PER ESERCENTI PAG. 11 DI 26
+
+.. raw:: html
+
+   </div>
 
 Modalità di autenticazione
 ==========================
 
-    Per consumare il web service di verifica del voucher, ogni esercente
-    dovrà essere dotato di un **certificato di autenticazione** da
-    installare nel proprio client del servizio e da utilizzare nella
-    chiamata SOAP per effettuare l’autenticazione in modalità SSL con
-    certificato client.
+.. raw:: html
 
-    Tale certificato X509 sarà generabile e scaricabile in formato .cer
-    direttamente tramite l’applicazione web dedicata agli esercenti, in
-    area autenticata. In particolare il processo di generazione del
-    certificato prevede due step:
+   <div>
+
+Per consumare il web service di verifica del voucher, ogni esercente
+dovrà essere dotato di un **certificato di autenticazione** da
+installare nel proprio client del servizio e da utilizzare nella
+chiamata SOAP per effettuare l’autenticazione in modalità SSL con
+certificato client.
+
+Tale certificato X509 sarà generabile e scaricabile in formato .cer
+direttamente tramite l’applicazione web dedicata agli esercenti, in area
+autenticata. In particolare il processo di generazione del certificato
+prevede due step:
+
+.. raw:: html
+
+   </div>
 
 1. Il primo step di richiesta del certificato; a seguito di questa
    operazione il sistema prende in carico la richiesta.
@@ -123,243 +218,386 @@ Modalità di autenticazione
    controlla se è pronto il certificato emesso da CA dedicata ed
    eventualmente lo rende disponibile per il download.
 
-..
+.. raw:: html
 
-    Durante il primo step sarà necessario caricare un file .der
-    rappresentante la richiesta di certificato alla CA dedicata al
-    progetto. Tale csr deve presentare le seguenti caratteristiche:
+   <div>
+
+Durante il primo step sarà necessario caricare un file .der
+rappresentante la richiesta di certificato alla CA dedicata al progetto.
+Tale csr deve presentare le seguenti caratteristiche:
+
+.. raw:: html
+
+   </div>
 
 -  Algoritmo generazione chiavi: RSA
 
 -  Lunghezza chiavi: 2048 bit
 
-..
+.. raw:: html
 
-    Una volta scaricato il certificato X509 va installato, insieme alla
-    corrispondente chiave privata, nel client utilizzato per il servizio
-    di verifica voucher. Pertanto l’evento di download del certificato
-    non può rappresentare la definitiva attivazione dell’esercente. E’
-    stato previsto uno step di attivazione, di tipo “Check” con i
-    seguenti valori di input:
+   <div>
+
+Una volta scaricato il certificato X509 va installato, insieme alla
+corrispondente chiave privata, nel client utilizzato per il servizio di
+verifica voucher. Pertanto l’evento di download del certificato non può
+rappresentare la definitiva attivazione dell’esercente. E’ stato
+previsto uno step di attivazione, di tipo “Check” con i seguenti valori
+di input:
+
+.. raw:: html
+
+   </div>
 
 -  tipo operazione = 1
 
 -  codice voucher = 11aa22bb
 
-..
+.. raw:: html
 
-    Questa operazione equivale ad una transazione di attivazione, il cui
-    unico effetto è quello di portare l’esercente nello stato attivo. Da
-    questo momento in poi i beneficiari potranno generare voucher reali
-    per tale esercente.
+   <div>
 
-    Endpoint del servizio
+Questa operazione equivale ad una transazione di attivazione, il cui
+unico effetto è quello di portare l’esercente nello stato attivo. Da
+questo momento in poi i beneficiari potranno generare voucher reali per
+tale esercente.
 
-    Il servizio risponde ai seguenti endpoint
-    `https://wstest.18app.italia.it/VerificaVoucherWEB/VerificaVoucher <https://wstest.18app.italia.it/VerificaVoucherWEB/VerificaVoucher>`__
-    (ambiente di prova)
-    `https://ws.18app.italia.it/VerificaVoucherWEB/VerificaVoucher <https://ws.18app.italia.it/VerificaVoucherWEB/VerificaVoucher>`__
-    (ambiente reale)
+Endpoint del servizio
 
-    APPLICAZIONE 18APP ALLEGATO
+Il servizio risponde ai seguenti endpoint
+`https://wstest.18app.italia.it/VerificaVoucherWEB/VerificaVoucher <https://wstest.18app.italia.it/VerificaVoucherWEB/VerificaVoucher>`__
+(ambiente di prova)
+`https://ws.18app.italia.it/VerificaVoucherWEB/VerificaVoucher <https://ws.18app.italia.it/VerificaVoucherWEB/VerificaVoucher>`__
+(ambiente reale)
 
-    LINEE GUIDA PER ESERCENTI PAG. 12 DI 26
+APPLICAZIONE 18APP ALLEGATO
+
+LINEE GUIDA PER ESERCENTI PAG. 12 DI 26
+
+.. raw:: html
+
+   </div>
 
 Codici di errore
 ================
 
-    La seguente tabella rappresenta i possibili errori gestiti dal
-    sistema:
+.. raw:: html
+
+   <div>
+
+La seguente tabella rappresenta i possibili errori gestiti dal sistema:
+
+.. raw:: html
+
+   </div>
 
 +-----------------------------------+-----------------------------------+
-|     **Codice/Code**               |     **Descrizione/Description**   |
-+===================================+===================================+
-|     01                            |     Errore nel formato dei        |
-|                                   |     parametri in input,           |
-|                                   |     verificarli e riprovare       |
-+-----------------------------------+-----------------------------------+
-|                                   |     Error in the input            |
-|                                   |     parameters, check and try     |
-|                                   |     again                         |
-+-----------------------------------+-----------------------------------+
-|     02                            |     Il buono richiesto non è      |
-|                                   |     disponibile sul sistema o è   |
-|                                   |     già stato riscosso o          |
-|                                   |     annullato                     |
-+-----------------------------------+-----------------------------------+
-|                                   |     The requested voucher is not  |
-|                                   |     available on the system. It   |
-|                                   |     could be already collected or |
-|                                   |     canceled                      |
-+-----------------------------------+-----------------------------------+
-|     03                            |     Impossibile attivare          |
-|                                   |     l'esercente. Verificare che i |
-|                                   |     dati siano corretti e che     |
+| .. raw:: html                     | .. raw:: html                     |
 |                                   |                                   |
-|                                   |     l'esercente non sia già stato |
-|                                   |     attivato                      |
+|    <div>                          |    <div>                          |
+|                                   |                                   |
+| **Codice/Code**                   | **Descrizione/Description**       |
+|                                   |                                   |
+| .. raw:: html                     | .. raw:: html                     |
+|                                   |                                   |
+|    </div>                         |    </div>                         |
++===================================+===================================+
+| .. raw:: html                     | .. raw:: html                     |
+|                                   |                                   |
+|    <div>                          |    <div>                          |
+|                                   |                                   |
+| 01                                | Errore nel formato dei parametri  |
+|                                   | in input, verificarli e riprovare |
+| .. raw:: html                     |                                   |
+|                                   | .. raw:: html                     |
+|    </div>                         |                                   |
+|                                   |    </div>                         |
 +-----------------------------------+-----------------------------------+
-|                                   |     Impossible to activate the    |
-|                                   |     user. Please verify input     |
-|                                   |     parameters and that the user  |
-|                                   |     has not been already          |
-|                                   |     activated.                    |
+|                                   | .. raw:: html                     |
+|                                   |                                   |
+|                                   |    <div>                          |
+|                                   |                                   |
+|                                   | Error in the input parameters,    |
+|                                   | check and try again               |
+|                                   |                                   |
+|                                   | .. raw:: html                     |
+|                                   |                                   |
+|                                   |    </div>                         |
 +-----------------------------------+-----------------------------------+
-|     04                            |     L'importo richiesto è         |
-|                                   |     superiore all'importo del     |
-|                                   |     buono selezionato             |
+| .. raw:: html                     | .. raw:: html                     |
+|                                   |                                   |
+|    <div>                          |    <div>                          |
+|                                   |                                   |
+| 02                                | Il buono richiesto non è          |
+|                                   | disponibile sul sistema o è già   |
+| .. raw:: html                     | stato riscosso o annullato        |
+|                                   |                                   |
+|    </div>                         | .. raw:: html                     |
+|                                   |                                   |
+|                                   |    </div>                         |
 +-----------------------------------+-----------------------------------+
-|                                   |     The amount claimed is greater |
-|                                   |     than the amount of the        |
-|                                   |     selected voucher              |
+|                                   | .. raw:: html                     |
+|                                   |                                   |
+|                                   |    <div>                          |
+|                                   |                                   |
+|                                   | The requested voucher is not      |
+|                                   | available on the system. It could |
+|                                   | be already collected or canceled  |
+|                                   |                                   |
+|                                   | .. raw:: html                     |
+|                                   |                                   |
+|                                   |    </div>                         |
 +-----------------------------------+-----------------------------------+
-|     05                            |     Non si può verificare o       |
-|                                   |     consumare il buono poichè     |
-|                                   |     l'esercente risulta non       |
-|                                   |     attivo                        |
+| .. raw:: html                     | .. raw:: html                     |
+|                                   |                                   |
+|    <div>                          |    <div>                          |
+|                                   |                                   |
+| 03                                | Impossibile attivare l'esercente. |
+|                                   | Verificare che i dati siano       |
+| .. raw:: html                     | corretti e che                    |
+|                                   |                                   |
+|    </div>                         | l'esercente non sia già stato     |
+|                                   | attivato                          |
+|                                   |                                   |
+|                                   | .. raw:: html                     |
+|                                   |                                   |
+|                                   |    </div>                         |
 +-----------------------------------+-----------------------------------+
-|                                   |     User inactive, voucher        |
-|                                   |     impossible to verify.         |
+|                                   | .. raw:: html                     |
+|                                   |                                   |
+|                                   |    <div>                          |
+|                                   |                                   |
+|                                   | Impossible to activate the user.  |
+|                                   | Please verify input parameters    |
+|                                   | and that the user has not been    |
+|                                   | already activated.                |
+|                                   |                                   |
+|                                   | .. raw:: html                     |
+|                                   |                                   |
+|                                   |    </div>                         |
 +-----------------------------------+-----------------------------------+
-|     06                            |     Ambito e bene del buono non   |
-|                                   |     coincidono con ambiti e beni  |
-|                                   |     trattati dall’esercente       |
+| .. raw:: html                     | .. raw:: html                     |
+|                                   |                                   |
+|    <div>                          |    <div>                          |
+|                                   |                                   |
+| 04                                | L'importo richiesto è superiore   |
+|                                   | all'importo del buono selezionato |
+| .. raw:: html                     |                                   |
+|                                   | .. raw:: html                     |
+|    </div>                         |                                   |
+|                                   |    </div>                         |
 +-----------------------------------+-----------------------------------+
-|                                   |     Category and type of this     |
-|                                   |     voucher are not aligned with  |
-|                                   |     category and type managed by  |
-|                                   |     the user.                     |
+|                                   | .. raw:: html                     |
+|                                   |                                   |
+|                                   |    <div>                          |
+|                                   |                                   |
+|                                   | The amount claimed is greater     |
+|                                   | than the amount of the selected   |
+|                                   | voucher                           |
+|                                   |                                   |
+|                                   | .. raw:: html                     |
+|                                   |                                   |
+|                                   |    </div>                         |
++-----------------------------------+-----------------------------------+
+| .. raw:: html                     | .. raw:: html                     |
+|                                   |                                   |
+|    <div>                          |    <div>                          |
+|                                   |                                   |
+| 05                                | Non si può verificare o consumare |
+|                                   | il buono poichè l'esercente       |
+| .. raw:: html                     | risulta non attivo                |
+|                                   |                                   |
+|    </div>                         | .. raw:: html                     |
+|                                   |                                   |
+|                                   |    </div>                         |
++-----------------------------------+-----------------------------------+
+|                                   | .. raw:: html                     |
+|                                   |                                   |
+|                                   |    <div>                          |
+|                                   |                                   |
+|                                   | User inactive, voucher impossible |
+|                                   | to verify.                        |
+|                                   |                                   |
+|                                   | .. raw:: html                     |
+|                                   |                                   |
+|                                   |    </div>                         |
++-----------------------------------+-----------------------------------+
+| .. raw:: html                     | .. raw:: html                     |
+|                                   |                                   |
+|    <div>                          |    <div>                          |
+|                                   |                                   |
+| 06                                | Ambito e bene del buono non       |
+|                                   | coincidono con ambiti e beni      |
+| .. raw:: html                     | trattati dall’esercente           |
+|                                   |                                   |
+|    </div>                         | .. raw:: html                     |
+|                                   |                                   |
+|                                   |    </div>                         |
++-----------------------------------+-----------------------------------+
+|                                   | .. raw:: html                     |
+|                                   |                                   |
+|                                   |    <div>                          |
+|                                   |                                   |
+|                                   | Category and type of this voucher |
+|                                   | are not aligned with category and |
+|                                   | type managed by the user.         |
+|                                   |                                   |
+|                                   | .. raw:: html                     |
+|                                   |                                   |
+|                                   |    </div>                         |
 +-----------------------------------+-----------------------------------+
 
 |image1|
 
-    APPLICAZIONE 18APP ALLEGATO
+.. raw:: html
 
-    LINEE GUIDA PER ESERCENTI PAG. 13 DI 26
+   <div>
+
+APPLICAZIONE 18APP ALLEGATO
+
+LINEE GUIDA PER ESERCENTI PAG. 13 DI 26
+
+.. raw:: html
+
+   </div>
 
 Esempi di request/response
 ==========================
 
-    Di seguito si riportano due esempi di request e relativa response,
-    sia per l’operation “Check” che per l’operation “Confirm”.
+.. raw:: html
 
-    “Check”
+   <div>
 
-    Check request:
+Di seguito si riportano due esempi di request e relativa response, sia
+per l’operation “Check” che per l’operation “Confirm”.
 
-    <soapenv:Envelope
-    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-    xmlns:ver="http://bonus.mibact.it/VerificaVoucher/">
+“Check”
 
-    <soapenv:Header/>
+Check request:
 
-    <soapenv:Body>
+<soapenv:Envelope
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:ver="http://bonus.mibact.it/VerificaVoucher/">
 
-    <ver:CheckRequestObj>
+<soapenv:Header/>
 
-    <checkReq>
+<soapenv:Body>
 
-    <tipoOperazione>1</tipoOperazione>
+<ver:CheckRequestObj>
 
-    <codiceVoucher>2a75f266</codiceVoucher>
+<checkReq>
 
-    <!--Optional:
+<tipoOperazione>1</tipoOperazione>
 
-    <partitaIvaEsercente>?</partitaIvaEsercente>
+<codiceVoucher>2a75f266</codiceVoucher>
 
-    -->
+<!--Optional:
 
-    </checkReq>
+<partitaIvaEsercente>?</partitaIvaEsercente>
 
-    </ver:CheckRequestObj>
+-->
 
-    </soapenv:Body>
+</checkReq>
 
-    </soapenv:Envelope> Check response:
+</ver:CheckRequestObj>
 
-    <soapenv:Envelope
-    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+</soapenv:Body>
 
-    <soapenv:Body>
+</soapenv:Envelope> Check response:
 
-    <a:CheckResponseObj
-    xmlns:a="http://bonus.mibact.it/VerificaVoucher/">
+<soapenv:Envelope
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
 
-    <checkResp>
+<soapenv:Body>
 
-    <nominativoBeneficiario>AAABBB10X10X111D</nominativoBeneficiario>
+<a:CheckResponseObj xmlns:a="http://bonus.mibact.it/VerificaVoucher/">
 
-    <partitaIvaEsercente>01043931003</partitaIvaEsercente>
+<checkResp>
+
+<nominativoBeneficiario>AAABBB10X10X111D</nominativoBeneficiario>
+
+<partitaIvaEsercente>01043931003</partitaIvaEsercente>
+
+.. raw:: html
+
+   </div>
 
 |image2|
 
-    APPLICAZIONE 18APP ALLEGATO
+.. raw:: html
 
-    LINEE GUIDA PER ESERCENTI PAG. 14 DI 26
+   <div>
 
-    <ambito>Teatro</ambito>
+APPLICAZIONE 18APP ALLEGATO
 
-    <bene>Biglietti</bene>
+LINEE GUIDA PER ESERCENTI PAG. 14 DI 26
 
-    <importo>40.5</importo>
+<ambito>Teatro</ambito>
 
-    </checkResp>
+<bene>Biglietti</bene>
 
-    </a:CheckResponseObj>
+<importo>40.5</importo>
 
-    </soapenv:Body>
+</checkResp>
 
-    </soapenv:Envelope>
+</a:CheckResponseObj>
 
-    “Confirm”
+</soapenv:Body>
 
-    Confirm request:
+</soapenv:Envelope>
 
-    <soapenv:Envelope
-    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-    xmlns:ver="http://bonus.mibact.it/VerificaVoucher/">
+“Confirm”
 
-    <soapenv:Header/>
+Confirm request:
 
-    <soapenv:Body>
+<soapenv:Envelope
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:ver="http://bonus.mibact.it/VerificaVoucher/">
 
-    <ver:ConfirmRequestObj>
+<soapenv:Header/>
 
-    <checkReq>
+<soapenv:Body>
 
-    <tipoOperazione>1</tipoOperazione>
+<ver:ConfirmRequestObj>
 
-    <codiceVoucher>2a75f266</codiceVoucher>
+<checkReq>
 
-    <importo>30.20</importo>
+<tipoOperazione>1</tipoOperazione>
 
-    </checkReq>
+<codiceVoucher>2a75f266</codiceVoucher>
 
-    </ver:ConfirmRequestObj>
+<importo>30.20</importo>
 
-    </soapenv:Body>
+</checkReq>
 
-    </soapenv:Envelope> Confirm response:
+</ver:ConfirmRequestObj>
 
-    <soapenv:Envelope
-    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+</soapenv:Body>
 
-    <soapenv:Body>
+</soapenv:Envelope> Confirm response:
 
-    <a:ConfirmResponseObj
-    xmlns:a="http://bonus.mibact.it/VerificaVoucher/">
+<soapenv:Envelope
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
 
-    <checkResp>
+<soapenv:Body>
 
-    <esito>OK</esito>
+<a:ConfirmResponseObj xmlns:a="http://bonus.mibact.it/VerificaVoucher/">
 
-    </checkResp>
+<checkResp>
 
-    </a:ConfirmResponseObj>
+<esito>OK</esito>
 
-    </soapenv:Body>
+</checkResp>
 
-    </soapenv:Envelope>
+</a:ConfirmResponseObj>
+
+</soapenv:Body>
+
+</soapenv:Envelope>
+
+.. raw:: html
+
+   </div>
 
 .. |image0| image:: media/image1.png
    :width: 7.27847in
