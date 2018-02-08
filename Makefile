@@ -8,5 +8,8 @@ output/test3.rst:input/test3.docx filter.hs
 output/%.rst:input/%.docx
 	pandoc $< -o $@
 
+native/%.native:input/%.docx
+	pandoc $< -o $@
+
 rst2html/%.html:output/%.rst
 	rst2html $< > $@
