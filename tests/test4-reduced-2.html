@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="Docutils 0.12: http://docutils.sourceforge.net/" />
-<title>18app</title>
+<title></title>
 <style type="text/css">
 
 /*
@@ -338,84 +338,62 @@ ul.auto-toc {
 </style>
 </head>
 <body>
-<div class="document" id="app">
-<h1 class="title">18app</h1>
+<div class="document">
+
 
 <blockquote>
-<p><strong>Servizio Web per verifica voucher degli esercenti</strong></p>
-<p>Gli esercenti registrati al servizio “<strong>18app</strong>” per la vendita
-online potranno validare nei propri sistemi i voucher di acquisto di
-beni da parte dei 18enni utilizzando uno specifico servizio web di
-cui si forniscono di seguito le specifiche di utilizzo.</p>
-<p><strong>*In merito agli endpoint, si precisa che al momento l’indirizzo
-referenziato nel wsdl
-(`http://bonus.mibact.it/VerificaVoucher &lt;http://bonus.mibact.it/VerificaVoucher&gt;`__)
-è provvisorio.*</strong></p>
-<p>Il servizio web di <strong>verifica del voucher</strong> da parte degli esercenti
-rende disponibili 2 principali operazioni (“<strong>Check</strong>” e
-“<strong>Confirm</strong>”). La seguente descrizione delle operazioni è
-necessaria per valorizzare adeguatamente i campi di input. Pertanto
-le operazioni esposte dall’interfaccia wsdl possono essere descritte
-come segue:</p>
-</blockquote>
-<div class="section" id="check">
-<h1>Check</h1>
+service <strong>VerificaVoucher</strong></blockquote>
 <table border="1" class="docutils">
 <colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
+<col width="50%" />
+<col width="50%" />
 </colgroup>
 <thead valign="bottom">
-<tr><th class="head">INPUT:</th>
-<th class="head">tipo operazione</th>
-<th class="head"><em>“1”, “2”</em></th>
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image1" src="media/image1.png" style="width: 3.2375in; height: 0.49861in;" /></th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr><td>OUTPUT:</td>
-<td>codice voucher
-nominativo
-beneficiario</td>
-<td><em>CF o Nome e
-Cognome</em></td>
+<tr><td>ports</td>
+<td><blockquote class="first">
+<p><strong>VerificaVoucherSOAP</strong></p>
+<p>binding
+<a href="#id1"><span class="problematic" id="id2">`</span></a><strong>tns:VerificaVoucherSOAP</strong></p>
+<div class="system-message" id="id1">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">tests/test4-reduced-2.rst</tt>, line 9); <em><a href="#id2">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">tests/test4-reduced-2.rst</tt>, line 11)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p>&lt;#_bookmark2&gt;`__</p>
+<blockquote>
+<p>extensibility &lt;soap:address</p>
+<p>location=&quot;<a class="reference external" href="https://bonus.mibac">https://bonus.mibac</a></p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">tests/test4-reduced-2.rst</tt>, line 16)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">t.it/VerificaVoucherWEB/VerificaV
+oucher&quot;/&gt;</p>
+</td>
 </tr>
-<tr><td>&nbsp;</td>
-<td>partita IVA
-esercente ambito</td>
-<td><em>cinema, teatro,
-libreria…</em></td>
-</tr>
-<tr><td>&nbsp;</td>
-<td>bene</td>
-<td><em>libri,
-spettacoli…</em></td>
-</tr>
-<tr><td>&nbsp;</td>
-<td>importo</td>
-<td><em>importo totale del
-voucher</em></td>
+<tr><td>source</td>
+<td><blockquote class="first">
+<p>&lt;wsdl:service
+name=&quot;VerificaVoucher&quot;&gt;</p>
+<p>&lt;wsdl:port
+name=&quot;VerificaVoucherSOAP&quot;
+binding=&quot;tns:VerificaVoucherS</p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">tests/test4-reduced-2.rst</tt>, line 25)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p class="last">OAP&quot;&gt;</p>
+</td>
 </tr>
 </tbody>
 </table>
-<!--  -->
-<blockquote>
-<p>Se <strong>tipo operazione</strong> verrà valorizzato con <strong>“1”</strong>, il check del
-voucher restituerà all’esercente i campi previsti in output senza
-consumare il voucher e quindi senza scalare l’importo dal borsellino
-del beneficiario. Questa modalità di utilizzo dell’operazione non è
-obbligatoria, ma lascia all’esercente la possibilità di eseguire un
-controllo tra il nominativo del beneficiario e quello del suo
-cliente in sessione.</p>
-<p>Se <strong>tipo operazione</strong> verrà valorizzato con <strong>“2”</strong>, il check del
-voucher consumerà direttamente l’importo, scalandolo dal borsellino
-del beneficiario, e restituerà comunque le informazioni previste in
-output. L’esercente potrà scegliere di usare direttamente questa
-modalità oppure effettuare due chiamate successive: la prima per il
-controllo del beneficiario e la seconda per l’effettivo utilizzo del
-voucher.</p>
-</blockquote>
-</div>
 </div>
 </body>
 </html>

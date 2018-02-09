@@ -1,15 +1,15 @@
 
-output/test4.rst:input/test4.docx
+tests/test4.rst:tests/test4.docx
 	pandoc --wrap none $< -o $@
 
-output/test3.rst:input/test3.docx filter.hs
+tests/test3.rst:tests/test3.docx filter.hs
 	pandoc --filter filter.hs $< -o $@
 
-output/%.rst:input/%.docx
+tests/%.rst:tests/%.docx
 	pandoc $< -o $@
 
-native/%.native:input/%.docx
+tests/%.native:tests/%.docx
 	pandoc $< -o $@
 
-rst2html/%.html:output/%.rst
+tests/%.html:tests/%.rst
 	rst2html $< > $@
