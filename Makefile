@@ -1,15 +1,17 @@
 
+version = frankenstein
+
 tests/test4.rst:tests/test4.docx
-	pandoc --wrap none $< -o $@
+	./$(version) --wrap none $< -o $@
 
 tests/test3.rst:tests/test3.docx filter.hs
-	pandoc --filter filter.hs $< -o $@
+	./$(version) --filter filter.hs $< -o $@
 
 tests/%.rst:tests/%.docx
-	pandoc $< -o $@
+	./$(version) $< -o $@
 
 tests/%.native:tests/%.docx
-	pandoc $< -o $@
+	./$(version) $< -o $@
 
 tests/%.html:tests/%.rst
 	rst2html $< > $@
