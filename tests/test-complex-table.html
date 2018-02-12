@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.12: http://docutils.sourceforge.net/" />
+<title>Appendice 3: regole tecniche di dettaglio per la compilazione della fattura</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7614 2013-02-21 15:55:51Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document" id="appendice-3-regole-tecniche-di-dettaglio-per-la-compilazione-della-fattura">
+<h1 class="title">Appendice 3: regole tecniche di dettaglio per la compilazione della fattura</h1>
+
+<blockquote>
+La valorizzazione degli elementi del tracciato xml deve rispettare i requisiti formali e di obbligatorietà previsti dalle regole di fatturazione elettronica e deve tener conto delle ulteriori indicazioni riportate nella tabella seguente:</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%" />
+<col width="7%" />
+<col width="75%" />
+<col width="8%" />
+<col width="3%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">&nbsp;</th>
+<th class="head">&nbsp;</th>
+<th class="head"><strong>ID e Nome Tag XML</strong></th>
+<th class="head"><strong>Descrizione funzionale</strong></th>
+<th class="head"><strong>NOTE</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>1 &lt;FatturaElettronicaHeader&gt;</strong></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.1 &lt;DatiTrasmissione&gt;</strong></td>
+<td><p class="first">blocco sempre obbligatorio contenente informazioni che identificano univocamente il soggetto che trasmette, il documento trasmesso, il</p>
+<p class="last">formato in cui è stato trasmesso il documento, il soggetto destinatario</p>
+</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.1.1 &lt;IdTrasmittente&gt;</strong></td>
+<td><p class="first">è l’identificativo univoco del soggetto trasmittente; per i soggetti residenti in Italia, siano essi persone fisiche o giuridiche, corrisponde al codice fiscale preceduto da <strong>IT</strong>; per i soggetti non residenti corrisponde al numero identificativo IVA (dove i primi due caratteri rappresentano il paese secondo lo standard ISO 3166-1 alpha-2 code, ed i restanti, fino ad un</p>
+<p class="last">massimo di 28, il codice vero e proprio)</p>
+</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.1.1.1 &lt;IdPaese&gt;</strong></td>
+<td>codice della nazione espresso secondo lo standard ISO 3166-1 alpha-2 code</td>
+<td>[<strong>IT</strong>], [<strong>ES</strong>], [<strong>DK</strong>],[<strong>…</strong>]</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.1.1.2 &lt;IdCodice&gt;</strong></td>
+<td>codice identificativo fiscale</td>
+<td>formato alfanumerico</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.1.2 &lt;ProgressivoInvio&gt;</strong></td>
+<td>progressivo univoco, attribuito dal soggetto che trasmette, relativo ad ogni singolo documento fattura</td>
+<td>formato alfanumerico</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><p class="first"><strong>1.1.3</strong></p>
+<p class="last"><strong>&lt;FormatoTrasmissione&gt;</strong></p>
+</td>
+<td>contiene il codice identificativo del formato/versione con cui è stato trasmesso il documento fattura</td>
+<td>valori ammessi: [<strong>FPA12</strong>]</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.1.4 &lt;CodiceDestinatario&gt;</strong></td>
+<td><p class="first">codice dell'ufficio dell’amministrazione dello stato destinatario della</p>
+<p class="last">fattura, definito dall'amministrazione di appartenenza come riportato nella rubrica “Indice PA”.</p>
+</td>
+<td>codice IPA da indicare: <strong>CY0MHE</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2 &lt;CedentePrestatore&gt;</strong></td>
+<td>blocco sempre obbligatorio contenente dati relativi al cedente / prestatore</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.1&lt;DatiAnagrafici&gt;</strong></td>
+<td>blocco sempre obbligatorio contenente i dati anagrafici, professionali e fiscali del cedente / prestatore</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.1.1 &lt;IdFiscaleIVA&gt;</strong></td>
+<td><p class="first">numero di identificazione fiscale ai fini IVA; i primi due caratteri rappresentano il paese ( <strong>IT</strong>, <strong>DE</strong>, <strong>ES</strong> …..) ed i restanti (fino ad un massimo di 28) il codice vero e proprio che, per i residenti in Italia, corrisponde al</p>
+<p class="last">numero di partita IVA.</p>
+</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.1.1.1 &lt;IdPaese&gt;</strong></td>
+<td>codice della nazione espresso secondo lo standard ISO 3166-1 alpha-2 code</td>
+<td>[<strong>IT</strong>], [<strong>ES</strong>], [<strong>DK</strong>],[<strong>…</strong>]</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.1.1.2 &lt;IdCodice&gt;</strong></td>
+<td>codice identificativo fiscale</td>
+<td>formato alfanumerico</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.1.2 &lt;CodiceFiscale&gt;</strong></td>
+<td>numero di Codice Fiscale</td>
+<td>formato alfanumerico</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.1.3 &lt;Anagrafica&gt;</strong></td>
+<td>dati anagrafici identificativi del cedente / prestatore</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><p class="first"><strong>1.2.1.3.1</strong></p>
+<p class="last"><strong>&lt;Denominazione&gt;</strong></p>
+</td>
+<td>ditta, denominazione o ragione sociale (ditta, impresa, società, ente), da valorizzare in alternativa ai campi <strong>1.2.1.3.2</strong> e <strong>1.2.1.3.3</strong></td>
+<td>formato alfanumerico</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.1.3.2 &lt;Nome&gt;</strong></td>
+<td>nome della persona fisica. Da valorizzare insieme al campo <strong>1.2.1.3.3</strong> ed in alternativa al campo <strong>1.2.1.3.1</strong></td>
+<td>formato alfanumerico</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><p class="first"><strong>1.2.1.3.3</strong></p>
+<p class="last"><strong>&lt;Cognome&gt;</strong></p>
+</td>
+<td><p class="first">cognome della persona fisica. Da valorizzare insieme al campo <strong>1.2.1.3.2</strong></p>
+<p class="last">ed in alternativa al campo <strong>1.2.1.3.1</strong></p>
+</td>
+<td>formato alfanumerico</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.1.3.5 &lt;CodEORI&gt;</strong></td>
+<td><p class="first">numero del Codice EORI (Economic Operator Registration and</p>
+<p class="last">Identification) in base al Regolamento (CE) n. 312 del 16 aprile 2009. In vigore dal 1 luglio 2009</p>
+</td>
+<td>formato alfanumerico</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%" />
+<col width="10%" />
+<col width="61%" />
+<col width="25%" />
+<col width="4%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">&nbsp;</th>
+<th class="head">&nbsp;</th>
+<th class="head"><strong>ID e Nome Tag XML</strong></th>
+<th class="head"><strong>Descrizione funzionale</strong></th>
+<th class="head"><strong>NOTE</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>&nbsp;</td>
+<td><strong>1.2.1.8 &lt;RegimeFiscale&gt;</strong></td>
+<td>regime fiscale</td>
+<td><p class="first">valori ammessi:</p>
+<p class="last"><strong>vedi tabella dei Codici dei regimi fiscali riportata in Appendice 1</strong></p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.2 &lt;Sede&gt;</strong></td>
+<td>blocco sempre obbligatorio contenente i dati della sede del cedente / prestatore</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.2.1 &lt;Indirizzo&gt;</strong></td>
+<td>indirizzo della sede del cedente o prestatore (nome della via, piazza etc.)</td>
+<td>formato alfanumerico</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.2.2 &lt;NumeroCivico&gt;</strong></td>
+<td>numero civico riferito all'indirizzo (non indicare se già presente nel campo indirizzo)</td>
+<td>formato alfanumerico</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.2.3 &lt;CAP&gt;</strong></td>
+<td>Codice Avviamento Postale</td>
+<td>formato numerico</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.2.4 &lt;Comune&gt;</strong></td>
+<td>comune relativo alla sede del cedente / prestatore</td>
+<td>formato alfanumerico</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.2.5 &lt;Provincia&gt;</strong></td>
+<td><p class="first">sigla della provincia di appartenenza del comune indicato nel campo</p>
+<p class="last"><strong>1.2.2.4</strong></p>
+</td>
+<td>[<strong>RM</strong>], [<strong>MI</strong>], [<strong>…</strong>]</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.2.6 &lt;Nazione&gt;</strong></td>
+<td>codice della nazione espresso secondo lo standard ISO 3166-1 alpha-2 code</td>
+<td>[<strong>IT</strong>], [<strong>ES</strong>], [<strong>DK</strong>],[<strong>…</strong>]</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.5 &lt;Contatti&gt;</strong></td>
+<td>dati relativi ai contatti del cedente / prestatore</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.5.1 &lt;Telefono&gt;</strong></td>
+<td>contatto telefonico fisso o mobile</td>
+<td><p class="first">Necessariamente da valorizzare per</p>
+<p class="last">essere eventualmente contattati per chiarimenti</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.2.5.3 &lt;Email&gt;</strong></td>
+<td>indirizzo di posta elettronica</td>
+<td><p class="first">Necessariamente da valorizzare per essere eventualmente contattati per</p>
+<p class="last">chiarimenti</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><p class="first"><strong>1.2.6</strong></p>
+<p class="last"><strong>&lt;RiferimentoAmministrazion e&gt;</strong></p>
+</td>
+<td>codice identificativo del cedente / prestatore ai fini amministrativo-contabili</td>
+<td><p class="first">Necessariamente da valorizzare riportando fedelmente il Codice esercente assegnato all’esercente</p>
+<p class="last">dall’applicazione 18APP3</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><p class="first"><strong>1.4</strong></p>
+<p class="last"><strong>&lt;CessionarioCommittente&gt;</strong></p>
+</td>
+<td>blocco sempre obbligatorio contenente dati relativi al cessionario / committente</td>
+<td><p class="first"><strong>Dati relativi al Ministero dei</strong></p>
+<p class="last"><strong>Beni e delle Attività Culturali e del Turismo</strong></p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.4.1 &lt;DatiAnagrafici&gt;</strong></td>
+<td>blocco contenente i dati fiscali e anagrafici del cessionario/committente</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.4.1.2 &lt;CodiceFiscale&gt;</strong></td>
+<td>numero di Codice Fiscale</td>
+<td>valore da indicare: <strong>97904380587</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.4.1.3 &lt;Anagrafica&gt;</strong></td>
+<td>dati anagrafici identificativi del cessionario/committente</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><p class="first"><strong>1.4.1.3.1</strong></p>
+<p class="last"><strong>&lt;Denominazione&gt;</strong></p>
+</td>
+<td>ditta, denominazione o ragione sociale (ditta, impresa, società, ente), da valorizzare in alternativa ai campi <strong>1.4.1.3.2</strong> e <strong>1.4.1.3.3</strong></td>
+<td>Ministero dei Beni e delle Attività Culturali e del Turismo</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.4.2 &lt;Sede&gt;</strong></td>
+<td>blocco sempre obbligatorio contenente i dati della sede del cessionario / committente (nel caso di somministrazione di servizi quali energia elettrica, gas … , i dati possono fare riferimento all'ubicazione dell'utenza, ex DM 370/2000)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.4.2.1 &lt;Indirizzo&gt;</strong></td>
+<td>indirizzo della sede del cessionario / committente (nome della via, piazza etc.)</td>
+<td>Via del Collegio Romano</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.4.2.2 &lt;NumeroCivico&gt;</strong></td>
+<td>numero civico riferito all'indirizzo (non indicare se già presente nel campo indirizzo)</td>
+<td>27</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.4.2.3 &lt;CAP&gt;</strong></td>
+<td>Codice Avviamento Postale</td>
+<td>00186</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.4.2.4 &lt;Comune&gt;</strong></td>
+<td>comune relativo alla stabile organizzazione in Italia</td>
+<td>ROMA</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+3 Riportare fedelmente tale codice, per il quale sono significativi e distinti i caratteri maiuscoli da quelli minuscoli (codice <em>case sensitive</em>)</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="29%" />
+<col width="44%" />
+<col width="17%" />
+<col width="3%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">&nbsp;</th>
+<th class="head">&nbsp;</th>
+<th class="head"><strong>ID e Nome Tag XML</strong></th>
+<th class="head"><strong>Descrizione funzionale</strong></th>
+<th class="head"><strong>NOTE</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>&nbsp;</td>
+<td><strong>1.4.2.5 &lt;Provincia&gt;</strong></td>
+<td><p class="first">sigla della provincia di appartenenza del comune indicato nel campo</p>
+<p class="last"><strong>1.4.2.4</strong></p>
+</td>
+<td>RM</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>1.4.2.6 &lt;Nazione&gt;</strong></td>
+<td>codice della nazione espresso secondo lo standard ISO 3166-1 alpha-2 code</td>
+<td>IT</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td><strong>2 &lt;FatturaElettronicaBody&gt;</strong></td>
+<td>il blocco ha molteplicità pari a 1 nel caso di fattura singola; nel caso di lotto di fatture, si ripete per ogni fattura componente il lotto stesso</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>2.1 &lt;DatiGenerali&gt;</strong></td>
+<td>blocco sempre obbligatorio contenente i dati generali del documento principale ed i dati dei documenti correlati</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><p class="first"><strong>2.1.1</strong></p>
+<p class="last"><strong>&lt;DatiGeneraliDocumento&gt;</strong></p>
+</td>
+<td>blocco sempre obbligatorio contenente i dati generali del documento principale</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><p class="first"><strong>2.1.1.1</strong></p>
+<p class="last"><strong>&lt;TipoDocumento&gt;</strong></p>
+</td>
+<td>tipologia di documento</td>
+<td>valore ammesso: TD01</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>2.1.1.2 &lt;Divisa&gt;</strong></td>
+<td>codice (espresso secondo lo standard ISO 4217 alpha-3:2001) della valuta utilizzata per l'indicazione degli importi</td>
+<td>valore ammesso: EUR</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>2.1.1.3 &lt;Data&gt;</strong></td>
+<td>data del documento (secondo il formato ISO 8601:2004)</td>
+<td>formato ISO 8601:2004, con la precisione seguente: <strong>YYYY-MM-DD</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>2.1.1.4 &lt;Numero&gt;</strong></td>
+<td>numero progressivo del documento</td>
+<td>formato alfanumerico</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>2.1.1.6 &lt;DatiBollo&gt;</strong></td>
+<td>blocco dati relativi al bollo</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><p class="first"><strong>2.1.1.6.1</strong></p>
+<p class="last"><strong>&lt;BolloVirtuale&gt;</strong></p>
+</td>
+<td>bollo assolto ai sensi del decreto MEF 17 giugno 2014 (art. 6)</td>
+<td><p class="first">valore ammesso</p>
+<p class="last"><strong>[NO]</strong></p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><p class="first"><strong>2.1.1.9</strong></p>
+<p class="last"><strong>&lt;ImportoTotaleDocument o&gt;</strong></p>
+</td>
+<td>importo totale del documento al netto dell'eventuale sconto e comprensivo di imposta a debito del cessionario / committente</td>
+<td><p class="first">formato numerico; i decimali vanno separati dall'intero con il carattere '.' (punto)</p>
+<p>valore ammesso: valore del campo</p>
+<p class="last">2.2.2.5 ImponibileImporto</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>2.2 &lt;DatiBeniServizi&gt;</strong></td>
+<td>blocco sempre obbligatorio contenente natura, qualità e quantità dei beni / servizi formanti oggetto dell'operazione</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>2.2.1 &lt;DettaglioLinee&gt;</strong></td>
+<td>blocco sempre obbligatorio contenente le linee di dettaglio del documento (i campi del blocco si ripetono per ogni riga di dettaglio)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>2.2.1.1 &lt;NumeroLinea&gt;</strong></td>
+<td>numero della riga di dettaglio del documento</td>
+<td>formato numerico</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>2.2.1.3 &lt;CodiceArticolo&gt;</strong></td>
+<td>eventuale codifica dell'articolo (la molteplicità N del blocco consente di gestire la presenza di più codifiche)</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><p class="first"><strong>2.2.1.3.1</strong></p>
+<p class="last"><strong>&lt;CodiceTipo&gt;</strong></p>
+</td>
+<td>indica la tipologia di codice articolo (TARIC, CPV, EAN, SSC, ...)</td>
+<td>valore ammesso: 18APP</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><p class="first"><strong>2.2.1.3.2</strong></p>
+<p class="last"><strong>&lt;CodiceValore&gt;</strong></p>
+</td>
+<td>indica il valore del codice articolo corrispondente alla tipologia riportata nel campo 2.2.1.3.1.</td>
+<td>Valore obbligatorio da indicare: codice identificativo buono4</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>2.2.1.4 &lt;Descrizione&gt;</strong></td>
+<td>natura e qualità dell'oggetto della cessione/prestazione; può fare anche riferimento ad un precedente documento emesso a titolo di 'anticipo/acconto' , nel qual caso il valore del campo <strong>2.2.1.9</strong> e <strong>2.2.1.11</strong> sarà negativo</td>
+<td>valore ammesso: PAGAMENTO BUONO</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td><strong>2.2.1.9 &lt;PrezzoUnitario&gt;</strong></td>
+<td>prezzo unitario del bene/servizio; nel caso di beni ceduti a titolo di sconto, premio o abbuono, l'importo indicato rappresenta il &quot;valore normale&quot;</td>
+<td><p class="first">formato numerico; i decimali vanno separati dall'intero con il carattere '.'</p>
+<p class="last">(punto) – valore da indicare: importo</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+4 Riportare fedelmente tale codice, per il quale sono significativi e distinti i caratteri maiuscoli da quelli minuscoli (codice <em>case sensitive</em>)</blockquote>
+</div>
+</body>
+</html>
