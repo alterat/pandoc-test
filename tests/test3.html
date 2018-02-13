@@ -341,11 +341,11 @@ ul.auto-toc {
 <div class="document">
 
 
-<div><p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
 <p>LINEE GUIDA PER ESERCENTI PAG. 9 DI 26</p>
-</div><div class="section" id="app">
+<div class="section" id="app">
 <h1>18app</h1>
-<div><p><strong>Servizio Web per verifica voucher degli esercenti</strong></p>
+<p><strong>Servizio Web per verifica voucher degli esercenti</strong></p>
 <p>Gli esercenti registrati al servizio “<strong>18app</strong>” per la vendita
 online potranno validare nei propri sistemi i voucher di acquisto di
 beni da parte dei 18enni utilizzando uno specifico servizio web di cui
@@ -360,7 +360,7 @@ rende disponibili 2 principali operazioni (“<strong>Check</strong>” e
 necessaria per valorizzare adeguatamente i campi di input. Pertanto le
 operazioni esposte dall’interfaccia wsdl possono essere descritte come
 segue:</p>
-</div><div class="section" id="check">
+<div class="section" id="check">
 <h2>Check</h2>
 <table border="1" class="docutils">
 <colgroup>
@@ -369,35 +369,27 @@ segue:</p>
 <col width="33%" />
 </colgroup>
 <thead valign="bottom">
-<tr><th class="head"><div class="first"><div></div><p>INPUT:</p>
-<div class="last"></div></div></th>
+<tr><th class="head">INPUT:</th>
 <th class="head">tipo operazione</th>
-<th class="head"><div class="first"><div></div><p><em>“1”, “2”</em></p>
-<div class="last"></div></div></th>
+<th class="head"><em>“1”, “2”</em></th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr><td><div class="first"><div></div><p>OUTPUT:</p>
-<div class="last"></div></div></td>
-<td><div class="first"><div></div><p>codice voucher
+<tr><td>OUTPUT:</td>
+<td>codice voucher
 nominativo
-beneficiario</p>
-<div class="last"></div></div></td>
-<td><div class="first"><div></div><p><em>CF o Nome e Cognome</em></p>
-<div class="last"></div></div></td>
+beneficiario</td>
+<td><em>CF o Nome e Cognome</em></td>
 </tr>
 <tr><td>&nbsp;</td>
-<td><div class="first"><div></div><p>partita IVA esercente
-ambito</p>
-<div class="last"></div></div></td>
+<td>partita IVA esercente
+ambito</td>
 <td><em>cinema, teatro,
 libreria…</em></td>
 </tr>
 <tr><td>&nbsp;</td>
-<td><div class="first"><div></div><p>bene</p>
-<div class="last"></div></div></td>
-<td><div class="first"><div></div><p><em>libri, spettacoli…</em></p>
-<div class="last"></div></div></td>
+<td>bene</td>
+<td><em>libri, spettacoli…</em></td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>importo</td>
@@ -406,7 +398,7 @@ voucher</em></td>
 </tr>
 </tbody>
 </table>
-<div><p>Se <strong>tipo operazione</strong> verrà valorizzato con <strong>“1”</strong>, il check del
+<p>Se <strong>tipo operazione</strong> verrà valorizzato con <strong>“1”</strong>, il check del
 voucher restituerà all’esercente i campi previsti in output senza
 consumare il voucher e quindi senza scalare l’importo dal borsellino del
 beneficiario. Questa modalità di utilizzo dell’operazione non è
@@ -421,43 +413,36 @@ effettuare due chiamate successive: la prima per il controllo del
 beneficiario e la seconda per l’effettivo utilizzo del voucher.</p>
 <p>Il sequence diagram seguente descrive ad alto livello l’interazione tra
 i vari sistemi coinvolti, nei casi fin qui descritti:</p>
-</div><p><img alt="image0" src="media/image1.png" style="width: 7.27847in; height: 9.82569in;" /></p>
-<div><p>APPLICAZIONE 18APP ALLEGATO</p>
+<p><img alt="image0" src="media/image1.png" style="width: 7.27847in; height: 9.82569in;" /></p>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
 <p>LINEE GUIDA PER ESERCENTI PAG. 10 DI 26</p>
-</div></div>
+</div>
 <div class="section" id="confirm">
 <h2>Confirm</h2>
 <table border="1" class="docutils">
 <colgroup>
-<col width="20%" />
-<col width="32%" />
-<col width="49%" />
+<col width="13%" />
+<col width="34%" />
+<col width="53%" />
 </colgroup>
 <thead valign="bottom">
-<tr><th class="head"><div class="first"><div></div><p>INPUT:</p>
-<div class="last"></div></div></th>
-<th class="head"><div class="first"><div></div><p>tipo operazione</p>
-<div class="last"></div></div></th>
-<th class="head"><div class="first"><div></div><p><em>“1”</em></p>
-<div class="last"></div></div></th>
+<tr><th class="head">INPUT:</th>
+<th class="head">tipo operazione</th>
+<th class="head"><em>“1”</em></th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr><td>&nbsp;</td>
-<td><div class="first"><div></div><p>codice voucher importo</p>
-<div class="last"></div></div></td>
-<td><div class="first"><div></div><p><em>importo confermato dall’esercente</em></p>
-<div class="last"></div></div></td>
+<td>codice voucher importo</td>
+<td><em>importo confermato dall’esercente</em></td>
 </tr>
-<tr><td><div class="first"><div></div><p>OUTPUT:</p>
-<div class="last"></div></div></td>
-<td><div class="first"><div></div><p>esito</p>
-<div class="last"></div></div></td>
+<tr><td>OUTPUT:</td>
+<td>esito</td>
 <td>&nbsp;</td>
 </tr>
 </tbody>
 </table>
-<div><p>In questa versione del servizio il <strong>tipo operazione</strong> verrà valorizzato
+<p>In questa versione del servizio il <strong>tipo operazione</strong> verrà valorizzato
 sempre con <strong>“1”</strong> e l’esercente potrà comunicare la quota utilizzata
 rispetto all’importo totale del voucher, momentaneamente impegnato. Il
 sistema scalerà l’importo dal borsellino del beneficiario,
@@ -468,11 +453,11 @@ all’esercente che potrà eventualmente fornire un feedback al
 beneficiario.</p>
 <p>APPLICAZIONE 18APP ALLEGATO</p>
 <p>LINEE GUIDA PER ESERCENTI PAG. 11 DI 26</p>
-</div></div>
+</div>
 </div>
 <div class="section" id="modalita-di-autenticazione">
 <h1>Modalità di autenticazione</h1>
-<div><p>Per consumare il web service di verifica del voucher, ogni esercente
+<p>Per consumare il web service di verifica del voucher, ogni esercente
 dovrà essere dotato di un <strong>certificato di autenticazione</strong> da
 installare nel proprio client del servizio e da utilizzare nella
 chiamata SOAP per effettuare l’autenticazione in modalità SSL con
@@ -481,31 +466,31 @@ certificato client.</p>
 direttamente tramite l’applicazione web dedicata agli esercenti, in area
 autenticata. In particolare il processo di generazione del certificato
 prevede due step:</p>
-</div><ol class="arabic simple">
+<ol class="arabic simple">
 <li>Il primo step di richiesta del certificato; a seguito di questa
 operazione il sistema prende in carico la richiesta.</li>
 <li>Il secondo step di verifica esito della richiesta; questa operazione
 controlla se è pronto il certificato emesso da CA dedicata ed
 eventualmente lo rende disponibile per il download.</li>
 </ol>
-<div><p>Durante il primo step sarà necessario caricare un file .der
+<p>Durante il primo step sarà necessario caricare un file .der
 rappresentante la richiesta di certificato alla CA dedicata al progetto.
 Tale csr deve presentare le seguenti caratteristiche:</p>
-</div><ul class="simple">
+<ul class="simple">
 <li>Algoritmo generazione chiavi: RSA</li>
 <li>Lunghezza chiavi: 2048 bit</li>
 </ul>
-<div><p>Una volta scaricato il certificato X509 va installato, insieme alla
+<p>Una volta scaricato il certificato X509 va installato, insieme alla
 corrispondente chiave privata, nel client utilizzato per il servizio di
 verifica voucher. Pertanto l’evento di download del certificato non può
 rappresentare la definitiva attivazione dell’esercente. E’ stato
 previsto uno step di attivazione, di tipo “Check” con i seguenti valori
 di input:</p>
-</div><ul class="simple">
+<ul class="simple">
 <li>tipo operazione = 1</li>
 <li>codice voucher = 11aa22bb</li>
 </ul>
-<div><p>Questa operazione equivale ad una transazione di attivazione, il cui
+<p>Questa operazione equivale ad una transazione di attivazione, il cui
 unico effetto è quello di portare l’esercente nello stato attivo. Da
 questo momento in poi i beneficiari potranno generare voucher reali per
 tale esercente.</p>
@@ -517,109 +502,90 @@ tale esercente.</p>
 (ambiente reale)</p>
 <p>APPLICAZIONE 18APP ALLEGATO</p>
 <p>LINEE GUIDA PER ESERCENTI PAG. 12 DI 26</p>
-</div></div>
+</div>
 <div class="section" id="codici-di-errore">
 <h1>Codici di errore</h1>
-<div><p>La seguente tabella rappresenta i possibili errori gestiti dal sistema:</p>
-</div><table border="1" class="docutils">
+<p>La seguente tabella rappresenta i possibili errori gestiti dal sistema:</p>
+<table border="1" class="docutils">
 <colgroup>
 <col width="50%" />
 <col width="50%" />
 </colgroup>
 <thead valign="bottom">
-<tr><th class="head"><div class="first"><div></div><p><strong>Codice/Code</strong></p>
-<div class="last"></div></div></th>
-<th class="head"><div class="first"><div></div><p><strong>Descrizione/Description</strong></p>
-<div class="last"></div></div></th>
+<tr><th class="head"><strong>Codice/Code</strong></th>
+<th class="head"><strong>Descrizione/Description</strong></th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr><td><div class="first"><div></div><p>01</p>
-<div class="last"></div></div></td>
-<td><div class="first"><div></div><p>Errore nel formato dei parametri
-in input, verificarli e riprovare</p>
-<div class="last"></div></div></td>
+<tr><td>01</td>
+<td>Errore nel formato dei parametri
+in input, verificarli e riprovare</td>
 </tr>
 <tr><td>&nbsp;</td>
-<td><div class="first"><div></div><p>Error in the input parameters,
-check and try again</p>
-<div class="last"></div></div></td>
+<td>Error in the input parameters,
+check and try again</td>
 </tr>
-<tr><td><div class="first"><div></div><p>02</p>
-<div class="last"></div></div></td>
-<td><div class="first"><div></div><p>Il buono richiesto non è
+<tr><td>02</td>
+<td>Il buono richiesto non è
 disponibile sul sistema o è già
-stato riscosso o annullato</p>
-<div class="last"></div></div></td>
+stato riscosso o annullato</td>
 </tr>
 <tr><td>&nbsp;</td>
-<td><div class="first"><div></div><p>The requested voucher is not
+<td>The requested voucher is not
 available on the system. It could
-be already collected or canceled</p>
-<div class="last"></div></div></td>
+be already collected or canceled</td>
 </tr>
-<tr><td><div class="first"><div></div><p>03</p>
-<div class="last"></div></div></td>
-<td><div class="first"><div></div><p>Impossibile attivare l'esercente.
+<tr><td>03</td>
+<td><p class="first">Impossibile attivare l'esercente.
 Verificare che i dati siano
 corretti e che</p>
-<p>l'esercente non sia già stato
+<p class="last">l'esercente non sia già stato
 attivato</p>
-<div class="last"></div></div></td>
+</td>
 </tr>
 <tr><td>&nbsp;</td>
-<td><div class="first"><div></div><p>Impossible to activate the user.
+<td>Impossible to activate the user.
 Please verify input parameters
 and that the user has not been
-already activated.</p>
-<div class="last"></div></div></td>
+already activated.</td>
 </tr>
-<tr><td><div class="first"><div></div><p>04</p>
-<div class="last"></div></div></td>
-<td><div class="first"><div></div><p>L'importo richiesto è superiore
-all'importo del buono selezionato</p>
-<div class="last"></div></div></td>
+<tr><td>04</td>
+<td>L'importo richiesto è superiore
+all'importo del buono selezionato</td>
 </tr>
 <tr><td>&nbsp;</td>
-<td><div class="first"><div></div><p>The amount claimed is greater
+<td>The amount claimed is greater
 than the amount of the selected
-voucher</p>
-<div class="last"></div></div></td>
+voucher</td>
 </tr>
-<tr><td><div class="first"><div></div><p>05</p>
-<div class="last"></div></div></td>
-<td><div class="first"><div></div><p>Non si può verificare o consumare
+<tr><td>05</td>
+<td>Non si può verificare o consumare
 il buono poichè l'esercente
-risulta non attivo</p>
-<div class="last"></div></div></td>
+risulta non attivo</td>
 </tr>
 <tr><td>&nbsp;</td>
-<td><div class="first"><div></div><p>User inactive, voucher impossible
-to verify.</p>
-<div class="last"></div></div></td>
+<td>User inactive, voucher impossible
+to verify.</td>
 </tr>
-<tr><td><div class="first"><div></div><p>06</p>
-<div class="last"></div></div></td>
-<td><div class="first"><div></div><p>Ambito e bene del buono non
+<tr><td>06</td>
+<td>Ambito e bene del buono non
 coincidono con ambiti e beni
-trattati dall’esercente</p>
-<div class="last"></div></div></td>
+trattati dall’esercente</td>
 </tr>
 <tr><td>&nbsp;</td>
-<td><div class="first"><div></div><p>Category and type of this voucher
+<td>Category and type of this voucher
 are not aligned with category and
-type managed by the user.</p>
-<div class="last"></div></div></td>
+type managed by the user.</td>
 </tr>
 </tbody>
 </table>
 <p><img alt="image1" src="media/image3.jpeg" style="width: 7.74167in; height: 9.82569in;" /></p>
-<div><p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
 <p>LINEE GUIDA PER ESERCENTI PAG. 13 DI 26</p>
-</div></div>
+</div>
 <div class="section" id="esempi-di-request-response">
 <h1>Esempi di request/response</h1>
-<div><p>Di seguito si riportano due esempi di request e relativa response, sia
+<p>Di seguito si riportano due esempi di request e relativa response, sia
 per l’operation “Check” che per l’operation “Confirm”.</p>
 <p>“Check”</p>
 <p>Check request:</p>
@@ -646,8 +612,8 @@ xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;</p>
 <p>&lt;checkResp&gt;</p>
 <p>&lt;nominativoBeneficiario&gt;AAABBB10X10X111D&lt;/nominativoBeneficiario&gt;</p>
 <p>&lt;partitaIvaEsercente&gt;01043931003&lt;/partitaIvaEsercente&gt;</p>
-</div><p><img alt="image2" src="media/image5.jpeg" style="width: 7.74167in; height: 9.82569in;" /></p>
-<div><p>APPLICAZIONE 18APP ALLEGATO</p>
+<p><img alt="image2" src="media/image5.jpeg" style="width: 7.74167in; height: 9.82569in;" /></p>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
 <p>LINEE GUIDA PER ESERCENTI PAG. 14 DI 26</p>
 <p>&lt;ambito&gt;Teatro&lt;/ambito&gt;</p>
 <p>&lt;bene&gt;Biglietti&lt;/bene&gt;</p>
@@ -682,7 +648,7 @@ xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;</p>
 <p>&lt;/a:ConfirmResponseObj&gt;</p>
 <p>&lt;/soapenv:Body&gt;</p>
 <p>&lt;/soapenv:Envelope&gt;</p>
-</div></div>
+</div>
 </div>
 </body>
 </html>

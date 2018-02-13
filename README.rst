@@ -5,9 +5,8 @@ Casi d'uso di pandoc
 Sono riportati alcuni casi in cui la conversione da docx a rst con 
 pandoc non è efficace. 
 
-I file di output sono ottenuti con
-
-``pandoc file-input.docx -t rst -o file-output.rst``
+I file sono tutti in `tests`, con nome uguale e diverse
+estensioni. Eseguendo `make tests/*` si possono aggiornare tutti
 
 test0
 =====
@@ -62,10 +61,3 @@ allineate.
 **Problema**: la conversione fallisce e la tabella creata presenta errori 
 di struttura.
 
-##############
-Come Compilare
-##############
-
-I file HTML si possono aggiornare tramite `make rst2html/*`, che
-aggiornerà anche i file RST necessari. Per aggiornare solo i files
-RST, eseguire `make output/*`

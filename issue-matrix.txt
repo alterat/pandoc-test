@@ -8,11 +8,11 @@ r = review pending
 w = work missing
 f = frankenstein
 
-                     4248 4059 4320 4327
-               test0 c
-               test1 c
+                     4248 4059 4320 4327 4360
+             c test0 c
+             c test1 c
              c test2 
-               test3
-               test4           rf   rf
-           test-code
-  test-complex-table      rf
+             c test3
+             c test4           rf   rf
+         c test-code
+  test-complex-table      rf             rf

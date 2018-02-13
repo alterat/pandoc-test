@@ -1,0 +1,1395 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.12: http://docutils.sourceforge.net/" />
+<title></title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7614 2013-02-21 15:55:51Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document">
+
+
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 15 DI 26</p>
+</blockquote>
+<div class="section" id="wsdl-verificavoucher-wsdl">
+<h1>WSDL VerificaVoucher.wsdl</h1>
+<blockquote>
+<p>targetnamespace: <a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/">**http://bonus.mibact.it/VerificaVoucher/**</a></p>
+<p>services bindings porttypes messages types</p>
+</blockquote>
+<div class="section" id="verificavouc-her">
+<h2><a class="reference external" href="#_bookmark0">VerificaVouc</a> <a class="reference external" href="#_bookmark0">her</a></h2>
+<blockquote>
+<p><strong>`VerificaVoucherS &lt;#_bookmark2&gt;`__ `OAP &lt;#_bookmark2&gt;`__</strong></p>
+<p><strong>`VerificaVouc &lt;#_bookmark3&gt;`__ `her &lt;#_bookmark3&gt;`__</strong></p>
+<p><strong>`CheckRequest &lt;#_bookmark6&gt;`__ `Check &lt;#_bookmark18&gt;`__</strong></p>
+<p><strong>`CheckRespons &lt;#_bookmark7&gt;`__ `e &lt;#_bookmark7&gt;`__ `ConfirmReque &lt;#_bookmark8&gt;`__ `st &lt;#_bookmark8&gt;`__ `ConfirmRespo &lt;#_bookmark9&gt;`__ `nse &lt;#_bookmark9&gt;`__</strong></p>
+<p><strong>`CheckRequestObj &lt;#_bookmark10&gt;`__ `CheckResponse &lt;#_bookmark22&gt;`__</strong></p>
+<p><strong>`CheckResponseO &lt;#_bookmark12&gt;`__ `bj &lt;#_bookmark12&gt;`__</strong></p>
+<p><strong>`Confirm &lt;#_bookmark28&gt;`__ `ConfirmRequestO &lt;#_bookmark14&gt;`__ `bj &lt;#_bookmark14&gt;`__</strong></p>
+<p><a class="reference external" href="#_bookmark32">**ConfirmResponse**</a></p>
+<p><strong>`ConfirmResponse &lt;#_bookmark16&gt;`__ `Obj &lt;#_bookmark16&gt;`__</strong></p>
+<p>attributeFormDefault: elementFormDefault:</p>
+<p>targetNamespace: <a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/">**http://bonus.mibact.it/VerificaVoucher/**</a></p>
+<p>Elements Complex types</p>
+<p><strong>`CheckRequestObj &lt;#_bookmark10&gt;`__ `Check &lt;#_bookmark18&gt;`__ `CheckResponseObj &lt;#_bookmark12&gt;`__ `CheckResponse &lt;#_bookmark22&gt;`__ `ConfirmRequestObj &lt;#_bookmark14&gt;`__ `Confirm &lt;#_bookmark28&gt;`__ `ConfirmResponseObj &lt;#_bookmark16&gt;`__ `ConfirmResponse &lt;#_bookmark32&gt;`__</strong></p>
+<p>service <strong>VerificaVoucher</strong></p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image0" src="media/image1.png" style="width: 3.23748in; height: 0.49875in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>ports</td>
+<td><p class="first"><strong>VerificaVoucherSOAP</strong></p>
+<p>binding <a class="reference external" href="#_bookmark2">**tns:VerificaVoucherSOAP**</a></p>
+<p>extensibility &lt;soap:address</p>
+<p class="last">location=&quot;<a class="reference external" href="https://bonus.mibact.it/VerificaVoucherWEB/VerificaVoucher">https://bonus.mibact.it/VerificaVoucherWEB/VerificaVoucher</a>&quot;/&gt;</p>
+</td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;wsdl:service name=&quot;VerificaVoucher&quot;&gt;</p>
+<p class="last">&lt;wsdl:port name=&quot;VerificaVoucherSOAP&quot; binding=&quot;tns:VerificaVoucherSOAP&quot;&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 16 DI 26</p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="98%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>&nbsp;</td>
+<td><p class="first">&lt;soap:address location=&quot;https://bonus.mibact.it/VerificaVoucherWEB/VerificaVoucher&quot;/&gt;</p>
+<p>&lt;/wsdl:port&gt;</p>
+<p class="last">&lt;/wsdl:service&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+binding <strong>VerificaVoucherSOAP</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image1" src="media/image2.png" style="width: 2.8175in; height: 2.26625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><a class="reference external" href="#_bookmark3">**tns:VerificaVoucher**</a></td>
+</tr>
+<tr><td>extensibility</td>
+<td>&lt;soap:binding style=&quot;document&quot; transport=<a class="reference external" href="http://schemas.xmlsoap.org/soap/http">&quot;http://schemas.xmlsoap.org/soap/http</a>&quot;/&gt;</td>
+</tr>
+<tr><td>operations</td>
+<td><p class="first"><strong>Check</strong></p>
+<p>extensibility &lt;soap:operation</p>
+<p>soapAction=&quot;<a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/Check">http://bonus.mibact.it/VerificaVoucher/Check</a>&quot;/&gt;</p>
+<p>input &lt;soap:body use=&quot;literal&quot;/&gt;</p>
+<p>output &lt;soap:body use=&quot;literal&quot;/&gt;</p>
+<p><strong>Confirm</strong></p>
+<p>extensibility &lt;soap:operation</p>
+<p>soapAction=&quot;<a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/Confirm">http://bonus.mibact.it/VerificaVoucher/Confirm</a>&quot;/&gt;</p>
+<p>input &lt;soap:body use=&quot;literal&quot;/&gt;</p>
+<p class="last">output &lt;soap:body use=&quot;literal&quot;/&gt;</p>
+</td>
+</tr>
+<tr><td>used by</td>
+<td>Port <a class="reference external" href="#_bookmark1">**VerificaVoucherSOAP**</a> in Service <a class="reference external" href="#_bookmark0">**VerificaVoucher**</a></td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;wsdl:binding name=&quot;VerificaVoucherSOAP&quot; type=&quot;tns:VerificaVoucher&quot;&gt;</p>
+<p>&lt;soap:binding style=&quot;document&quot; transport=<a class="reference external" href="http://schemas.xmlsoap.org/soap/http">&quot;http://schemas.xmlsoap.org/soap/http</a>&quot;/&gt;</p>
+<p>&lt;wsdl:operation name=&quot;Check&quot;&gt;</p>
+<p>&lt;soap:operation soapAction=<a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/Check">&quot;http://bonus.mibact.it/VerificaVoucher/Check</a>&quot;/&gt;</p>
+<p>&lt;wsdl:input&gt;</p>
+<p class="last">&lt;soap:body use=&quot;literal&quot;/&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 17 DI 26</p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%" />
+<col width="99%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>&nbsp;</td>
+<td><p class="first">&lt;/wsdl:input&gt;</p>
+<p>&lt;wsdl:output&gt;</p>
+<p>&lt;soap:body use=&quot;literal&quot;/&gt;</p>
+<p>&lt;/wsdl:output&gt;</p>
+<p>&lt;/wsdl:operation&gt;</p>
+<p>&lt;wsdl:operation name=&quot;Confirm&quot;&gt;</p>
+<p>&lt;soap:operation soapAction=<a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/Confirm">&quot;http://bonus.mibact.it/VerificaVoucher/Confirm</a>&quot;/&gt;</p>
+<p>&lt;wsdl:input&gt;</p>
+<p>&lt;soap:body use=&quot;literal&quot;/&gt;</p>
+<p>&lt;/wsdl:input&gt;</p>
+<p>&lt;wsdl:output&gt;</p>
+<p>&lt;soap:body use=&quot;literal&quot;/&gt;</p>
+<p>&lt;/wsdl:output&gt;</p>
+<p>&lt;/wsdl:operation&gt;</p>
+<p class="last">&lt;/wsdl:binding&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+porttype <strong>VerificaVoucher</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image2" src="media/image3.png" style="width: 2.52in; height: 1.89in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>operations</td>
+<td><p class="first"><strong>Check</strong></p>
+<p>input <a class="reference external" href="#_bookmark6">**tns:CheckRequest**</a></p>
+<p>output <a class="reference external" href="#_bookmark7">**tns:CheckResponse**</a></p>
+<p><strong>Confirm</strong></p>
+<p>input <a class="reference external" href="#_bookmark8">**tns:ConfirmRequest**</a></p>
+<p class="last">output <a class="reference external" href="#_bookmark9">**tns:ConfirmResponse**</a></p>
+</td>
+</tr>
+<tr><td>used by</td>
+<td>binding <a class="reference external" href="#_bookmark2">**VerificaVoucherSOAP**</a></td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;wsdl:portType name=&quot;VerificaVoucher&quot;&gt;</p>
+<p>&lt;wsdl:operation name=&quot;Check&quot;&gt;</p>
+<p>&lt;wsdl:input message=&quot;tns:CheckRequest&quot;/&gt;</p>
+<p>&lt;wsdl:output message=&quot;tns:CheckResponse&quot;/&gt;</p>
+<p>&lt;/wsdl:operation&gt;</p>
+<p class="last">&lt;wsdl:operation name=&quot;Confirm&quot;&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 18 DI 26</p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="4%" />
+<col width="96%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>&nbsp;</td>
+<td><p class="first">&lt;wsdl:input message=&quot;tns:ConfirmRequest&quot;/&gt;</p>
+<p>&lt;wsdl:output message=&quot;tns:ConfirmResponse&quot;/&gt;</p>
+<p>&lt;/wsdl:operation&gt;</p>
+<p class="last">&lt;/wsdl:portType&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+message <strong>CheckRequest</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">parts</th>
+<th class="head"><p class="first"><strong>parameters</strong></p>
+<p class="last">element <a class="reference external" href="#_bookmark10">**tns:CheckRequestObj**</a></p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>used by</td>
+<td>Operation <a class="reference external" href="#_bookmark4">**Check**</a> in PortType <strong>`VerificaVouche &lt;#_bookmark3&gt;`__r</strong></td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;wsdl:message name=&quot;CheckRequest&quot;&gt;</p>
+<p>&lt;wsdl:part name=&quot;parameters&quot; element=&quot;tns:CheckRequestObj&quot;/&gt;</p>
+<p class="last">&lt;/wsdl:message&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+message <strong>CheckResponse</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">parts</th>
+<th class="head"><p class="first"><strong>parameters</strong></p>
+<p class="last">element <a class="reference external" href="#_bookmark12">**tns:CheckResponseObj**</a></p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>used by</td>
+<td>Operation <a class="reference external" href="#_bookmark4">**Check**</a> in PortType <strong>`VerificaVouche &lt;#_bookmark3&gt;`__r</strong></td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;wsdl:message name=&quot;CheckResponse&quot;&gt;</p>
+<p>&lt;wsdl:part name=&quot;parameters&quot; element=&quot;tns:CheckResponseObj&quot;/&gt;</p>
+<p class="last">&lt;/wsdl:message&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+message <strong>ConfirmRequest</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="8%" />
+<col width="92%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">parts</th>
+<th class="head"><p class="first"><strong>parameters</strong></p>
+<p class="last">element <a class="reference external" href="#_bookmark14">**tns:ConfirmRequestObj**</a></p>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>used by</td>
+<td>Operation <a class="reference external" href="#_bookmark5">**Confirm**</a> in PortType <strong>`VerificaVouche &lt;#_bookmark3&gt;`__r</strong></td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;wsdl:message name=&quot;ConfirmRequest&quot;&gt;</p>
+<p>&lt;wsdl:part name=&quot;parameters&quot; element=&quot;tns:ConfirmRequestObj&quot;/&gt;</p>
+<p class="last">&lt;/wsdl:message&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>message <strong>ConfirmResponse</strong></p>
+<p><strong>Codice campo modificato Codice campo modificato</strong></p>
+<p><strong>Codice campo modificato Codice campo modificato</strong></p>
+<p><strong>Codice campo modificato Codice campo modificato</strong></p>
+<p><strong>Codice campo modificato Codice campo modificato</strong></p>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 19 DI 26</p>
+<p>element <strong>CheckRequestObj</strong></p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image3" src="media/image4.png" style="width: 2.52877in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>namespace</td>
+<td><a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/">http://bonus.mibact.it/VerificaVoucher/</a></td>
+</tr>
+<tr><td>properties</td>
+<td>content complex</td>
+</tr>
+<tr><td>children</td>
+<td><a class="reference external" href="#_bookmark11">**checkReq**</a></td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;xsd:element name=&quot;CheckRequestObj&quot;&gt;</p>
+<p>&lt;xsd:complexType&gt;</p>
+<p>&lt;xsd:sequence&gt;</p>
+<p>&lt;xsd:element name=&quot;checkReq&quot; type=&quot;tns:Check&quot;/&gt;</p>
+<p>&lt;/xsd:sequence&gt;</p>
+<p>&lt;/xsd:complexType&gt;</p>
+<p class="last">&lt;/xsd:element&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>CheckRequestObj/checkReq</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image4" src="media/image5.png" style="width: 2.85249in; height: 1.2775in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><a class="reference external" href="#_bookmark18">**tns:Check**</a></td>
+</tr>
+<tr><td>properties</td>
+<td>content complex</td>
+</tr>
+<tr><td>children</td>
+<td><strong>`tipoOperazione &lt;#_bookmark19&gt;`__ `codiceVoucher &lt;#_bookmark20&gt;`__ `partitaIvaEsercente &lt;#_bookmark21&gt;`__</strong></td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;checkReq&quot; type=&quot;tns:Check&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>CheckResponseObj</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="79%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image5" src="media/image6.png" style="width: 2.67741in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>namespace</td>
+<td><a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/">http://bonus.mibact.it/VerificaVoucher/</a></td>
+</tr>
+<tr><td>properties</td>
+<td>content complex</td>
+</tr>
+<tr><td>children</td>
+<td><a class="reference external" href="#_bookmark13">**checkResp**</a></td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;CheckResponseObj&quot;&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 20 DI 26</p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="3%" />
+<col width="97%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>&nbsp;</td>
+<td><p class="first">&lt;xsd:complexType&gt;</p>
+<p>&lt;xsd:sequence&gt;</p>
+<p>&lt;xsd:element name=&quot;checkResp&quot; type=&quot;tns:CheckResponse&quot;/&gt;</p>
+<p>&lt;/xsd:sequence&gt;</p>
+<p>&lt;/xsd:complexType&gt;</p>
+<p class="last">&lt;/xsd:element&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>CheckResponseObj/checkResp</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="6%" />
+<col width="94%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image6" src="media/image7.png" style="width: 3.08875in; height: 1.855in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><a class="reference external" href="#_bookmark22">**tns:CheckResponse**</a></td>
+</tr>
+<tr><td>properties</td>
+<td>content complex</td>
+</tr>
+<tr><td>children</td>
+<td><strong>`nominativoBeneficiario &lt;#element-checkresponsenominativobeneficiario&gt;`__ `partitaIvaEsercente &lt;#_bookmark24&gt;`__ `ambito &lt;#_bookmark25&gt;`__ `bene &lt;#_bookmark26&gt;`__ `importo &lt;#_bookmark27&gt;`__</strong></td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;checkResp&quot; type=&quot;tns:CheckResponse&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>ConfirmRequestObj</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image7" src="media/image8.png" style="width: 2.61629in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>namespace</td>
+<td><a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/">http://bonus.mibact.it/VerificaVoucher/</a></td>
+</tr>
+<tr><td>properties</td>
+<td>content complex</td>
+</tr>
+<tr><td>children</td>
+<td><a class="reference external" href="#_bookmark15">**checkReq**</a></td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;xsd:element name=&quot;ConfirmRequestObj&quot;&gt;</p>
+<p>&lt;xsd:complexType&gt;</p>
+<p>&lt;xsd:sequence&gt;</p>
+<p>&lt;xsd:element name=&quot;checkReq&quot; type=&quot;tns:Confirm&quot;/&gt;</p>
+<p>&lt;/xsd:sequence&gt;</p>
+<p>&lt;/xsd:complexType&gt;</p>
+<p class="last">&lt;/xsd:element&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 21 DI 26</p>
+<p>element <strong>ConfirmRequestObj/checkReq</strong></p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image8" src="media/image9.png" style="width: 2.65994in; height: 1.2775in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><a class="reference external" href="#_bookmark28">**tns:Confirm**</a></td>
+</tr>
+<tr><td>properties</td>
+<td>content complex</td>
+</tr>
+<tr><td>children</td>
+<td><strong>`tipoOperazione &lt;#_bookmark29&gt;`__ `codiceVoucher &lt;#_bookmark30&gt;`__ `importo &lt;#_bookmark31&gt;`__</strong></td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;checkReq&quot; type=&quot;tns:Confirm&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>ConfirmResponseObj</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="84%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image9" src="media/image10.png" style="width: 2.76493in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>namespace</td>
+<td><a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/">http://bonus.mibact.it/VerificaVoucher/</a></td>
+</tr>
+<tr><td>properties</td>
+<td>content complex</td>
+</tr>
+<tr><td>children</td>
+<td><a class="reference external" href="#_bookmark17">**checkResp**</a></td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;xsd:element name=&quot;ConfirmResponseObj&quot;&gt;</p>
+<p>&lt;xsd:complexType&gt;</p>
+<p>&lt;xsd:sequence&gt;</p>
+<p>&lt;xsd:element name=&quot;checkResp&quot; type=&quot;tns:ConfirmResponse&quot;/&gt;</p>
+<p>&lt;/xsd:sequence&gt;</p>
+<p>&lt;/xsd:complexType&gt;</p>
+<p class="last">&lt;/xsd:element&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>ConfirmResponseObj/checkResp</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="84%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image10" src="media/image11.png" style="width: 2.33625in; height: 0.7in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><a class="reference external" href="#_bookmark32">**tns:ConfirmResponse**</a></td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 22 DI 26</p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">properties</th>
+<th class="head">content complex</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>children</td>
+<td><a class="reference external" href="#_bookmark33">**esito**</a></td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;checkResp&quot; type=&quot;tns:ConfirmResponse&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+complexType <strong>Check</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image11" src="media/image12.png" style="width: 2.46753in; height: 0.88375in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>namespace</td>
+<td><a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/">http://bonus.mibact.it/VerificaVoucher/</a></td>
+</tr>
+<tr><td>children</td>
+<td><strong>`tipoOperazione &lt;#_bookmark19&gt;`__ `codiceVoucher &lt;#_bookmark20&gt;`__ `partitaIvaEsercente &lt;#_bookmark21&gt;`__</strong></td>
+</tr>
+<tr><td>used by</td>
+<td>element <a class="reference external" href="#_bookmark11">**CheckRequestObj/checkReq**</a></td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;xsd:complexType name=&quot;Check&quot;&gt;</p>
+<p>&lt;xsd:sequence&gt;</p>
+<p>&lt;xsd:element name=&quot;tipoOperazione&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;xsd:element name=&quot;codiceVoucher&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;xsd:element name=&quot;partitaIvaEsercente&quot; type=&quot;xsd:string&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;/xsd:sequence&gt;</p>
+<p class="last">&lt;/xsd:complexType&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>Check/tipoOperazione</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="12%" />
+<col width="88%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image12" src="media/image13.png" style="width: 1.08498in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;tipoOperazione&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>Check/codiceVoucher</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="46%" />
+<col width="54%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>diagram</td>
+<td><img alt="image13" src="media/image14.png" style="width: 1.07624in; height: 0.30625in;" /></td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 23 DI 26</p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="12%" />
+<col width="88%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">type</th>
+<th class="head"><strong>xsd:string</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;codiceVoucher&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>Check/partitaIvaEsercente</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image14" src="media/image15.png" style="width: 1.27748in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td><p class="first">minOcc 0</p>
+<p class="last">maxOcc 1 content simple</p>
+</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;partitaIvaEsercente&quot; type=&quot;xsd:string&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+complexType <strong>CheckResponse</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="5%" />
+<col width="95%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image15" src="media/image16.png" style="width: 3.1327in; height: 1.46125in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>namespace</td>
+<td><a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/">http://bonus.mibact.it/VerificaVoucher/</a></td>
+</tr>
+<tr><td>children</td>
+<td><strong>`nominativoBeneficiario &lt;#element-checkresponsenominativobeneficiario&gt;`__ `partitaIvaEsercente &lt;#_bookmark24&gt;`__ `ambito &lt;#_bookmark25&gt;`__ `bene &lt;#_bookmark26&gt;`__ `importo &lt;#_bookmark27&gt;`__</strong></td>
+</tr>
+<tr><td>used by</td>
+<td>element <a class="reference external" href="#_bookmark13">**CheckResponseObj/checkResp**</a></td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;xsd:complexType name=&quot;CheckResponse&quot;&gt;</p>
+<p>&lt;xsd:sequence&gt;</p>
+<p>&lt;xsd:element name=&quot;nominativoBeneficiario&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;xsd:element name=&quot;partitaIvaEsercente&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;xsd:element name=&quot;ambito&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;xsd:element name=&quot;bene&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;xsd:element name=&quot;importo&quot; type=&quot;xsd:double&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;/xsd:sequence&gt;</p>
+<p class="last">&lt;/xsd:complexType&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 24 DI 26</p>
+</blockquote>
+</div>
+<div class="section" id="element-checkresponse-nominativobeneficiario">
+<h2>element CheckResponse/nominativoBeneficiario</h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image16" src="media/image17.png" style="width: 1.45255in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;nominativoBeneficiario&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>CheckResponse/partitaIvaEsercente</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image17" src="media/image18.png" style="width: 1.27748in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;partitaIvaEsercente&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>CheckResponse/ambito</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="87%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image18" src="media/image19.png" style="width: 0.68249in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;ambito&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>CheckResponse/bene</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="87%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image19" src="media/image20.png" style="width: 0.665in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;bene&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 25 DI 26</p>
+<p>element <strong>CheckResponse/importo</strong></p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="87%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image20" src="media/image21.png" style="width: 0.73499in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:double</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;importo&quot; type=&quot;xsd:double&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+complexType <strong>Confirm</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image21" src="media/image22.png" style="width: 2.3625in; height: 0.88375in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>namespace</td>
+<td><a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/">http://bonus.mibact.it/VerificaVoucher/</a></td>
+</tr>
+<tr><td>children</td>
+<td><strong>`tipoOperazione &lt;#_bookmark29&gt;`__ `codiceVoucher &lt;#_bookmark30&gt;`__ `importo &lt;#_bookmark31&gt;`__</strong></td>
+</tr>
+<tr><td>used by</td>
+<td>element <a class="reference external" href="#_bookmark15">**ConfirmRequestObj/checkReq**</a></td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;xsd:complexType name=&quot;Confirm&quot;&gt;</p>
+<p>&lt;xsd:sequence&gt;</p>
+<p>&lt;xsd:element name=&quot;tipoOperazione&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;xsd:element name=&quot;codiceVoucher&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;xsd:element name=&quot;importo&quot; type=&quot;xsd:double&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;/xsd:sequence&gt;</p>
+<p class="last">&lt;/xsd:complexType&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>Confirm/tipoOperazione</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="12%" />
+<col width="88%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image22" src="media/image13.png" style="width: 1.08498in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;tipoOperazione&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+<p>APPLICAZIONE 18APP ALLEGATO</p>
+<p>LINEE GUIDA PER ESERCENTI PAG. 26 DI 26</p>
+<p>element <strong>Confirm/codiceVoucher</strong></p>
+</blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="12%" />
+<col width="88%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image23" src="media/image14.png" style="width: 1.07624in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;codiceVoucher&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>Confirm/importo</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="87%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image24" src="media/image21.png" style="width: 0.73499in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:double</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;importo&quot; type=&quot;xsd:double&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+complexType <strong>ConfirmResponse</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="12%" />
+<col width="88%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image25" src="media/image23.png" style="width: 2.30997in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>namespace</td>
+<td><a class="reference external" href="http://bonus.mibact.it/VerificaVoucher/">http://bonus.mibact.it/VerificaVoucher/</a></td>
+</tr>
+<tr><td>children</td>
+<td><a class="reference external" href="#_bookmark33">**esito**</a></td>
+</tr>
+<tr><td>used by</td>
+<td>element <a class="reference external" href="#_bookmark17">**ConfirmResponseObj/checkResp**</a></td>
+</tr>
+<tr><td>source</td>
+<td><p class="first">&lt;xsd:complexType name=&quot;ConfirmResponse&quot;&gt;</p>
+<p>&lt;xsd:sequence&gt;</p>
+<p>&lt;xsd:element name=&quot;esito&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</p>
+<p>&lt;/xsd:sequence&gt;</p>
+<p class="last">&lt;/xsd:complexType&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!--  -->
+<blockquote>
+element <strong>ConfirmResponse/esito</strong></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="87%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">diagram</th>
+<th class="head"><img alt="image26" src="media/image24.png" style="width: 0.665in; height: 0.30625in;" /></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>type</td>
+<td><strong>xsd:string</strong></td>
+</tr>
+<tr><td>properties</td>
+<td>content simple</td>
+</tr>
+<tr><td>source</td>
+<td>&lt;xsd:element name=&quot;esito&quot; type=&quot;xsd:string&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot;/&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>
