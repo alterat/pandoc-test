@@ -52,8 +52,9 @@ Testo con parte di codice.
 
 **Problema**: la conversione non riconosce il codice.
 
+
 test-complex-table
-=============
+==================
 
 Tabella molto complessa, quasi patologica, per via delle celle multiple non
 allineate.
@@ -61,3 +62,7 @@ allineate.
 **Problema**: la conversione fallisce e la tabella creata presenta errori 
 di struttura.
 
+test-multicell-table
+====================
+
+Tabella con celle non uniformi.
