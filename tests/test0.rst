@@ -10,7 +10,7 @@ Introduzione
 Per ottenere il pagamento dei buoni validati, l’esercente deve provvedere a emettere corrispondenti fatture elettroniche nei confronti della pubblica amministrazione usando **la piattaforma di fatturazione elettronica della PA**, seguendo le istruzioni di seguito indicate.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    ***Nota Bene***
+    *Nota Bene*
 
 -  .. rubric:: **Le fatture così emesse non hanno rilevanza ai fini
       fiscali** – essendo l’evento fiscale già regolato mediante il

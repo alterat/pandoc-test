@@ -1,0 +1,17 @@
+
+crossing Pandoc issue numbers with our test naming and
+keeping a status for issues
+
+merged: 4248 4360
+
+c = closed
+r = review pending
+w = work missing
+f = frankenstein
+
+issue status pandoc-test
+4059  rf     10
+4320  rf     9
+4327  rf     9
+4368  w      12
+

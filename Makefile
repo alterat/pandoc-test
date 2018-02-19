@@ -14,8 +14,11 @@ tests/test-complex-table.rst:tests/test-complex-table.docx
 
 # end repeated rules
 
-tests/test3.rst:tests/test3.docx filter.hs
-	./$(version) --filter filter.hs $< -o $@
+tests/test3.rst:tests/test3.docx 7.hs
+	./$(version) --filter 7.hs $< -o $@
+
+tests/15.rst:tests/15.docx 15.hs
+	./$(version) --filter 15.hs $< -o $@
 
 tests/%.rst:tests/%.docx
 	./$(version) $< -o $@

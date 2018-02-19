@@ -5,7 +5,7 @@
 +=========+==============================================================================+
 | ports   |     **VerificaVoucherSOAP**                                                  |
 |         |                                                                              |
-|         |     binding `**tns:VerificaVoucherSOAP** <#_bookmark2>`__                    |
+|         |     binding `tns:VerificaVoucherSOAP <#_bookmark2>`__                        |
 |         |                                                                              |
 |         |     extensibility <soap:address                                              |
 |         |                                                                              |
